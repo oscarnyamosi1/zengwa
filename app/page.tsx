@@ -14,18 +14,18 @@ import NewsletterCTA from '@/app/components/NewsletterCTA';
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
-      {/* <PublicHeader /> */}
+      <PublicHeader />
       <main>
-        {/* <HeroSection /> */}
-        {/* <TrustBadgeStrip /> */}
-        {/* <FeaturedCampaigns /> */}
-        {/* <ImpactStats /> */}
-        {/* <OurStorySection /> */}
-        {/* <TestimonialsSection /> */}
-        {/* <LatestNews /> */}
-        {/* <NewsletterCTA /> */}
+        <HeroSection />
+        <TrustBadgeStrip />
+        <FeaturedCampaigns />
+        <ImpactStats />
+        <OurStorySection />
+        <TestimonialsSection />
+        <LatestNews />
+        <NewsletterCTA />
       </main>
-      {/* <PublicFooter /> */}
+      <PublicFooter />
     </div>
   );
 }
