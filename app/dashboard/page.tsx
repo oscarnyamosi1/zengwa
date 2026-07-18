@@ -47,7 +47,7 @@ export default function DashboardPage() {
 
         {/* Activity Feed */}
         <div className="mt-6">
-          <ActivityFeed />
+          {/* <ActivityFeed /> */}
         </div>
       </div>
     </DashboardLayout>
