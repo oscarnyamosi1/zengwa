@@ -1,9 +1,15 @@
 import React from 'react';
-import { SocialIcon } from 'react-social-icons'; 
 import Link from 'next/link';
 import AppLogo from '@/components/ui/AppLogo';
 import { MapPin, Phone, Mail } from 'lucide-react';
-import { Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
+// import { Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
+// import { Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 
 const quickLinks = [
   { label: 'Home', href: '/' },
@@ -24,10 +30,10 @@ const ministryLinks = [
 ];
 
 const socialLinks = [
-  { icon: Facebook, label: 'Facebook' },
-  { icon: Instagram, label: 'Instagram' },
-  { icon: Twitter, label: 'Twitter' },
-  { icon: Youtube, label: 'YouTube' },
+  { icon: FaFacebook, label: 'Facebook' },
+  { icon: FaInstagram, label: 'Instagram' },
+  { icon: FaTwitter, label: 'Twitter' },
+  { icon: FaYoutube, label: 'YouTube' },
 ];
 
 export default function PublicFooter() {
@@ -52,14 +58,14 @@ export default function PublicFooter() {
               &ldquo;Train up a child in the way he should go; even when he is old he will not depart from it.&rdquo; — Proverbs 22:6
             </p>
             <div className="flex items-center gap-3">
-              {socialLinks?.map(({ icon: SocialIcon, label }) => (
+              {socialLinks?.map(({ icon: IconComponent, label }) => (
                 <button
                   key={`social-${label}`}
                   aria-label={label}
                   className="w-9 h-9 rounded-lg bg-primary-foreground/10 hover:bg-accent/20 flex items-center justify-center transition-colors"
                 >
-                  {/* <SocialIcon size={16} className="text-primary-foreground/80" /> */}
-                  social icon plavece holder
+                  <IconComponent size={16} className="text-primary-foreground/80" />
+                  {/* social icon plavece holder */}
                 </button>
               ))}
             </div>

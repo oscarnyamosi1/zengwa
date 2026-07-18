@@ -10,6 +10,7 @@ import TestimonialsSection from '@/app/components/TestimonialsSection';
 import LatestNews from '@/app/components/LatestNews';
 import NewsletterCTA from '@/app/components/NewsletterCTA';
 
+
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">

@@ -1,15 +1,15 @@
 import React from 'react';
 import type { Metadata, Viewport } from 'next';
-import { Plus_Jakarta_Sans } from 'next/font/google';
-import '../styles/tailwind.css';
+// import { Plus_Jakarta_Sans } from 'next/font/google';
+import "@/app/globals.css"
 import { Toaster } from 'sonner';
 
-const plusJakarta = Plus_Jakarta_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
-  variable: '--font-plus-jakarta',
-  display: 'swap',
-});
+// const plusJakarta = Plus_Jakarta_Sans({
+//   subsets: ['latin'],
+//   weight: ['400', '500', '600', '700', '800'],
+//   variable: '--font-plus-jakarta',
+//   display: 'swap',
+// });
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -29,8 +29,10 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={plusJakarta.variable}>
-      <body className={plusJakarta.className}>
+    // <html lang="en" className={plusJakarta.variable}>
+    //   <body className={plusJakarta.className}>
+    <html lang="en">
+      <body>
         {children}
         <Toaster
           position="bottom-right"
