@@ -27,5 +27,6 @@ export default function HomePage() {
       </main>
       <PublicFooter />
     </div>
+    // done here
   );
 }
