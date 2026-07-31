@@ -7,20 +7,20 @@ import { Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 
 const quickLinks = [
   { label: 'Home', href: '/' },
-  { label: 'About Us', href: '/' },
+  { label: 'About Us', href: '/about' },
   { label: 'Donate', href: '/donate' },
   { label: 'Dashboard', href: '/dashboard' },
-  { label: 'Blog', href: '/' },
-  { label: 'Contact', href: '/' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 const ministryLinks = [
   { label: 'Child Sponsorship', href: '/donate' },
-  { label: 'School Construction', href: '/' },
-  { label: 'Clean Water Projects', href: '/' },
-  { label: 'Church Planting', href: '/' },
-  { label: 'Community Health', href: '/' },
-  { label: 'Volunteer Program', href: '/' },
+  { label: 'School Construction', href: '/coming-soon' },
+  { label: 'Clean Water Projects', href: '/coming-soon' },
+  { label: 'Church Planting', href: '/coming-soon' },
+  { label: 'Community Health', href: '/coming-soon' },
+  { label: 'Volunteer Program', href: '/volunteer-program' },
 ];
 
 const socialLinks = [
@@ -59,7 +59,7 @@ export default function PublicFooter() {
                   className="w-9 h-9 rounded-lg bg-primary-foreground/10 hover:bg-accent/20 flex items-center justify-center transition-colors"
                 >
                   {/* <SocialIcon size={16} className="text-primary-foreground/80" /> */}
-                  social icon plavece holder
+                  social icon place holder
                 </button>
               ))}
             </div>

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description:
     'Support Zengwa Christian Education Centre through donations, child sponsorship, and ministry partnerships. 100% of funds go directly to transforming communities in Africa.',
   icons: {
-    icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
+    icon: [{ url: '/logo.png', type: 'image/png' }],
   },
 };
 
@@ -46,8 +46,7 @@ export default function RootLayout({
           }}
         />
 
-        <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fzengwaconn1230back.builtwithrocket.new&_be=https%3A%2F%2Fappanalytics.rocket.new&_v=0.1.19" />
-        <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2" /></body>
+        </body>
     </html>
   );
 }

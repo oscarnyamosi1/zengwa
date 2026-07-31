@@ -27,7 +27,7 @@ export default function DashboardRightPanel() {
   return (
     <div className="flex flex-col gap-5">
       {/* Sponsorship Ring */}
-      <div className="bg-card rounded-2xl border border-border shadow-card p-5">
+      <div className="bg-card rounded-md border border-border shadow-card p-5">
         <h3 className="font-bold text-foreground text-base mb-1">Sponsorship Status</h3>
         <p className="text-xs text-muted-foreground mb-4">847 of 910 children sponsored</p>
         <SponsorshipRingChart />
@@ -47,7 +47,7 @@ export default function DashboardRightPanel() {
         </div>
       </div>
       {/* Upcoming Events */}
-      <div className="bg-card rounded-2xl border border-border shadow-card p-5">
+      <div className="bg-card rounded-md border border-border shadow-card p-5">
         <div className="flex items-center justify-between mb-4">
           <h3 className="font-bold text-foreground text-base">Upcoming Events</h3>
           <Calendar size={16} className="text-muted-foreground" />
@@ -67,7 +67,7 @@ export default function DashboardRightPanel() {
         </div>
       </div>
       {/* Prayer Requests */}
-      <div className="bg-card rounded-2xl border border-border shadow-card p-5">
+      <div className="bg-card rounded-md border border-border shadow-card p-5">
         <div className="flex items-center justify-between mb-4">
           <div>
             <h3 className="font-bold text-foreground text-base">Prayer Requests</h3>

@@ -43,9 +43,9 @@ export default function OurStorySection() {
               
             </div>
             {/* Overlay card */}
-            <div className="absolute bottom-6 right-6 glass-card rounded-xl p-4 shadow-glass border border-border max-w-52">
+            <div className="absolute bottom-6 right-6 glass-card rounded-sm p-4 shadow-glass border border-border max-w-52">
               <div className="flex items-center gap-2 mb-2">
-                <div className="w-2 h-2 rounded-full bg-accent animate-pulse-slow" />
+                {/* <div className="w-2 h-2 rounded-full bg-accent animate-pulse-slow" /> */}
                 <span className="text-xs font-semibold text-primary uppercase tracking-wider">Live Impact</span>
               </div>
               <p className="text-2xl font-extrabold text-foreground stat-number">847</p>
@@ -86,7 +86,7 @@ export default function OurStorySection() {
             </div>
 
             <Link
-              href="/"
+              href="/about"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold text-sm hover:bg-secondary transition-all duration-150 active:scale-95">
               
               Learn More About Us

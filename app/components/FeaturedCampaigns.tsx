@@ -3,6 +3,10 @@ import Link from 'next/link';
 import { ChevronLeft, ChevronRight, ShoppingCart, Star } from 'lucide-react';
 import AppImage from '@/components/ui/AppImage';
 
+import { faHandHoldingHeart, faHandHoldingDollar } from '@fortawesome/free-solid-svg-icons';
+import FaIcon from '@/app/components/FaIcon';
+
+
 const campaigns = [
 {
   id: 'camp-001',
@@ -112,7 +116,7 @@ export default function FeaturedCampaigns() {
               return (
                 <div
                   key={campaign.id}
-                  className="campaign-card-hover bg-card rounded-2xl overflow-hidden border border-border shadow-card group">
+                  className="campaign-card-hover bg-card rounded-sm overflow-hidden border border-border shadow-card group">
                   
                   {/* Image */}
                   <div className="relative overflow-hidden">
@@ -172,7 +176,7 @@ export default function FeaturedCampaigns() {
                       href="/donate"
                       className="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground py-2.5 rounded-xl text-sm font-semibold hover:bg-secondary transition-all duration-150 active:scale-95">
                       
-                      <ShoppingCart size={14} />
+                      <FaIcon icon={faHandHoldingHeart} size={22} className="white" />
                       Donate Now
                     </Link>
                   </div>

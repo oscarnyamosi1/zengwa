@@ -1,10 +1,10 @@
 import React from 'react';
-import DashboardLayout from '@/app/dashboard/components/DashboardLayout';
-import KPIBentoGrid from '@/app/dashboard/components/KPIBentoGrid';
-import ChartsRow from '@/app/dashboard/components/ChartsRow';
-import RecentDonationsTable from '@/app/dashboard/components/RecentDonationsTable';
-import DashboardRightPanel from '@/app/dashboard/components/DashboardRightPanel';
-import ActivityFeed from '@/app/dashboard/components/ActivityFeed';
+import DashboardLayout from '@/app/(admin)/dashboard/components/DashboardLayout';
+import KPIBentoGrid from '@/app/(admin)/dashboard/components/KPIBentoGrid';
+import ChartsRow from '@/app/(admin)/dashboard/components/ChartsRow';
+import RecentDonationsTable from '@/app/(admin)/dashboard/components/RecentDonationsTable';
+import DashboardRightPanel from '@/app/(admin)/dashboard/components/DashboardRightPanel';
+import ActivityFeed from '@/app/(admin)/dashboard/components/ActivityFeed';
 
 export default function DashboardPage() {
   return (

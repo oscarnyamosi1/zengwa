@@ -25,7 +25,7 @@ const testimonials = [
 },
 {
   id: 'testi-003',
-  name: 'Sarah Thompson',
+  name: 'Mwashinga Sarah',
   role: 'Partner Donor — London, UK',
   avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_11287cdb4-1772690426652.png",
   alt: 'Portrait of a British woman with blonde hair smiling professionally',

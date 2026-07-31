@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import AppLogo from '@/components/ui/AppLogo';
 import { MapPin, Phone, Mail } from 'lucide-react';
+import { companyCommunicationChannel } from '@/data/dummyData'; 
 // import { Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 // import { Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 import {
@@ -13,20 +14,20 @@ import {
 
 const quickLinks = [
   { label: 'Home', href: '/' },
-  { label: 'About Us', href: '/' },
+  { label: 'About Us', href: '/about' },
   { label: 'Donate', href: '/donate' },
   { label: 'Dashboard', href: '/dashboard' },
-  { label: 'Blog', href: '/' },
-  { label: 'Contact', href: '/' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 const ministryLinks = [
-  { label: 'Child Sponsorship', href: '/donate' },
-  { label: 'School Construction', href: '/' },
-  { label: 'Clean Water Projects', href: '/' },
-  { label: 'Church Planting', href: '/' },
-  { label: 'Community Health', href: '/' },
-  { label: 'Volunteer Program', href: '/' },
+  { label: 'Child Sponsorship', href: '/sponsorship' },
+  { label: 'School Construction', href: '/coming-soon' },
+  { label: 'Clean Water Projects', href: '/coming-soon' },
+  { label: 'Church Planting', href: '/coming-soon' },
+  { label: 'Community Health', href: '/coming-soon' },
+  { label: 'Volunteer Program', href: '/volunteer-program' },
 ];
 
 const socialLinks = [
@@ -115,7 +116,7 @@ export default function PublicFooter() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-accent shrink-0" />
-                <span className="text-primary-foreground/70 text-sm">info@zengwaconnect.org</span>
+                <span className="text-primary-foreground/70 text-sm">{companyCommunicationChannel.email}</span>
               </li>
             </ul>
             <div className="mt-6 p-3 rounded-xl bg-primary-foreground/10 border border-primary-foreground/20">

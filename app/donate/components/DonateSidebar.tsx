@@ -16,7 +16,7 @@ export default function DonateSidebar() {
   return (
     <div className="flex flex-col gap-4 sticky top-24">
       {/* Progress Summary */}
-      <div className="bg-card rounded-2xl border border-border shadow-card p-5">
+      <div className="bg-card rounded-md border border-border shadow-card p-5">
         <h3 className="font-bold text-foreground text-base mb-4">Campaign Progress</h3>
         <div className="space-y-4">
           {[
@@ -43,7 +43,7 @@ export default function DonateSidebar() {
         </div>
       </div>
       {/* Trust Badges */}
-      <div className="bg-card rounded-2xl border border-border shadow-card p-5">
+      <div className="bg-card rounded-md border border-border shadow-card p-5">
         <h3 className="font-bold text-foreground text-base mb-3">Why Donate Here?</h3>
         <div className="space-y-3">
           {[
@@ -65,7 +65,7 @@ export default function DonateSidebar() {
         </div>
       </div>
       {/* Recent Donors */}
-      <div className="bg-card rounded-2xl border border-border shadow-card p-5">
+      <div className="bg-card rounded-md border border-border shadow-card p-5">
         <div className="flex items-center justify-between mb-3">
           <h3 className="font-bold text-foreground text-base">Recent Donors</h3>
           <div className="flex items-center gap-1">

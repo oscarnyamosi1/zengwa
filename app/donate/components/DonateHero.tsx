@@ -7,10 +7,7 @@ export default function DonateHero() {
   return (
     <section className="hero-gradient py-12 lg:py-16">
       <div className="max-w-screen-2xl mx-auto px-6 lg:px-10 xl:px-16 text-center">
-        <div className="inline-flex items-center gap-2 bg-primary-foreground/10 text-primary-foreground border border-primary-foreground/20 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
-          <Heart size={14} />
-          Make a Difference Today
-        </div>
+
         <h1 className="text-3xl lg:text-5xl font-extrabold text-primary-foreground mb-3 tracking-tight">
           Your Gift Changes Lives
         </h1>

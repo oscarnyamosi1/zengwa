@@ -50,7 +50,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 
 export default function DonationTrendChart() {
   return (
-    <div className="bg-card rounded-2xl border border-border shadow-card p-5">
+    <div className="bg-card rounded-md border border-border shadow-card p-5">
       <div className="flex items-center justify-between mb-5">
         <div>
           <h3 className="font-bold text-foreground text-base">Donation Trend</h3>

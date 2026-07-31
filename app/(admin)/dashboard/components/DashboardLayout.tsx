@@ -31,42 +31,42 @@ const navGroups = [
     label: 'Overview',
     items: [
       { id: 'nav-dashboard', label: 'Dashboard', icon: LayoutDashboard, href: '/dashboard', badge: null },
-      { id: 'nav-analytics', label: 'Analytics', icon: BarChart3, href: '/dashboard', badge: null },
+      { id: 'nav-analytics', label: 'Analytics', icon: BarChart3, href: '/analytics', badge: null },
     ],
   },
   {
     id: 'group-fundraising',
     label: 'Fundraising',
     items: [
-      { id: 'nav-donations', label: 'Donations', icon: Heart, href: '/donate', badge: '12' },
-      { id: 'nav-campaigns', label: 'Campaigns', icon: Megaphone, href: '/dashboard', badge: null },
-      { id: 'nav-sponsorship', label: 'Sponsorship', icon: HandHeart, href: '/dashboard', badge: '3' },
+      { id: 'nav-donations', label: 'Donations', icon: Heart, href: '/donations', badge: '12' },
+      { id: 'nav-campaigns', label: 'Campaigns', icon: Megaphone, href: '/campaigns', badge: null },
+      { id: 'nav-sponsorship', label: 'Sponsorship', icon: HandHeart, href: '/sponsorship', badge: '3' },
     ],
   },
   {
     id: 'group-people',
     label: 'People',
     items: [
-      { id: 'nav-donors', label: 'Donors', icon: Users, href: '/dashboard', badge: null },
-      { id: 'nav-volunteers', label: 'Volunteers', icon: Users, href: '/dashboard', badge: null },
+      { id: 'nav-donors', label: 'Donors', icon: Users, href: '/donors', badge: null },
+      { id: 'nav-volunteers', label: 'Volunteers', icon: Users, href: '/volunteers', badge: null },
     ],
   },
   {
     id: 'group-content',
     label: 'Content',
     items: [
-      { id: 'nav-blog', label: 'Blog / CMS', icon: BookOpen, href: '/dashboard', badge: null },
-      { id: 'nav-gallery', label: 'Media Gallery', icon: Image, href: '/dashboard', badge: null },
-      { id: 'nav-events', label: 'Events', icon: Calendar, href: '/dashboard', badge: null },
-      { id: 'nav-prayers', label: 'Prayer Wall', icon: PrayingHandsIcon, href: '/dashboard', badge: '7' },
+      { id: 'nav-blog', label: 'Blog / CMS', icon: BookOpen, href: '/blog', badge: null },
+      { id: 'nav-gallery', label: 'Media Gallery', icon: Image, href: '/gallery', badge: null },
+      { id: 'nav-events', label: 'Events', icon: Calendar, href: '/events', badge: null },
+      { id: 'nav-prayers', label: 'Prayer Wall', icon: PrayingHandsIcon, href: '/prayer-wall', badge: '7' },
     ],
   },
   {
     id: 'group-reports',
     label: 'Reports',
     items: [
-      { id: 'nav-reports', label: 'Financial Reports', icon: FileText, href: '/dashboard', badge: null },
-      { id: 'nav-settings', label: 'Settings', icon: Settings, href: '/dashboard', badge: null },
+      { id: 'nav-reports', label: 'Financial Reports', icon: FileText, href: '/financial-reports', badge: null },
+      { id: 'nav-settings', label: 'Settings', icon: Settings, href: '/settings', badge: null },
     ],
   },
 ];

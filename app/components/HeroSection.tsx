@@ -15,12 +15,7 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="animate-slide-up">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-accent/20 text-primary border border-accent/40 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
-              <span className="w-2 h-2 rounded-full bg-primary animate-pulse-slow" />
-              🙏 Fuel Your Faith. Change A Life.
-            </div>
-
+           
             {/* Headline */}
             <h1 className="text-hero-xl text-foreground mb-4 text-balance">
               Balanced Giving.{' '}
@@ -68,7 +63,7 @@ export default function HeroSection() {
           <div className="relative flex justify-center lg:justify-end animate-fade-in">
             <div className="relative w-full max-w-lg">
               {/* Main image card */}
-              <div className="glass-card rounded-2xl overflow-hidden shadow-card-lg p-2">
+              <div className="glass-card rounded-l overflow-hidden shadow-card-lg p-2">
                 <AppImage
                   src="https://images.unsplash.com/photo-1567057420215-0afa9aa9253a"
                   alt="African children in school uniforms studying together in a bright classroom, smiling and engaged"
@@ -86,7 +81,7 @@ export default function HeroSection() {
               </div>
 
               {/* Floating donation card */}
-              <div className="absolute -bottom-4 -left-4 glass-card rounded-xl p-3 shadow-card-lg border border-border max-w-48">
+              <div className="absolute -bottom-4 -left-4 glass-card rounded-sm p-3 shadow-card-lg border border-border max-w-48">
                 <div className="flex items-center gap-2 mb-1.5">
                   <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center">
                     <Heart size={14} className="text-primary" />

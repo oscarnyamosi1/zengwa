@@ -75,7 +75,7 @@ export default function LatestNews() {
           {posts?.map((post) =>
           <article
             key={post?.id}
-            className="campaign-card-hover bg-card rounded-2xl overflow-hidden border border-border shadow-card group">
+            className="campaign-card-hover bg-card rounded-sm overflow-hidden border border-border shadow-card group">
             
               <div className="overflow-hidden">
                 <AppImage

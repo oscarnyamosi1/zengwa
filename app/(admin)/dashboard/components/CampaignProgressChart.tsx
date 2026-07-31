@@ -34,7 +34,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 
 export default function CampaignProgressChart() {
   return (
-    <div className="bg-card rounded-2xl border border-border shadow-card p-5 h-full">
+    <div className="bg-card rounded-md border border-border shadow-card p-5 h-full">
       <div className="mb-5">
         <h3 className="font-bold text-foreground text-base">Campaign Funding</h3>
         <p className="text-xs text-muted-foreground mt-0.5">% of goal reached per active campaign</p>

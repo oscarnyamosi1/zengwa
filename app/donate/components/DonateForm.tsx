@@ -210,7 +210,7 @@ export default function DonateForm() {
                       key={c.id}
                       type="button"
                       onClick={() => setSelectedCampaign(c.id)}
-                      className={`text-left p-3 rounded-xl border-2 transition-all ${
+                      className={`text-left p-3 rounded-sm border-2 transition-all ${
                         selectedCampaign === c.id
                           ? 'border-primary bg-muted' :'border-border hover:border-accent hover:bg-muted/50'
                       }`}
