@@ -31,7 +31,7 @@ export default function CampaignsPage() {
     });
 
   // const totalRaised = campaigns.reduce((s, c) => s + c.raised, 0);
-  const totalRaised = impactStats.totalRaisedKES.toFixed(5)
+  const totalRaised:number = Number(impactStats.totalRaisedKES.toFixed(5))
   // const totalDonors = campaigns.reduce((s, c) => s + c.donors, 0);
   const totalDonors = impactStats.donorsCount
 
