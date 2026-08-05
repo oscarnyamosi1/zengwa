@@ -77,15 +77,15 @@ const analyticsData = {
     { week: 'W4 Jul', donations: 280, target: 280 },
   ],
   campaigns: [
-    { name: 'School Block B', percentage: 78, color: 'bg-primary' },
+    { name: 'School Block', percentage: 78, color: 'bg-primary' },
     { name: 'Clean Water', percentage: 62, color: 'bg-accent' },
     { name: 'Child Sponsorship', percentage: 93, color: 'bg-primary' },
     { name: 'Health Outreach', percentage: 45, color: 'bg-yellow-500' },
     { name: 'Church Planting', percentage: 31, color: 'bg-blue-500' },
   ],
   donations: [
-    { id: 1, name: 'Margaret Wanjiku', email: 'margaret.w@gmail.com', campaign: 'School Block B', amount: 'KES 5,000', method: 'M-Pesa', status: 'Confirmed', country: 'Kenya', date: '17 Jul 2026' },
-    { id: 2, name: 'Mwashinga Sarah', email: 'mwashinga.s@outlook.com', campaign: 'School Block B', amount: 'GBP 30', method: 'Stripe', status: 'Confirmed', country: 'UK', date: '17 Jul 2026' },
+    { id: 1, name: 'Margaret Wanjiku', email: 'margaret.w@gmail.com', campaign: 'School Block', amount: 'KES 5,000', method: 'M-Pesa', status: 'Confirmed', country: 'Kenya', date: '17 Jul 2026' },
+    { id: 2, name: 'Mwashinga Sarah', email: 'mwashinga.s@outlook.com', campaign: 'School Block', amount: 'GBP 30', method: 'Stripe', status: 'Confirmed', country: 'UK', date: '17 Jul 2026' },
     { id: 3, name: 'Anonymous', email: '—', campaign: 'Clean Water', amount: 'USD 50', method: 'PayPal', status: 'Confirmed', country: '—', date: '17 Jul 2026' },
     { id: 4, name: 'David Omondi', email: 'david.o@yahoo.com', campaign: 'Child Sponsorship', amount: 'KES 2,500', method: 'M-Pesa', status: 'Pending', country: 'Kenya', date: '16 Jul 2026' },
     { id: 5, name: 'James Kariuki', email: 'james.k@gmail.com', campaign: 'General Fund', amount: 'KES 10,000', method: 'M-Pesa', status: 'Confirmed', country: 'Kenya', date: '16 Jul 2026' },
@@ -101,7 +101,7 @@ const analyticsData = {
   events: [
     { id: 1, title: 'Board Meeting — Q3 Review', date: '19 Jul 2026', category: 'Admin', badge: 'Admin' },
     { id: 2, title: 'Volunteer Orientation Day', date: '22 Jul 2026', category: 'Volunteer', badge: 'Volunteer' },
-    { id: 3, title: 'School Block B Site Visit', date: '25 Jul 2026', category: 'Project', badge: 'Project' },
+    { id: 3, title: 'School Block Site Visit', date: '25 Jul 2026', category: 'Project', badge: 'Project' },
     { id: 4, title: 'Donor Appreciation Webinar', date: '30 Jul 2026', category: 'Donor', badge: 'Donor' },
   ],
   prayers: [

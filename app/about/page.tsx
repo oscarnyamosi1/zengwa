@@ -21,12 +21,8 @@ const values = [
 
 
 const milestones = [
-{ year: '2009', title: 'Founded', description: 'Pastor James Mwangi starts a small school under a tree with 12 students in Zengwa Village.' },
-{ year: '2012', title: 'First Building', description: 'First permanent classroom block completed, funded by a church in Sweden.' },
-{ year: '2015', title: 'NGO Registration', description: 'Officially registered as a Kenyan NGO. Child sponsorship program launched with 50 children.' },
-{ year: '2018', title: 'Clean Water', description: 'First borehole drilled, providing clean water to 800 community members.' },
-{ year: '2021', title: 'Digital Platform', description: 'Online giving platform launched, connecting donors worldwide to our mission.' },
-{ year: '2026', title: 'Today', description: '847 sponsored children, 28 communities reached, and 17 years of God\'s faithfulness.' }];
+{ year: '2025', title: 'Digital Platform', description: 'Online giving platform launched, connecting donors worldwide to our mission.' },
+{ year: '2026', title: 'Today', description: '847 sponsored children, 28 communities reached, and 1 year of God\'s faithfulness.' }];
 
 
 export default function AboutPage() {
@@ -42,7 +38,7 @@ export default function AboutPage() {
           </div>
           <div className="relative max-w-screen-2xl mx-auto px-6 lg:px-10 xl:px-16 text-center">
          
-                <div className="inline-flex items-center gap-2 bg-primary-foreground/10 border-primary-foreground/20 text-accent px-4 py-1.5 rounded-full text-sm font-semibold mb-5">
+            <div className="inline-flex items-center gap-2 bg-primary-foreground/10 border-primary-foreground/20 text-accent px-4 py-1.5 rounded-full text-sm font-semibold mb-5">
            
                 <h1 className="text-4xl text-white lg:text-5xl font-bold text-primary-foreground mb-4 leading-tight flex items-center gap-3 whitespace-nowrap">
                   <Church size={40} className="shrink-0" />
@@ -52,10 +48,10 @@ export default function AboutPage() {
             </div>
 
             <h1 className="text-4xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-              17 Years of Transforming<br />Lives in Northern Kenya
+              1 Year of Transforming<br />Lives in the Coast of Kenya
             </h1>
             <p className="text-primary-foreground/75 text-lg max-w-2xl mx-auto mb-8">
-              What began as a small school under a tree has grown into a ministry touching thousands of lives through education, clean water, healthcare, and the Gospel.
+              What began as a small school under a tree has grown into a ministry touching hundreds of lives through education, clean water, healthcare, and the Gospel.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/donate" className="bg-accent text-primary font-semibold px-6 py-3 rounded-xl hover:bg-accent/90 transition-colors flex items-center gap-2">
@@ -106,7 +102,7 @@ export default function AboutPage() {
                   Zengwa Christian Education Centre
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Founded in 2009 by Pastor James Mwangi, Zengwa Christian Education Centre is a faith-based NGO operating in Marsabit County, Northern Kenya — one of the most remote and underserved regions in Africa.
+                  Founded in 2025 by Evangelist Anne Kemunto and Mohammed Beni, Zengwa Christian Education Centre is a faith-based NGO operating in Kwale County, Coast  region of Kenya — one of the most remote and underserved regions in Africa.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-8">
                   We believe that every child deserves quality education, clean water, healthcare, and the knowledge of God&apos;s love. Through the generosity of donors worldwide, we are making this a reality — one life at a time.
@@ -115,13 +111,13 @@ export default function AboutPage() {
                   <div className="p-5 rounded-2xl bg-primary/5 border border-primary/20">
                     <h3 className="font-bold text-primary mb-2 text-lg">Our Mission</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      To transform lives in Northern Kenya through Christian education, community development, and the proclamation of the Gospel.
+                      To transform lives in the Coast region of Kenya through Christian education, community development, and the proclamation of the Gospel.
                     </p>
                   </div>
                   <div className="p-5 rounded-2xl bg-accent/10 border border-accent/30">
                     <h3 className="font-bold text-primary mb-2 text-lg">Our Vision</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      A Northern Kenya where every child is educated, every family has clean water, and every community knows the love of Jesus Christ.
+                      A Coast region of Kenya where every child is educated, every family has clean water, and every community knows the love of Jesus Christ.
                     </p>
                   </div>
                 </div>
@@ -136,6 +132,9 @@ export default function AboutPage() {
                 
                 <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-sm p-4 shadow-card-lg">
                   <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Scripture</p>
+                  <p className="text-sm font-medium text-foreground italic max-w-48">
+                    &ldquo;To know Christ and to make Him known."&rdquo;
+                  </p>
                   <p className="text-sm font-medium text-foreground italic max-w-48">
                     &ldquo;Train up a child in the way he should go...&rdquo;
                   </p>
@@ -183,7 +182,7 @@ export default function AboutPage() {
                 Our Journey
                 <span className="w-8 h-0.5 bg-primary rounded" />
               </div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-foreground">17 Years of Faithfulness</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold text-foreground">1 Year of Faithfulness</h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {milestones?.map((m, i) =>
@@ -207,7 +206,7 @@ export default function AboutPage() {
                 <span className="w-8 h-0.5 bg-primary rounded" />
               </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground">Meet Our Team</h2>
-              <p className="text-muted-foreground mt-3 max-w-xl mx-auto">Dedicated servants who give their lives to see Northern Kenya transformed.</p>
+              <p className="text-muted-foreground mt-3 max-w-xl mx-auto">Dedicated servants who give their lives to see Coast  region of Kenya transformed.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {teamMembers?.map((member) =>
@@ -263,7 +262,7 @@ export default function AboutPage() {
           <div className="max-w-screen-2xl mx-auto px-6 lg:px-10 xl:px-16 text-center">
             <h2 className="text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">Join Our Mission</h2>
             <p className="text-primary-foreground/75 max-w-xl mx-auto mb-8">
-              Whether you give, volunteer, or pray — you are part of the story God is writing in Northern Kenya.
+              Whether you give, volunteer, or pray — you are part of the story God is writing in Coast  region of Kenya.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/donate" className="bg-accent text-primary font-semibold px-8 py-3 rounded-xl hover:bg-accent/90 transition-colors flex items-center gap-2">

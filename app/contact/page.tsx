@@ -63,7 +63,7 @@ export default function ContactPage() {
                   <h2 className="text-2xl font-bold text-foreground mb-6">Contact Information</h2>
                   <div className="space-y-4">
                     {[
-                      { icon: MapPin, label: 'Address', value: 'Zengwa Village, Marsabit County, Northern Kenya' },
+                      { icon: MapPin, label: 'Address', value: 'Zengwa Village, Kwale County, Coast  region of Kenya' },
                       { icon: Phone, label: 'Phone', value: '+254 700 123 456' },
                       { icon: Mail, label: 'Email', value: 'info@zengwaconnect.org' },
                       { icon: Clock, label: 'Office Hours', value: 'Mon–Fri: 8am–5pm EAT' },

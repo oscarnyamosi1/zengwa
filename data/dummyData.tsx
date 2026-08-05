@@ -199,16 +199,16 @@ export const companyCommunicationChannel = {
   phone:"+254 700 123 456",
   facebook:"facebooklink",
   x:"x.com",
-  location:"Zengwa Village, Marsabit County, Northern Kenya",
+  location:"Zengwa Village, Kwale County, Coast of Kenya",
   instagram:"instagram.com",
-  youtube:"youtubre.com",
+  youtube:"youtube.com",
   tiktok:"tiktok.com",
 }
 
 export const campaigns: Campaign[] = [
 {
   id: 'camp-001',
-  title: 'Zengwa Primary School Block B',
+  title: 'Zengwa Primary School Block',
   category: 'Education',
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_1ea8fffc7-1784313313635.png",
   alt: 'Construction workers building a new school classroom block with concrete walls and iron roof in rural Kenya',
@@ -267,12 +267,12 @@ export const campaigns: Campaign[] = [
   badge: 'New',
   badgeColor: 'bg-gold/20 text-warning',
   currency: 'KES',
-  description: 'Mobile health clinics bringing medical care, vaccinations, and health education to 5 remote villages in Marsabit County.',
+  description: 'Mobile health clinics bringing medical care, vaccinations, and health education to 5 remote villages in Kwale County.',
   updates: 3
 },
 {
   id: 'camp-005',
-  title: 'Church Planting — Marsabit North',
+  title: 'Church Planting — Kwale North',
   category: 'Church',
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_1fe854a69-1765652592467.png",
   alt: 'Small congregation gathered under a thatched roof church structure in a remote African village during Sunday service',
@@ -307,90 +307,91 @@ export const campaigns: Campaign[] = [
 // ─── CHILDREN (SPONSORSHIP) ───────────────────────────────────
 
 export const children: Child[] = [
-{
-  id: 'child-001',
-  name: 'Amina Wanjiku',
-  age: 9,
-  grade: 'Grade 3',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_13b578e81-1772639951391.png",
-  alt: 'Young Kenyan girl in school uniform smiling brightly while holding a pencil and notebook',
-  story: 'Amina loves mathematics and dreams of becoming a doctor. She lives with her grandmother after losing her parents. Your sponsorship covers her school fees, meals, and healthcare.',
-  sponsored: false,
-  monthlyAmount: 3500,
-  currency: 'KES',
-  interests: ['Mathematics', 'Drawing', 'Singing'],
-  location: 'Zengwa Village'
-},
-{
-  id: 'child-002',
-  name: 'David Kipchoge',
-  age: 11,
-  grade: 'Grade 5',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_11e51961d-1767969209983.png",
-  alt: 'Smiling African boy in school uniform holding a book outside a rural school building',
-  story: 'David is the top student in his class and wants to be an engineer. He helps his widowed mother fetch water every morning before school. Sponsorship will change his trajectory.',
-  sponsored: true,
-  monthlyAmount: 3500,
-  currency: 'KES',
-  interests: ['Science', 'Football', 'Reading'],
-  location: 'Marsabit Town'
-},
-{
-  id: 'child-003',
-  name: 'Grace Achieng',
-  age: 8,
-  grade: 'Grade 2',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_16ceadbcc-1772182453068.png",
-  alt: 'Young African girl with braided hair smiling while sitting at a school desk with crayons',
-  story: 'Grace is the youngest of 6 siblings. She walks 5km to school every day and never misses a class. She loves art and wants to be a teacher one day.',
-  sponsored: false,
-  monthlyAmount: 3500,
-  currency: 'KES',
-  interests: ['Art', 'Dancing', 'Storytelling'],
-  location: 'Laisamis'
-},
-{
-  id: 'child-004',
-  name: 'Samuel Mutua',
-  age: 13,
-  grade: 'Grade 7',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_13cf08e10-1772758022379.png",
-  alt: 'Teenage African boy in school uniform standing proudly in front of a chalkboard',
-  story: 'Samuel scored the highest in his district exams but nearly dropped out due to lack of fees. He wants to study computer science and bring technology to his village.',
-  sponsored: false,
-  monthlyAmount: 4500,
-  currency: 'KES',
-  interests: ['Computers', 'Chess', 'Writing'],
-  location: 'Zengwa Village'
-},
-{
-  id: 'child-005',
-  name: 'Faith Chebet',
-  age: 10,
-  grade: 'Grade 4',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_16ceadbcc-1772182453068.png",
-  alt: 'African girl with bright smile wearing school uniform and carrying a backpack',
-  story: 'Faith is an orphan raised by her aunt. Despite hardship, she maintains excellent grades and leads the school choir. She dreams of becoming a nurse.',
-  sponsored: true,
-  monthlyAmount: 3500,
-  currency: 'KES',
-  interests: ['Music', 'Nursing', 'Cooking'],
-  location: 'Karare'
-},
-{
-  id: 'child-006',
-  name: 'John Lokiru',
-  age: 12,
-  grade: 'Grade 6',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1f3ba91ec-1772095671131.png",
-  alt: 'Young African boy in school uniform reading a book under a tree',
-  story: 'John comes from a pastoralist family and is the first in his family to attend school. He is passionate about agriculture and wants to modernize farming in his community.',
-  sponsored: false,
-  monthlyAmount: 4000,
-  currency: 'KES',
-  interests: ['Agriculture', 'Animals', 'Running'],
-  location: 'North Horr'
-}];
+  {
+    id: 'child-001',
+    name: 'Amina Wanjiku',
+    age: 9,
+    grade: 'Grade 3',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_13b578e81-1772639951391.png",
+    alt: 'Young Kenyan girl in school uniform smiling brightly while holding a pencil and notebook',
+    story: 'Amina loves mathematics and dreams of becoming a doctor. She lives with her grandmother after losing her parents. Your sponsorship covers her school fees, meals, and healthcare.',
+    sponsored: false,
+    monthlyAmount: 3500,
+    currency: 'KES',
+    interests: ['Mathematics', 'Drawing', 'Singing'],
+    location: 'Zengwa Village'
+  },
+  {
+    id: 'child-002',
+    name: 'David Kipchoge',
+    age: 11,
+    grade: 'Grade 5',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_11e51961d-1767969209983.png",
+    alt: 'Smiling African boy in school uniform holding a book outside a rural school building',
+    story: 'David is the top student in his class and wants to be an engineer. He helps his widowed mother fetch water every morning before school. Sponsorship will change his trajectory.',
+    sponsored: true,
+    monthlyAmount: 3500,
+    currency: 'KES',
+    interests: ['Science', 'Football', 'Reading'],
+    location: 'Kwale Town'
+  },
+  {
+    id: 'child-003',
+    name: 'Grace Achieng',
+    age: 8,
+    grade: 'Grade 2',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_16ceadbcc-1772182453068.png",
+    alt: 'Young African girl with braided hair smiling while sitting at a school desk with crayons',
+    story: 'Grace is the youngest of 6 siblings. She walks 5km to school every day and never misses a class. She loves art and wants to be a teacher one day.',
+    sponsored: false,
+    monthlyAmount: 3500,
+    currency: 'KES',
+    interests: ['Art', 'Dancing', 'Storytelling'],
+    location: 'Laisamis'
+  },
+  {
+    id: 'child-004',
+    name: 'Samuel Mutua',
+    age: 13,
+    grade: 'Grade 7',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_13cf08e10-1772758022379.png",
+    alt: 'Teenage African boy in school uniform standing proudly in front of a chalkboard',
+    story: 'Samuel scored the highest in his district exams but nearly dropped out due to lack of fees. He wants to study computer science and bring technology to his village.',
+    sponsored: false,
+    monthlyAmount: 4500,
+    currency: 'KES',
+    interests: ['Computers', 'Chess', 'Writing'],
+    location: 'Zengwa Village'
+  },
+  {
+    id: 'child-005',
+    name: 'Faith Chebet',
+    age: 10,
+    grade: 'Grade 4',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_16ceadbcc-1772182453068.png",
+    alt: 'African girl with bright smile wearing school uniform and carrying a backpack',
+    story: 'Faith is an orphan raised by her aunt. Despite hardship, she maintains excellent grades and leads the school choir. She dreams of becoming a nurse.',
+    sponsored: true,
+    monthlyAmount: 3500,
+    currency: 'KES',
+    interests: ['Music', 'Nursing', 'Cooking'],
+    location: 'Karare'
+  },
+  {
+    id: 'child-006',
+    name: 'John Lokiru',
+    age: 12,
+    grade: 'Grade 6',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_1f3ba91ec-1772095671131.png",
+    alt: 'Young African boy in school uniform reading a book under a tree',
+    story: 'John comes from a pastoralist family and is the first in his family to attend school. He is passionate about agriculture and wants to modernize farming in his community.',
+    sponsored: false,
+    monthlyAmount: 4000,
+    currency: 'KES',
+    interests: ['Agriculture', 'Animals', 'Running'],
+    location: 'North Horr'
+  }
+];
 
 
 // ─── PROJECTS ─────────────────────────────────────────────────
@@ -398,7 +399,7 @@ export const children: Child[] = [
 export const projects: Project[] = [
 {
   id: 'proj-001',
-  title: 'Zengwa Primary School Block B',
+  title: 'Zengwa Primary School Block',
   category: 'Education',
   image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1fa810fe8-1784313443629.png',
   alt: 'Construction workers building a new school classroom block with concrete walls and iron roof in rural Kenya',
@@ -410,7 +411,7 @@ export const projects: Project[] = [
   description: 'Construction of a 4-classroom block with library and sanitation facilities to accommodate 200 additional students.',
   startDate: 'Jan 2026',
   endDate: 'Sep 2026',
-  location: 'Zengwa Village, Marsabit',
+  location: 'Zengwa Village, Kwale',
   beneficiaries: 200
 },
 {
@@ -449,7 +450,7 @@ export const projects: Project[] = [
 },
 {
   id: 'proj-004',
-  title: 'Church Planting — Marsabit North',
+  title: 'Church Planting — Kwale North',
   category: 'Church Planting',
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_193fd4305-1784839059916.png",
   alt: 'Small congregation gathered under a thatched roof church structure in a remote African village during Sunday service',
@@ -461,7 +462,7 @@ export const projects: Project[] = [
   description: 'Planting 3 new churches in unreached communities with trained pastors and discipleship programs.',
   startDate: 'Feb 2026',
   endDate: 'Dec 2026',
-  location: 'Marsabit North',
+  location: 'Kwale North',
   beneficiaries: 450
 },
 {
@@ -553,7 +554,7 @@ export const blogPosts: BlogPost[] = [
 },
 {
   id: 'blog-004',
-  title: 'Volunteer Spotlight: Dr. Emily\'s Two Weeks in Marsabit',
+  title: 'Volunteer Spotlight: Dr. Emily\'s Two Weeks in Kwale',
   excerpt: 'Dr. Emily flew from London to spend two weeks running free medical clinics. She treated 480 patients and trained 12 community health workers.',
   content: 'Full article content here...',
   category: 'Volunteers',
@@ -626,7 +627,7 @@ export const events: Event[] = [
   description: 'New volunteer orientation covering our mission, values, safety protocols, and project assignments. All new volunteers must attend before deployment.',
   date: 'August 3, 2026',
   time: '9:00 AM — 1:00 PM',
-  location: 'Zengwa Education Centre, Marsabit',
+  location: 'Zengwa Education Centre, Kwale',
   type: 'Training',
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_1a1f9ebc4-1772211601313.png",
   alt: 'Group of volunteers in orange vests attending an orientation session in a community hall',
@@ -640,7 +641,7 @@ export const events: Event[] = [
   description: 'A day of corporate prayer and fasting for our nation, our ministry, and the communities we serve. All are welcome to join in person or online.',
   date: 'August 8, 2026',
   time: '6:00 AM — 6:00 PM',
-  location: 'Zengwa Church, Marsabit',
+  location: 'Zengwa Church, Kwale',
   type: 'Prayer',
   image: 'https://images.unsplash.com/photo-1575652341484-cf585e29d737',
   alt: 'Community members gathered in prayer inside a church with hands raised in worship',
@@ -651,7 +652,7 @@ export const events: Event[] = [
 {
   id: 'evt-004',
   title: 'Back-to-School Drive 2026',
-  description: 'Help us collect school supplies, uniforms, and books for 500 children returning to school in September. Drop-off points across Nairobi and Marsabit.',
+  description: 'Help us collect school supplies, uniforms, and books for 500 children returning to school in September. Drop-off points across Nairobi and Kwale.',
   date: 'August 20–31, 2026',
   time: 'All Day',
   location: 'Multiple Locations',
@@ -739,7 +740,7 @@ export const galleryItems: GalleryItem[] = [
   id: 'gal-005',
   type: 'photo',
   title: 'Sunday Worship Service',
-  alt: 'Congregation worshipping together in a newly built church in Marsabit County',
+  alt: 'Congregation worshipping together in a newly built church in Kwale County',
   image: 'https://images.unsplash.com/photo-1575652341484-cf585e29d737',
   album: 'Church',
   date: 'June 2026',
@@ -825,7 +826,8 @@ export const volunteers: Volunteer[] = [
   location: 'Nairobi, Kenya',
   joined: 'September 2025',
   testimonial: 'Every child I teach is a seed planted for Kenya\'s future. This ministry is doing God\'s work.'
-}];
+}
+];
 
 
 export const volunteerRoles: VolunteerRole[] = [
@@ -836,7 +838,7 @@ export const volunteerRoles: VolunteerRole[] = [
   commitment: '2–4 weeks on-site',
   skills: ['Medical degree or nursing', 'First aid certification', 'Cross-cultural communication'],
   openings: 8,
-  location: 'Marsabit County, Kenya',
+  location: 'Kwale County, Kenya',
   category: 'Health'
 },
 {
@@ -846,7 +848,7 @@ export const volunteerRoles: VolunteerRole[] = [
   commitment: '1–3 months',
   skills: ['Physical fitness', 'Basic construction (preferred)', 'Teamwork'],
   openings: 15,
-  location: 'Zengwa Village, Marsabit',
+  location: 'Zengwa Village, Kwale',
   category: 'Construction'
 },
 {
@@ -856,7 +858,7 @@ export const volunteerRoles: VolunteerRole[] = [
   commitment: '3–12 months',
   skills: ['Teaching qualification (preferred)', 'Patience', 'Creativity'],
   openings: 6,
-  location: 'Zengwa Village, Marsabit',
+  location: 'Zengwa Village, Kwale',
   category: 'Education'
 },
 {
@@ -866,7 +868,7 @@ export const volunteerRoles: VolunteerRole[] = [
   commitment: 'Remote or 1–4 weeks on-site',
   skills: ['Photography/videography', 'Social media', 'Graphic design'],
   openings: 4,
-  location: 'Remote / Marsabit',
+  location: 'Remote / Kwale',
   category: 'Communications'
 },
 {
@@ -888,7 +890,8 @@ export const volunteerRoles: VolunteerRole[] = [
   openings: 3,
   location: 'Nairobi / Remote',
   category: 'Fundraising'
-}];
+}
+];
 
 
 // ─── TEAM MEMBERS ─────────────────────────────────────────────
@@ -896,36 +899,21 @@ export const volunteerRoles: VolunteerRole[] = [
 export const teamMembers: TeamMember[] = [
 {
   id: 'team-001',
-  name: 'Pastor James Mwangi',
-  role: 'Founder & Executive Director',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_19a711f4d-1772438320119.png",
-  alt: 'African pastor in formal attire smiling confidently',
-  bio: 'Pastor James founded Zengwa Christian Education Centre in 2009 after a vision to transform his home village through education and the Gospel. He holds a Masters in Theology from Nairobi Evangelical Graduate School.'
+  name: 'Evangelist Anne Kemunto',
+  role: 'Founder &  Director',
+  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1ede44e00-1772198986914.png",
+  alt: 'Evangelist Anne Kemunto',
+  bio: 'Evangelist Anne Kemunto founded Zengwa Christian Education Centre in 2025 after a vision to transform his home village through education and the Gospel.'
 },
 {
   id: 'team-002',
-  name: 'Grace Odhiambo',
-  role: 'Volunteer & Programs Coordinator',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1ede44e00-1772198986914.png",
-  alt: 'Kenyan woman in professional attire smiling warmly',
-  bio: 'Grace has coordinated over 200 volunteers from 30 countries. She holds a degree in Community Development from University of Nairobi and is passionate about sustainable impact.'
+  name: 'Mohammed Beni',
+  role: 'Founder &  Director',
+  image: "https://img.rocket.new/generatedImages/rocket_gen_img_19a711f4d-1772438320119.png",
+  alt: 'Mohammed Beni smiling confidently',
+  bio: 'Mohammed Beni has coordinated over 200 volunteers from 6 counties. He is passionate about sustainable impact.'
 },
-{
-  id: 'team-003',
-  name: 'David Njoroge',
-  role: 'Project Manager',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1fa72eee0-1772198988451.png",
-  alt: 'Kenyan man in business casual attire at a construction site',
-  bio: 'David oversees all construction and infrastructure projects. A civil engineer by training, he ensures every shilling is used efficiently and every building meets quality standards.'
-},
-{
-  id: 'team-004',
-  name: 'Sarah Kimani',
-  role: 'Sponsorship Coordinator',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_131cb46a2-1785090031598.png",
-  alt: 'Kenyan woman teacher smiling in a classroom setting',
-  bio: 'Sarah manages relationships with 847 sponsored children and their sponsors worldwide. She ensures every child receives their support and every sponsor receives meaningful updates.'
-}];
+];
 
 
 // ─── TESTIMONIALS ─────────────────────────────────────────────
@@ -966,12 +954,12 @@ export const testimonials: Testimonial[] = [
 // ─── RECENT DONATIONS ─────────────────────────────────────────
 
 export const recentDonations: DonationRecord[] = [
-{ id: 'don-001', donor: 'Margaret T.', amount: 15000, currency: 'KES', campaign: 'School Block B', method: 'M-Pesa', date: '2026-07-30', status: 'Completed', anonymous: false },
+{ id: 'don-001', donor: 'Margaret T.', amount: 15000, currency: 'KES', campaign: 'School Block', method: 'M-Pesa', date: '2026-07-30', status: 'Completed', anonymous: false },
 { id: 'don-002', donor: 'Anonymous', amount: 50000, currency: 'KES', campaign: 'Clean Water', method: 'Stripe', date: '2026-07-30', status: 'Completed', anonymous: true },
 { id: 'don-003', donor: 'Robert Chen', amount: 25000, currency: 'KES', campaign: 'Child Sponsorship', method: 'PayPal', date: '2026-07-29', status: 'Completed', anonymous: false },
 { id: 'don-004', donor: 'Grace M.', amount: 5000, currency: 'KES', campaign: 'Church Planting', method: 'M-Pesa', date: '2026-07-29', status: 'Pending', anonymous: false },
 { id: 'don-005', donor: 'John K.', amount: 10000, currency: 'KES', campaign: 'Health Outreach', method: 'M-Pesa', date: '2026-07-28', status: 'Completed', anonymous: false },
-{ id: 'don-006', donor: 'Anonymous', amount: 100000, currency: 'KES', campaign: 'School Block B', method: 'Stripe', date: '2026-07-28', status: 'Completed', anonymous: true },
+{ id: 'don-006', donor: 'Anonymous', amount: 100000, currency: 'KES', campaign: 'School Block', method: 'Stripe', date: '2026-07-28', status: 'Completed', anonymous: true },
 { id: 'don-007', donor: 'Pastor Erik L.', amount: 30000, currency: 'KES', campaign: 'Girls Dormitory', method: 'PayPal', date: '2026-07-27', status: 'Completed', anonymous: false },
 { id: 'don-008', donor: 'Mary W.', amount: 3500, currency: 'KES', campaign: 'Child Sponsorship', method: 'M-Pesa', date: '2026-07-27', status: 'Failed', anonymous: false }];
 
@@ -979,10 +967,10 @@ export const recentDonations: DonationRecord[] = [
 // ─── PRAYER REQUESTS ──────────────────────────────────────────
 
 export const prayerRequests: PrayerRequest[] = [
-{ id: 'pr-001', name: 'Pastor James', request: 'Pray for the completion of School Block B before the September term begins.', date: '2026-07-28', prayers: 142, answered: false },
+{ id: 'pr-001', name: 'Pastor James', request: 'Pray for the completion of School Block before the September term begins.', date: '2026-07-28', prayers: 142, answered: false },
 { id: 'pr-002', name: 'Anonymous', request: 'Pray for the 23 children awaiting sponsors — that God would move hearts to give.', date: '2026-07-25', prayers: 89, answered: false },
 { id: 'pr-003', name: 'Grace O.', request: 'Thanksgiving — the borehole is 76% funded! Pray for the final KES 220K.', date: '2026-07-20', prayers: 234, answered: false },
-{ id: 'pr-004', name: 'Community', request: 'Pray for the new churches in Marsabit North — for growth, discipleship, and protection.', date: '2026-07-15', prayers: 178, answered: false },
+{ id: 'pr-004', name: 'Community', request: 'Pray for the new churches in Kwale North — for growth, discipleship, and protection.', date: '2026-07-15', prayers: 178, answered: false },
 { id: 'pr-005', name: 'Sarah K.', request: 'Amina passed her exams with top marks! Praise God for His faithfulness.', date: '2026-07-10', prayers: 312, answered: true }];
 
 
@@ -1009,11 +997,11 @@ export const dashboardUsers: DashboardUser[] = [
 // ─── AUDIT LOGS ───────────────────────────────────────────────
 
 export const auditLogs: AuditLog[] = [
-{ id: 'log-001', user: 'Pastor Amani', action: 'Created campaign', resource: 'School Block B', timestamp: '2026-07-30 14:32', ip: '196.201.x.x', status: 'success' },
+{ id: 'log-001', user: 'Pastor Amani', action: 'Created campaign', resource: 'School Block', timestamp: '2026-07-30 14:32', ip: '196.201.x.x', status: 'success' },
 { id: 'log-002', user: 'Finance Officer', action: 'Exported financial report', resource: 'July 2026 Report', timestamp: '2026-07-30 11:15', ip: '196.201.x.x', status: 'success' },
 { id: 'log-003', user: 'Unknown', action: 'Failed login attempt', resource: 'Auth', timestamp: '2026-07-29 23:44', ip: '41.90.x.x', status: 'error' },
 { id: 'log-004', user: 'Grace Odhiambo', action: 'Approved volunteer', resource: 'Michael Osei', timestamp: '2026-07-29 09:20', ip: '196.201.x.x', status: 'success' },
-{ id: 'log-005', user: 'David Njoroge', action: 'Updated project progress', resource: 'School Block B', timestamp: '2026-07-28 16:05', ip: '196.201.x.x', status: 'success' },
+{ id: 'log-005', user: 'David Njoroge', action: 'Updated project progress', resource: 'School Block', timestamp: '2026-07-28 16:05', ip: '196.201.x.x', status: 'success' },
 { id: 'log-006', user: 'Finance Officer', action: 'Flagged suspicious donation', resource: 'don-008', timestamp: '2026-07-27 10:30', ip: '196.201.x.x', status: 'warning' }];
 
 
@@ -1027,33 +1015,41 @@ export const impactStats = {
   projectsCompleted: 14,
   yearsOfService: 17,
   countriesRepresented: 24,
+  donorsCount:1200,
   livesTransformed: 3200
 };
 
 // ─── DONATION TREND DATA (for charts) ─────────────────────────
 
 export const donationTrendData = [
-{ month: 'Jan', amount: 820000, donors: 98 },
-{ month: 'Feb', amount: 940000, donors: 112 },
-{ month: 'Mar', amount: 1100000, donors: 134 },
-{ month: 'Apr', amount: 980000, donors: 118 },
-{ month: 'May', amount: 1340000, donors: 156 },
-{ month: 'Jun', amount: 2500000, donors: 198 },
-{ month: 'Jul', amount: 2840000, donors: 234 }];
+  { month: 'Jan', amount: 820000, donors: 98 },
+  { month: 'Feb', amount: 940000, donors: 112 },
+  { month: 'Mar', amount: 1100000, donors: 134 },
+  { month: 'Apr', amount: 980000, donors: 118 },
+  { month: 'May', amount: 1340000, donors: 156 },
+  { month: 'Jun', amount: 2500000, donors: 198 },
+  { month: 'Jul', amount: 2840000, donors: 234 }
+];
 
 
 // ─── CAMPAIGN PROGRESS (for charts) ───────────────────────────
 
 export const campaignProgressData = [
-{ name: 'School Block B', raised: 1240000, goal: 1800000 },
-{ name: 'Clean Water', raised: 680000, goal: 900000 },
-{ name: 'Sponsorship', raised: 325000, goal: 500000 },
-{ name: 'Health Outreach', raised: 145000, goal: 400000 },
-{ name: 'Church Planting', raised: 92000, goal: 250000 }];
+
+  { name: 'School Block', raised: 1240000, goal: 1800000 },
+  { name: 'Clean Water', raised: 680000, goal: 900000 },
+  { name: 'Sponsorship', raised: 325000, goal: 500000 },
+  { name: 'Health Outreach', raised: 145000, goal: 400000 },
+  { name: 'Church Planting', raised: 92000, goal: 250000 }
+
+];
 
 
 // ─── SPONSORSHIP RING DATA ────────────────────────────────────
 
 export const sponsorshipRingData = [
-{ name: 'Sponsored', value: 847, fill: '#1B5E20' },
-{ name: 'Awaiting Sponsor', value: 63, fill: '#81C784' }];
+
+  { name: 'Sponsored', value: 847, fill: '#1B5E20' },
+  { name: 'Awaiting Sponsor', value: 63, fill: '#81C784' }
+
+];

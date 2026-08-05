@@ -13,7 +13,7 @@ const SponsorshipRingChart = dynamic(
 const upcomingEvents = [
   { id: 'evt-001', title: 'Board Meeting — Q3 Review', date: '19 Jul 2026', type: 'Admin', color: 'bg-primary/10 text-primary' },
   { id: 'evt-002', title: 'Volunteer Orientation Day', date: '22 Jul 2026', type: 'Volunteer', color: 'bg-accent/20 text-primary' },
-  { id: 'evt-003', title: 'School Block B Site Visit', date: '25 Jul 2026', type: 'Project', color: 'bg-gold/20 text-warning' },
+  { id: 'evt-003', title: 'School Block Site Visit', date: '25 Jul 2026', type: 'Project', color: 'bg-gold/20 text-warning' },
   { id: 'evt-004', title: 'Donor Appreciation Webinar', date: '30 Jul 2026', type: 'Donor', color: 'bg-warning/10 text-warning' },
 ];
 

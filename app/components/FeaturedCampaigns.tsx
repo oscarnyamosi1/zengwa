@@ -10,7 +10,7 @@ import FaIcon from '@/app/components/FaIcon';
 const campaigns = [
 {
   id: 'camp-001',
-  title: 'Zengwa Primary School Block B',
+  title: 'Zengwa Primary School Block',
   category: 'Education',
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_1fa810fe8-1784313443629.png",
   alt: 'Construction workers building a new school classroom block with concrete walls and iron roof in rural Kenya',
@@ -70,7 +70,7 @@ const campaigns = [
 },
 {
   id: 'camp-005',
-  title: 'Church Planting — Marsabit North',
+  title: 'Church Planting — Kwale North',
   category: 'Church',
   image: "https://images.unsplash.com/photo-1575652341484-cf585e29d737",
   alt: 'Small congregation gathered under a thatched roof church structure in a remote African village during Sunday service',

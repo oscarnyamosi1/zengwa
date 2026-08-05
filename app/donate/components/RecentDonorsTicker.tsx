@@ -2,9 +2,9 @@ import React from 'react';
 import { Heart } from 'lucide-react';
 
 const tickerItems = [
-  { id: 'tick-001', text: 'Margaret W. donated KES 5,000 to School Block B' },
+  { id: 'tick-001', text: 'Margaret W. donated KES 5,000 to School Block' },
   { id: 'tick-002', text: 'Anonymous donated USD 50 to Clean Water Borehole' },
-  { id: 'tick-003', text: 'Sarah T. donated GBP 30 to School Block B' },
+  { id: 'tick-003', text: 'Sarah T. donated GBP 30 to School Block' },
   { id: 'tick-004', text: 'David O. donated KES 2,500 to Child Sponsorship' },
   { id: 'tick-005', text: 'James K. donated KES 10,000 to General Ministry Fund' },
   { id: 'tick-006', text: 'Amelia N. donated EUR 25 to Community Health' },
@@ -25,7 +25,7 @@ export default function RecentDonorsTicker() {
               key={`ticker-${item?.id}-${i}`}
               className="text-xs text-muted-foreground font-medium shrink-0"
             >
-              🙏 {item?.text}
+              &bull; {item?.text}
             </span>
           ))}
         </div>

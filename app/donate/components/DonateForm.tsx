@@ -22,11 +22,11 @@ import Icon from '@/components/ui/AppIcon';
 
 
 const campaigns = [
-  { id: 'camp-001', title: 'School Block B Construction', category: 'Education', raised: 1240000, goal: 1800000 },
+  { id: 'camp-001', title: 'School Block Construction', category: 'Education', raised: 1240000, goal: 1800000 },
   { id: 'camp-002', title: 'Clean Water Borehole', category: 'Water', raised: 680000, goal: 900000 },
   { id: 'camp-003', title: 'Child Sponsorship — 50 Students', category: 'Sponsorship', raised: 325000, goal: 500000 },
   { id: 'camp-004', title: 'Community Health Outreach', category: 'Health', raised: 145000, goal: 400000 },
-  { id: 'camp-005', title: 'Church Planting — Marsabit North', category: 'Church', raised: 92000, goal: 250000 },
+  { id: 'camp-005', title: 'Church Planting — Kwale North', category: 'Church', raised: 92000, goal: 250000 },
   { id: 'camp-general', title: 'General Ministry Fund', category: 'General', raised: 0, goal: 0 },
 ];
 
@@ -115,7 +115,7 @@ export default function DonateForm() {
     await new Promise((r) => setTimeout(r, 2000));
     setSubmitting(false);
     setSubmitted(true);
-    toast.success('Donation confirmed! 🙏', {
+    toast.success('Donation confirmed!', {
       description: `Your ${currency} ${finalAmount.toLocaleString()} donation has been received. A receipt will be sent to ${data.email}.`,
     });
   };
@@ -126,7 +126,7 @@ export default function DonateForm() {
         <div className="w-20 h-20 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-5">
           <Check size={36} className="text-primary" />
         </div>
-        <h2 className="text-2xl font-extrabold text-foreground mb-2">Thank You! 🙏</h2>
+        <h2 className="text-2xl font-extrabold text-foreground mb-2">Thank You!</h2>
         <p className="text-muted-foreground mb-1">
           Your donation of <strong className="text-primary">{currency} {finalAmount.toLocaleString()}</strong> has been received.
         </p>
@@ -318,11 +318,11 @@ export default function DonateForm() {
                 <div className="mt-3 p-3 rounded-xl bg-muted border border-border">
                   <p className="text-xs font-semibold text-primary mb-1.5">Your Impact:</p>
                   <div className="text-xs text-muted-foreground space-y-0.5">
-                    {finalAmount >= 30000 && <p>✅ Sponsors 1 child for an entire month</p>}
-                    {finalAmount >= 5000 && finalAmount < 30000 && <p>✅ Provides school supplies for 5 children</p>}
-                    {finalAmount >= 1000 && finalAmount < 5000 && <p>✅ Covers a child's meals for one week</p>}
-                    {finalAmount >= 500 && finalAmount < 1000 && <p>✅ Buys learning materials for 2 students</p>}
-                    {finalAmount < 500 && <p>✅ Contributes to the general ministry fund</p>}
+                    {finalAmount >= 30000 && <p><Check style={{display:"inline-flex"}} /> Sponsors 1 child for an entire month</p>}
+                    {finalAmount >= 5000 && finalAmount < 30000 && <p><Check style={{display:"inline-flex"}}/> Provides school supplies for 5 children</p>}
+                    {finalAmount >= 1000 && finalAmount < 5000 && <p><Check style={{display:"inline-flex"}} /> Coverss a child&apos;s meals for one week</p>}
+                    {finalAmount >= 500 && finalAmount < 1000 && <p><Check style={{display:"inline-flex"}} /> Buys learning materials for 2 students</p>}
+                    {finalAmount < 500 && <p><Check style={{display:"inline-flex"}} /> Contributes to the general ministry fund</p>}
                   </div>
                 </div>
               )}
@@ -475,7 +475,7 @@ export default function DonateForm() {
               <label className="flex items-start gap-3 cursor-pointer group">
                 <input
                   type="checkbox"
-                  defaultChecked
+                  // defaultChecked
                   {...register('receiveReceipt')}
                   className="mt-0.5 w-4 h-4 rounded border-border text-primary focus:ring-primary/20 accent-primary"
                 />
@@ -668,7 +668,7 @@ export default function DonateForm() {
             </div>
 
             <p className="text-center text-xs text-muted-foreground mt-4">
-              🔒 Secured by 256-bit SSL encryption. Your payment info is never stored on our servers.
+              Secured by 256-bit SSL encryption. Your payment info is never stored on our servers.
             </p>
           </form>
         )}

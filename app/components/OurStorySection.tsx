@@ -67,7 +67,7 @@ export default function OurStorySection() {
               At Zengwa Christian Education Centre, we believe that smart investment in children is the key to a transformed community. We curate the finest educational programs and community initiatives that nourish young minds and delight families without compromise. No corruption, no waste — just pure, wholesome impact to keep communities going strong.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Founded in 2019 in the heart of Northern Kenya, we have grown from serving 45 children to over 847 students across 3 schools — with plans to reach 2,000 by 2028.
+              Founded in 2019 in the heart of Coast  region of Kenya, we have grown from serving 45 children to over 847 students across 3 schools — with plans to reach 2,000 by 2028.
             </p>
 
             {/* Pillars */}

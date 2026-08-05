@@ -29,15 +29,15 @@ type Donation = {
 };
 
 const donations: Donation[] = [
-  { id: 'don-001', donor: 'Margaret Wanjiku', email: 'margaret.w@gmail.com', campaign: 'School Block B', amount: '5,000', currency: 'KES', method: 'M-Pesa', status: 'Confirmed', date: '17 Jul 2026', country: 'Kenya' },
-  { id: 'don-002', donor: 'Sarah Thompson', email: 'sarah.t@outlook.com', campaign: 'School Block B', amount: '30', currency: 'GBP', method: 'Stripe', status: 'Confirmed', date: '17 Jul 2026', country: 'UK' },
+  { id: 'don-001', donor: 'Margaret Wanjiku', email: 'margaret.w@gmail.com', campaign: 'School Block', amount: '5,000', currency: 'KES', method: 'M-Pesa', status: 'Confirmed', date: '17 Jul 2026', country: 'Kenya' },
+  { id: 'don-002', donor: 'Sarah Thompson', email: 'sarah.t@outlook.com', campaign: 'School Block', amount: '30', currency: 'GBP', method: 'Stripe', status: 'Confirmed', date: '17 Jul 2026', country: 'UK' },
   { id: 'don-003', donor: 'Anonymous', email: '—', campaign: 'Clean Water', amount: '50', currency: 'USD', method: 'PayPal', status: 'Confirmed', date: '17 Jul 2026', country: '—' },
   { id: 'don-004', donor: 'David Omondi', email: 'david.o@yahoo.com', campaign: 'Child Sponsorship', amount: '2,500', currency: 'KES', method: 'M-Pesa', status: 'Pending', date: '16 Jul 2026', country: 'Kenya' },
   { id: 'don-005', donor: 'James Kariuki', email: 'james.k@gmail.com', campaign: 'General Fund', amount: '10,000', currency: 'KES', method: 'M-Pesa', status: 'Confirmed', date: '16 Jul 2026', country: 'Kenya' },
   { id: 'don-006', donor: 'Amelia Ndung\'u', email: 'amelia.n@gmail.com', campaign: 'Health Outreach', amount: '25', currency: 'EUR', method: 'Stripe', status: 'Confirmed', date: '16 Jul 2026', country: 'Germany' },
   { id: 'don-007', donor: 'Peter Mwangi', email: 'peter.m@icloud.com', campaign: 'Church Planting', amount: '1,500', currency: 'KES', method: 'M-Pesa', status: 'Pending', date: '15 Jul 2026', country: 'Kenya' },
   { id: 'don-008', donor: 'Grace Achieng', email: 'grace.a@gmail.com', campaign: 'Clean Water', amount: '3,000', currency: 'KES', method: 'M-Pesa', status: 'Failed', date: '15 Jul 2026', country: 'Kenya' },
-  { id: 'don-009', donor: 'Michael van der Berg', email: 'm.vdb@hotmail.com', campaign: 'School Block B', amount: '75', currency: 'EUR', method: 'PayPal', status: 'Confirmed', date: '15 Jul 2026', country: 'Netherlands' },
+  { id: 'don-009', donor: 'Michael van der Berg', email: 'm.vdb@hotmail.com', campaign: 'School Block', amount: '75', currency: 'EUR', method: 'PayPal', status: 'Confirmed', date: '15 Jul 2026', country: 'Netherlands' },
   { id: 'don-010', donor: 'Esther Njeri', email: 'esther.n@gmail.com', campaign: 'Child Sponsorship', amount: '30,000', currency: 'KES', method: 'M-Pesa', status: 'Confirmed', date: '14 Jul 2026', country: 'Kenya' },
   { id: 'don-011', donor: 'Robert Kimani', email: 'robert.k@gmail.com', campaign: 'General Fund', amount: '500', currency: 'KES', method: 'M-Pesa', status: 'Pending', date: '14 Jul 2026', country: 'Kenya' },
   { id: 'don-012', donor: 'Christine Mutua', email: 'christine.m@yahoo.com', campaign: 'Health Outreach', amount: '1,200', currency: 'KES', method: 'M-Pesa', status: 'Confirmed', date: '13 Jul 2026', country: 'Kenya' },

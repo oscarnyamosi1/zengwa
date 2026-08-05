@@ -3,13 +3,14 @@ import Link from 'next/link';
 import { Heart, Users, TrendingUp, Shield, Award, CheckCircle } from 'lucide-react';
 import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
+import { impactStats } from '@/data/dummyData'
 
 
 const recentDonations = [
-{ id: 'rd-001', name: 'Margaret W.', amount: 'KES 5,000', campaign: 'School Block B', time: '2 min ago', avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_1f5c84a8b-1772712488589.png", alt: 'Profile photo of a Kenyan woman with a warm smile' },
+{ id: 'rd-001', name: 'Margaret W.', amount: 'KES 5,000', campaign: 'School Block', time: '2 min ago', avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_1f5c84a8b-1772712488589.png", alt: 'Profile photo of a Kenyan woman with a warm smile' },
 { id: 'rd-002', name: 'Anonymous', amount: 'USD 50', campaign: 'Clean Water', time: '8 min ago', avatar: null, alt: '' },
 { id: 'rd-003', name: 'David O.', amount: 'KES 2,500', campaign: 'Child Sponsorship', time: '14 min ago', avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_10c0dde2e-1772695747551.png", alt: 'Profile photo of a young Kenyan man smiling' },
-{ id: 'rd-004', name: 'Sarah T.', amount: 'GBP 30', campaign: 'School Block B', time: '21 min ago', avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_16fa53386-1772335404610.png", alt: 'Profile photo of a British woman with blonde hair' }];
+{ id: 'rd-004', name: 'Sarah T.', amount: 'GBP 30', campaign: 'School Block', time: '21 min ago', avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_16fa53386-1772335404610.png", alt: 'Profile photo of a British woman with blonde hair' }];
 
 
 export default function DonateSidebar() {
@@ -20,7 +21,7 @@ export default function DonateSidebar() {
         <h3 className="font-bold text-foreground text-base mb-4">Campaign Progress</h3>
         <div className="space-y-4">
           {[
-          { label: 'School Block B', raised: 1240000, goal: 1800000, pct: 69 },
+          { label: 'School Block', raised: 1240000, goal: 1800000, pct: 69 },
           { label: 'Clean Water', raised: 680000, goal: 900000, pct: 76 },
           { label: 'Child Sponsorship', raised: 325000, goal: 500000, pct: 65 }]?.
           map((c) =>
@@ -106,7 +107,7 @@ export default function DonateSidebar() {
           className="mt-4 w-full flex items-center justify-center gap-2 bg-muted text-primary py-2.5 rounded-xl text-sm font-semibold hover:bg-accent/20 transition-colors">
           
           <Heart size={14} />
-          Join {1847} donors today
+          Join {impactStats.donorsCount} donors today
         </Link>
       </div>
     </div>);

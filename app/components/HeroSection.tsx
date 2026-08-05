@@ -23,7 +23,7 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-muted-foreground text-lg leading-relaxed mb-8 max-w-lg">
-              Discover how your generosity transforms children's lives through Christian education, clean water, and community development in Northern Kenya.
+              Discover how your generosity transforms children's lives through Christian education, clean water, and community development in Coast  region of Kenya.
             </p>
 
             {/* CTAs */}
@@ -49,7 +49,7 @@ export default function HeroSection() {
               {[
               { icon: CheckCircle, text: '100% Natural Mission' },
               { icon: Truck, text: 'Free Impact Reports' },
-              { icon: Shield, text: 'Secure Payments' }]?.
+              { icon: Shield, text: 'Secure Donation Channels' }]?.
               map(({ icon: Icon, text }) =>
               <div key={`trust-${text}`} className="flex items-center gap-2 text-sm text-muted-foreground font-medium">
                   <Icon size={16} className="text-primary" />
@@ -77,7 +77,7 @@ export default function HeroSection() {
               {/* Floating badge — 100% Organic */}
               <div className="absolute -top-4 -right-4 w-20 h-20 rounded-full bg-primary flex flex-col items-center justify-center shadow-card-lg border-4 border-card">
                 <span className="text-primary-foreground font-extrabold text-sm leading-none">100%</span>
-                <span className="text-accent text-xs font-semibold leading-none mt-0.5">Organic</span>
+                <span className="text-accent text-xs font-semibold leading-none mt-0.5">Faith</span>
               </div>
 
               {/* Floating donation card */}

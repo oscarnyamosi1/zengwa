@@ -6,7 +6,7 @@ import AppImage from '@/components/ui/AppImage';
 const posts = [
 {
   id: 'post-001',
-  title: 'School Block B Construction Reaches 72% — Completion Expected by September',
+  title: 'School Block Construction Reaches 72% — Completion Expected by September',
   category: 'Construction',
   date: '14 Jul 2026',
   readTime: '4 min read',
@@ -39,11 +39,11 @@ const posts = [
 },
 {
   id: 'post-004',
-  title: 'Partnership with Marsabit Diocese Strengthens Church Planting Initiative',
+  title: 'Partnership with Kwale Diocese Strengthens Church Planting Initiative',
   category: 'Church',
   date: '24 Jun 2026',
   readTime: '3 min read',
-  excerpt: 'A new memorandum of understanding with the Anglican Diocese of Marsabit will accelerate our church planting goals, targeting 8 new congregations by end of 2027.',
+  excerpt: 'A new memorandum of understanding with the Anglican Diocese of Kwale will accelerate our church planting goals, targeting 8 new congregations by end of 2027.',
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_18daf0a55-1765652592016.png",
   alt: 'Community members gathered outside a small rural church in Kenya for a Sunday service',
   categoryColor: 'bg-gold/20 text-warning'

@@ -171,5 +171,3 @@ export default function EventsPage() {
     </div>
   );
 }
-
-// ??oscar nyamosi

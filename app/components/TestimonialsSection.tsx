@@ -16,7 +16,7 @@ const testimonials = [
 {
   id: 'testi-002',
   name: 'David Omondi',
-  role: 'Community Volunteer — Marsabit',
+  role: 'Community Volunteer — Kwale',
   avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_1d2cc09b4-1763294485121.png",
   alt: 'Portrait of a young Kenyan man with a warm smile wearing a casual shirt',
   quote: 'The new borehole changed everything for our village. Women used to walk 8km for water. Now our children come to school clean and healthy. This is what real change looks like.',

@@ -36,10 +36,10 @@ export default function NewsletterCTA() {
               <span className="text-accent text-sm font-semibold tracking-wider uppercase">Stay Connected</span>
             </div>
             <h2 className="text-2xl lg:text-3xl font-extrabold text-primary-foreground mb-2">
-              Get 10% Off Your First Gift!
+              Founded by:
             </h2>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              Subscribe to our newsletter and get exclusive ministry updates, impact stories, health tips, and prayer needs delivered to your inbox.
+            Evangelist Anne Kemunto & Mohammed Beni
             </p>
           </div>
 

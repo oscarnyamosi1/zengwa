@@ -6,7 +6,7 @@ import PublicHeader from '@/components/PublicHeader';
 import PublicFooter from '@/components/PublicFooter';
 import AppImage from '@/components/ui/AppImage';
 import { Heart, Star, Clock, Users, Megaphone, TrendingUp } from 'lucide-react';
-import { campaigns } from '@/data/dummyData';
+import { campaigns,impactStats } from '@/data/dummyData';
 
 const categories = ['All', 'Education', 'Water & Health', 'Sponsorship', 'Health', 'Church', 'Infrastructure'];
 const sortOptions = ['Most Funded', 'Newest', 'Ending Soon', 'Most Donors'];
@@ -30,8 +30,10 @@ export default function CampaignsPage() {
       return 0;
     });
 
-  const totalRaised = campaigns.reduce((s, c) => s + c.raised, 0);
-  const totalDonors = campaigns.reduce((s, c) => s + c.donors, 0);
+  // const totalRaised = campaigns.reduce((s, c) => s + c.raised, 0);
+  const totalRaised = impactStats.totalRaisedKES.toFixed(5)
+  // const totalDonors = campaigns.reduce((s, c) => s + c.donors, 0);
+  const totalDonors = impactStats.donorsCount
 
   return (
     <div className="min-h-screen bg-background">
@@ -214,7 +216,7 @@ export default function CampaignsPage() {
           <div className="max-w-screen-2xl mx-auto px-6 lg:px-10 xl:px-16">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               {[
-                { icon: '', title: 'Secure Payments', desc: 'M-Pesa, Stripe & PayPal. All transactions encrypted and secure.' },
+                { icon: '', title: 'Secure Donation Channel', desc: 'M-Pesa, Stripe & PayPal. All transactions encrypted and secure.' },
                 { icon: '', title: 'Full Transparency', desc: 'Monthly financial reports published. Every shilling accounted for.' },
                 { icon: '', title: 'Instant Receipts', desc: 'Tax-deductible receipts sent immediately to your email.' },
               ].map((item) => (

@@ -12,7 +12,7 @@ export default function DonateHero() {
           Your Gift Changes Lives
         </h1>
         <p className="text-primary-foreground/75 text-base lg:text-lg max-w-xl mx-auto mb-6">
-          100% of every donation goes directly to ministry programs — education, water, health, and church planting in Northern Kenya.
+          100% of every donation goes directly to ministry programs — education, water, health, and church planting in Coast  region of Kenya.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-5">
           {[

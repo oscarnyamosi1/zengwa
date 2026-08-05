@@ -107,7 +107,7 @@ export default function PublicFooter() {
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-accent mt-0.5 shrink-0" />
                 <span className="text-primary-foreground/70 text-sm">
-                  Zengwa Village, Marsabit County,<br />Northern Kenya
+                  Zengwa Village, Kwale County,<br />Coast  region of Kenya
                 </span>
               </li>
               <li className="flex items-center gap-3">
