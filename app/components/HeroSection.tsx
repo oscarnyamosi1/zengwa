@@ -36,7 +36,7 @@ export default function HeroSection() {
                 Donate Now
               </Link>
               <Link
-                href="/"
+                href="/campaigns"
                 className="flex items-center gap-2.5 border-2 border-primary text-primary px-7 py-3.5 rounded-xl font-semibold text-base hover:bg-muted transition-all duration-150 active:scale-95">
                 
                 Explore Campaigns

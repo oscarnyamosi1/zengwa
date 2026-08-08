@@ -203,7 +203,7 @@ export default function FeaturedCampaigns() {
         {/* View all */}
         <div className="text-center mt-8">
           <Link
-            href="/"
+            href="/campaigns"
             className="inline-flex items-center gap-2 border border-primary text-primary px-6 py-2.5 rounded-xl text-sm font-semibold hover:bg-muted transition-colors">
             
             View All Campaigns

@@ -104,7 +104,7 @@ const Signup: React.FC = () => {
             <div className="terms-row">
               <div className="check">✓</div>
               <span className="terms-text">
-                I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                I agree to the <a href="/terms-of-service">Terms of Service</a> and <a href="/privacy-policy">Privacy Policy</a>
               </span>
             </div>
 
@@ -171,7 +171,7 @@ const BrandingPanel: React.FC = () => (
             </div>
           </div>
         </div>
-        <div className="brand-copy">© 2025 Zengwa Christian Education Centre</div>
+        <div className="brand-copy">© {new Date().getFullYear()} Zengwa Christian Education Centre</div>
       </div>
     </div>
   </div>

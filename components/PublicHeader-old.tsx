@@ -25,7 +25,7 @@ export default function PublicHeader() {
     <>
       {/* Announcement bar */}
       <div className="bg-primary text-primary-foreground text-center py-2 text-sm font-medium tracking-wide">
-        Join 10,000+ donors transforming lives in Africa —&nbsp;
+        Join ther donors, transform lives in Africa —&nbsp;
         <Link href="/donate" className="underline underline-offset-2 hover:text-accent transition-colors">
           Give Today
         </Link>

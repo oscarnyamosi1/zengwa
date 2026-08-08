@@ -150,7 +150,7 @@ const BrandingPanel: React.FC = () => (
             </div>
           </div>
         </div>
-        <div className="brand-copy">© 2025 Zengwa Christian Education Centre</div>
+        <div className="brand-copy">© {new Date().getFullYear()} Zengwa Christian Education Centre</div>
       </div>
     </div>
   </div>

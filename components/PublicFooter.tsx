@@ -130,12 +130,12 @@ export default function PublicFooter() {
       <div className="border-t border-primary-foreground/20">
         <div className="max-w-screen-2xl mx-auto px-6 lg:px-10 xl:px-16 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-primary-foreground/50 text-xs">
-            &copy; 2026 ZengwaConnect. All rights reserved. Built with ❤️ for God&apos;s glory.
+            &copy; {new Date().getFullYear()} ZengwaConnect. All rights reserved. Built with Love for God&apos;s glory.
           </p>
           <div className="flex items-center gap-4">
-            <Link href="/" className="text-primary-foreground/50 text-xs hover:text-accent transition-colors">Privacy Policy</Link>
-            <Link href="/" className="text-primary-foreground/50 text-xs hover:text-accent transition-colors">Terms of Service</Link>
-            <Link href="/" className="text-primary-foreground/50 text-xs hover:text-accent transition-colors">Donation Policy</Link>
+            <Link href="/privacy-policy" className="text-primary-foreground/50 text-xs hover:text-accent transition-colors">Privacy Policy</Link>
+            <Link href="/terms-of-service" className="text-primary-foreground/50 text-xs hover:text-accent transition-colors">Terms of Service</Link>
+            <Link href="/donation-policy" className="text-primary-foreground/50 text-xs hover:text-accent transition-colors">Donation Policy</Link>
           </div>
         </div>
       </div>

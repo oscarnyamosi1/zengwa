@@ -195,7 +195,7 @@ export interface AuditLog {
 // ─── CAMPAIGNS ────────────────────────────────────────────────
 
 export const companyCommunicationChannel = {
-  email:"info@zengwaconnect.org",
+  email:"zengwaacademy@gmail.com",
   phone:"+254 700 123 456",
   facebook:"facebooklink",
   x:"x.com",
