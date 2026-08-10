@@ -69,6 +69,7 @@ export interface BlogPost {
   authorRole: string;
   authorAvatar: string;
   image: string;
+  storyImages:string[];
   alt: string;
   date: string;
   readTime: number;
@@ -452,7 +453,8 @@ export const blogPosts: BlogPost[] = [
   date: 'July 15, 2026',
   readTime: 5,
   tags: ['Water', 'Community', 'Impact'],
-  featured: true
+  featured: true,
+  storyImages:[]
 },
 {
   id: 'blog-002',
@@ -468,7 +470,8 @@ export const blogPosts: BlogPost[] = [
   date: 'July 8, 2026',
   readTime: 4,
   tags: ['Sponsorship', 'Education', 'Success Story'],
-  featured: true
+  featured: true,
+  storyImages:[]
 },
 {
   id: 'blog-003',
@@ -484,7 +487,8 @@ export const blogPosts: BlogPost[] = [
   date: 'July 1, 2026',
   readTime: 8,
   tags: ['Report', 'Ministry', 'Impact'],
-  featured: false
+  featured: false,
+  storyImages:[]
 },
 {
   id: 'blog-004',
@@ -500,7 +504,8 @@ export const blogPosts: BlogPost[] = [
   date: 'June 22, 2026',
   readTime: 6,
   tags: ['Volunteers', 'Health', 'Community'],
-  featured: false
+  featured: false,
+  storyImages:[]
 },
 {
   id: 'blog-005',
@@ -516,7 +521,8 @@ export const blogPosts: BlogPost[] = [
   date: 'June 10, 2026',
   readTime: 5,
   tags: ['Church', 'Evangelism', 'Salvation'],
-  featured: false
+  featured: false,
+  storyImages:[]
 },
 {
   id: 'blog-006',
@@ -532,99 +538,100 @@ export const blogPosts: BlogPost[] = [
   date: 'May 28, 2026',
   readTime: 3,
   tags: ['Infrastructure', 'Education', 'Solar'],
-  featured: false
+  featured: false,
+  storyImages:[]
 }];
 
 
 // ─── EVENTS ───────────────────────────────────────────────────
 
 export const events: Event[] = [
-{
-  id: 'evt-001',
-  title: 'Annual Fundraising Gala 2026',
-  description: 'Join us for an evening of celebration, testimonies, and fundraising for our 2026 projects. Featuring live music, dinner, and inspiring stories from the field.',
-  date: 'August 15, 2026',
-  time: '6:00 PM — 10:00 PM',
-  location: 'Nairobi Serena Hotel, Nairobi',
-  type: 'Fundraiser',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_178e04177-1772254978127.png",
-  alt: 'Elegant fundraising gala dinner with round tables, candles, and guests in formal attire',
-  attendees: 180,
-  capacity: 250,
-  free: false,
-  price: 5000,
-  currency: 'KES'
-},
-{
-  id: 'evt-002',
-  title: 'Volunteer Orientation Day',
-  description: 'New volunteer orientation covering our mission, values, safety protocols, and project assignments. All new volunteers must attend before deployment.',
-  date: 'August 3, 2026',
-  time: '9:00 AM — 1:00 PM',
-  location: 'Zengwa Education Centre, Kwale',
-  type: 'Training',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1a1f9ebc4-1772211601313.png",
-  alt: 'Group of volunteers in orange vests attending an orientation session in a community hall',
-  attendees: 24,
-  capacity: 40,
-  free: true
-},
-{
-  id: 'evt-003',
-  title: 'Community Prayer & Fasting Day',
-  description: 'A day of corporate prayer and fasting for our nation, our ministry, and the communities we serve. All are welcome to join in person or online.',
-  date: 'August 8, 2026',
-  time: '6:00 AM — 6:00 PM',
-  location: 'Zengwa Church, Kwale',
-  type: 'Prayer',
-  image: 'https://images.unsplash.com/photo-1575652341484-cf585e29d737',
-  alt: 'Community members gathered in prayer inside a church with hands raised in worship',
-  attendees: 120,
-  capacity: 300,
-  free: true
-},
-{
-  id: 'evt-004',
-  title: 'Back-to-School Drive 2026',
-  description: 'Help us collect school supplies, uniforms, and books for 500 children returning to school in September. Drop-off points across Nairobi and Kwale.',
-  date: 'August 20–31, 2026',
-  time: 'All Day',
-  location: 'Multiple Locations',
-  type: 'Community Drive',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_17120bf64-1767940898922.png",
-  alt: 'School supplies including books, pencils, and backpacks arranged on a table for donation',
-  attendees: 89,
-  capacity: 500,
-  free: true
-},
-{
-  id: 'evt-005',
-  title: 'Medical Outreach — Laisamis',
-  description: 'Free medical camp offering consultations, vaccinations, dental care, and health education to 800+ residents of Laisamis and surrounding villages.',
-  date: 'September 5–7, 2026',
-  time: '8:00 AM — 5:00 PM',
-  location: 'Laisamis Community Centre',
-  type: 'Health Outreach',
-  image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1e2a766cc-1772878671814.png',
-  alt: 'Medical team setting up a free health clinic with patients waiting in line outside',
-  attendees: 0,
-  capacity: 800,
-  free: true
-},
-{
-  id: 'evt-006',
-  title: 'Donor Appreciation Breakfast',
-  description: 'A special breakfast for our top donors to share project updates, impact reports, and future plans. An intimate gathering of 50 key supporters.',
-  date: 'September 12, 2026',
-  time: '8:00 AM — 11:00 AM',
-  location: 'Villa Rosa Kempinski, Nairobi',
-  type: 'Donor Relations',
-  image: "https://images.unsplash.com/photo-1661335996024-1264a70d1347",
-  alt: 'Elegant breakfast setting with white tablecloths and fresh flowers for a donor appreciation event',
-  attendees: 35,
-  capacity: 50,
-  free: true
-}
+// {
+//   id: 'evt-001',
+//   title: 'Annual Fundraising Gala 2026',
+//   description: 'Join us for an evening of celebration, testimonies, and fundraising for our 2026 projects. Featuring live music, dinner, and inspiring stories from the field.',
+//   date: 'August 15, 2026',
+//   time: '6:00 PM — 10:00 PM',
+//   location: 'Nairobi Serena Hotel, Nairobi',
+//   type: 'Fundraiser',
+//   image: "https://img.rocket.new/generatedImages/rocket_gen_img_178e04177-1772254978127.png",
+//   alt: 'Elegant fundraising gala dinner with round tables, candles, and guests in formal attire',
+//   attendees: 180,
+//   capacity: 250,
+//   free: false,
+//   price: 5000,
+//   currency: 'KES'
+// },
+// {
+//   id: 'evt-002',
+//   title: 'Volunteer Orientation Day',
+//   description: 'New volunteer orientation covering our mission, values, safety protocols, and project assignments. All new volunteers must attend before deployment.',
+//   date: 'August 3, 2026',
+//   time: '9:00 AM — 1:00 PM',
+//   location: 'Zengwa Education Centre, Kwale',
+//   type: 'Training',
+//   image: "https://img.rocket.new/generatedImages/rocket_gen_img_1a1f9ebc4-1772211601313.png",
+//   alt: 'Group of volunteers in orange vests attending an orientation session in a community hall',
+//   attendees: 24,
+//   capacity: 40,
+//   free: true
+// },
+// {
+//   id: 'evt-003',
+//   title: 'Community Prayer & Fasting Day',
+//   description: 'A day of corporate prayer and fasting for our nation, our ministry, and the communities we serve. All are welcome to join in person or online.',
+//   date: 'August 8, 2026',
+//   time: '6:00 AM — 6:00 PM',
+//   location: 'Zengwa Church, Kwale',
+//   type: 'Prayer',
+//   image: 'https://images.unsplash.com/photo-1575652341484-cf585e29d737',
+//   alt: 'Community members gathered in prayer inside a church with hands raised in worship',
+//   attendees: 120,
+//   capacity: 300,
+//   free: true
+// },
+// {
+//   id: 'evt-004',
+//   title: 'Back-to-School Drive 2026',
+//   description: 'Help us collect school supplies, uniforms, and books for 500 children returning to school in September. Drop-off points across Nairobi and Kwale.',
+//   date: 'August 20–31, 2026',
+//   time: 'All Day',
+//   location: 'Multiple Locations',
+//   type: 'Community Drive',
+//   image: "https://img.rocket.new/generatedImages/rocket_gen_img_17120bf64-1767940898922.png",
+//   alt: 'School supplies including books, pencils, and backpacks arranged on a table for donation',
+//   attendees: 89,
+//   capacity: 500,
+//   free: true
+// },
+// {
+//   id: 'evt-005',
+//   title: 'Medical Outreach — Laisamis',
+//   description: 'Free medical camp offering consultations, vaccinations, dental care, and health education to 800+ residents of Laisamis and surrounding villages.',
+//   date: 'September 5–7, 2026',
+//   time: '8:00 AM — 5:00 PM',
+//   location: 'Laisamis Community Centre',
+//   type: 'Health Outreach',
+//   image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1e2a766cc-1772878671814.png',
+//   alt: 'Medical team setting up a free health clinic with patients waiting in line outside',
+//   attendees: 0,
+//   capacity: 800,
+//   free: true
+// },
+// {
+//   id: 'evt-006',
+//   title: 'Donor Appreciation Breakfast',
+//   description: 'A special breakfast for our top donors to share project updates, impact reports, and future plans. An intimate gathering of 50 key supporters.',
+//   date: 'September 12, 2026',
+//   time: '8:00 AM — 11:00 AM',
+//   location: 'Villa Rosa Kempinski, Nairobi',
+//   type: 'Donor Relations',
+//   image: "https://images.unsplash.com/photo-1661335996024-1264a70d1347",
+//   alt: 'Elegant breakfast setting with white tablecloths and fresh flowers for a donor appreciation event',
+//   attendees: 35,
+//   capacity: 50,
+//   free: true
+// }
 
 ];
 
@@ -667,7 +674,7 @@ export const galleryItems: GalleryItem[] = [
   type: 'photo',
   title: 'Piece of land bought by Zengwa Connect Team',
   alt: 'Piece of land bought nby zengwa connenct team to to facilitate construction of children Shelter',
-  image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1e2a766cc-1772878671814.png',
+  image: 'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786187748/WhatsApp_Image_2026-08-02_at_12.29.17_PM_oidfiu.jpg',
   album: 'Shelter',
   date: 'May 2026',
   likes: 167
@@ -675,9 +682,9 @@ export const galleryItems: GalleryItem[] = [
 {
   id: 'gal-005',
   type: 'photo',
-  title: 'Sunday Worship Service',
-  alt: 'Congregation worshipping together in a newly built church in Kwale County',
-  image: 'https://images.unsplash.com/photo-1575652341484-cf585e29d737',
+  title: 'A house constructed by the vulnarable Children',
+  alt: 'A house constructed by the vulnarable Children in Zengwa Kwale County',
+  image: 'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786187737/WhatsApp_Image_2026-08-02_at_12.29.23_PM_zd824t.jpg',
   album: 'Church',
   date: 'June 2026',
   likes: 234
@@ -685,43 +692,45 @@ export const galleryItems: GalleryItem[] = [
 {
   id: 'gal-006',
   type: 'photo',
-  title: 'Girls\' Dormitory Foundation',
-  alt: 'Construction workers laying the foundation for a new girls dormitory at Zengwa school',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1b4c4b012-1785486042124.png",
-  album: 'Construction',
-  date: 'May 2026',
-  likes: 112
+  title: 'A house constructed by the vulnarable Children',
+  alt: 'A house constructed by the vulnarable Children in Zengwa Kwale County',
+  image: 'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786187736/WhatsApp_Image_2026-08-02_at_12.29.31_PM_t8lrz4.jpg',
+  album: 'Church',
+  date: 'June 2026',
+  likes: 234
 },
 {
   id: 'gal-007',
   type: 'photo',
-  title: 'Solar Panel Installation',
-  alt: 'Technicians installing solar panels on the roof of Zengwa Primary School',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_110d6a8fa-1785486042237.png",
-  album: 'Infrastructure',
-  date: 'January 2026',
-  likes: 88
+  title: 'A house constructed by the vulnarable Children',
+  alt: 'A house constructed by the vulnarable Children in Zengwa Kwale County',
+  image: 'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786187727/WhatsApp_Image_2026-08-02_at_12.29.27_PM_fjtb6m.jpg',
+  album: 'Church',
+  date: 'June 2026',
+  likes: 234
 },
 {
   id: 'gal-008',
   type: 'photo',
-  title: 'Volunteer Team Photo',
-  alt: 'Group of international and local volunteers posing together outside the Zengwa Education Centre',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1af9a07b6-1785486041801.png",
-  album: 'Volunteers',
-  date: 'April 2026',
-  likes: 321
+  title: 'A house constructed by the vulnarable Children',
+  alt: 'A black polythene  house constructed by the vulnarable Children in Zengwa Kwale County',
+  image: 'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786187733/WhatsApp_Image_2026-08-02_at_12.29.24_PM_1_mopyco.jpg',
+  album: 'Church',
+  date: 'June 2026',
+  likes: 234
 },
 {
   id: 'gal-009',
   type: 'photo',
-  title: 'Sponsored Children Graduation',
-  alt: 'Sponsored children in graduation gowns celebrating their primary school completion',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1fc00cea5-1774952578351.png",
-  album: 'Education',
-  date: 'November 2025',
-  likes: 445
-}];
+  title: 'A stand stall like house constructed by the vulnarable Children',
+  alt: 'A black polythene  house constructed by the vulnarable Children in Zengwa Kwale County',
+  image: 'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786187733/WhatsApp_Image_2026-08-02_at_12.29.49_PM_wt394t.jpg',
+  album: 'Church',
+  date: 'June 2026',
+  likes: 234
+}
+
+];
 
 
 // ─── VOLUNTEERS ───────────────────────────────────────────────
