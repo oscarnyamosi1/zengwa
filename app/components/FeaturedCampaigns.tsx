@@ -5,84 +5,7 @@ import AppImage from '@/components/ui/AppImage';
 
 import { faHandHoldingHeart, faHandHoldingDollar } from '@fortawesome/free-solid-svg-icons';
 import FaIcon from '@/app/components/FaIcon';
-
-
-const campaigns = [
-{
-  id: 'camp-001',
-  title: 'Zengwa Primary School Block',
-  category: 'Education',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1fa810fe8-1784313443629.png",
-  alt: 'Construction workers building a new school classroom block with concrete walls and iron roof in rural Kenya',
-  raised: 1240000,
-  goal: 1800000,
-  donors: 248,
-  rating: 4.9,
-  reviews: 120,
-  badge: 'Urgent',
-  badgeColor: 'bg-danger text-danger-light',
-  currency: 'KES'
-},
-{
-  id: 'camp-002',
-  title: 'Clean Water Borehole — Zengwa Village',
-  category: 'Water & Health',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1444ad8a7-1772110832391.png",
-  alt: 'African woman drawing clean water from a newly installed borehole pump surrounded by community members',
-  raised: 680000,
-  goal: 900000,
-  donors: 156,
-  rating: 5.0,
-  reviews: 98,
-  badge: 'Featured',
-  badgeColor: 'bg-primary text-primary-foreground',
-  currency: 'KES'
-},
-{
-  id: 'camp-003',
-  title: 'Child Sponsorship — 50 Students',
-  category: 'Sponsorship',
-  image: "https://images.unsplash.com/photo-1567057420215-0afa9aa9253a",
-  alt: 'Group of smiling Kenyan school children in green uniforms standing outside a classroom holding books',
-  raised: 325000,
-  goal: 500000,
-  donors: 89,
-  rating: 4.8,
-  reviews: 96,
-  badge: 'Active',
-  badgeColor: 'bg-accent/20 text-primary',
-  currency: 'KES'
-},
-{
-  id: 'camp-004',
-  title: 'Community Health Outreach 2026',
-  category: 'Health',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1e2a766cc-1772878671814.png",
-  alt: 'Medical volunteer in white coat examining a young child at a rural health outreach clinic in Africa',
-  raised: 145000,
-  goal: 400000,
-  donors: 64,
-  rating: 4.7,
-  reviews: 75,
-  badge: 'New',
-  badgeColor: 'bg-gold/20 text-warning',
-  currency: 'KES'
-},
-{
-  id: 'camp-005',
-  title: 'Church Planting — Kwale North',
-  category: 'Church',
-  image: "https://images.unsplash.com/photo-1575652341484-cf585e29d737",
-  alt: 'Small congregation gathered under a thatched roof church structure in a remote African village during Sunday service',
-  raised: 92000,
-  goal: 250000,
-  donors: 41,
-  rating: 4.9,
-  reviews: 64,
-  badge: 'Active',
-  badgeColor: 'bg-accent/20 text-primary',
-  currency: 'KES'
-}];
+import  { campaigns } from "@/data/dummyData"
 
 
 function formatKES(amount: number): string {
@@ -121,7 +44,7 @@ export default function FeaturedCampaigns() {
                   {/* Image */}
                   <div className="relative overflow-hidden">
                     <AppImage
-                      src={campaign.image}
+                      src={ campaign.image?.[0] || null }
                       alt={campaign.alt}
                       width={400}
                       height={220}

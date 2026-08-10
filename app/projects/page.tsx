@@ -107,7 +107,7 @@ export default function ProjectsPage() {
                   <div key={project.id} className="bg-card border border-border rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all group">
                     <div className="relative overflow-hidden">
                       <AppImage
-                        src={project.image}
+                        src={project.image[0]}
                         alt={project.alt}
                         width={500}
                         height={280}

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Heart, ArrowRight, CheckCircle, Truck, Shield } from 'lucide-react';
 import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
+import { recentDonations } from '@/data/dummyData';
 
 
 export default function HeroSection() {
@@ -88,7 +89,7 @@ export default function HeroSection() {
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground font-medium">Latest Donation</p>
-                    <p className="text-sm font-bold text-foreground">KES 5,000</p>
+                    <p className="text-sm font-bold text-foreground">KES {recentDonations.at(-1)?.amount?.toLocaleString()}</p>
                   </div>
                 </div>
                 <div className="w-full bg-muted rounded-full h-1.5">

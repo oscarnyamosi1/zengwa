@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image'
+import { impactStats,projects } from "@/data/dummyData"; 
 
 const Login: React.FC = () => {
   return (
@@ -133,11 +134,17 @@ const BrandingPanel: React.FC = () => (
           <div className="impact-label">Our Impact</div>
           <div className="impact-grid">
             <div className="impact-stat">
-              <div className="stat-number">1,240+</div>
-              <div className="stat-label">Children Supported</div>
+              {(impactStats.childrenSponsored > 0)?
+              <div>
+
+                <div className="stat-number">{impactStats.childrenSponsored}</div>
+              </div>
+              : 
+                <div className="stat-label">To support the vulnerable children .</div>
+                }
             </div>
             <div className="impact-stat">
-              <div className="stat-number">38</div>
+              <div className="stat-number">{projects.length}</div>
               <div className="stat-label">Active Projects</div>
             </div>
             <div className="impact-stat">

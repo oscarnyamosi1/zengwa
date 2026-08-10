@@ -47,7 +47,7 @@ export default function PublicHeader() {
   return (
     <>
       <div className="bg-primary text-primary-foreground text-center py-2 text-sm font-medium tracking-wide">
-        Join 10,000+ donors transforming lives in Africa —&nbsp;
+        Join thousands of donors transforming lives in Africa —&nbsp;
         <Link href="/donate" className="underline underline-offset-2 hover:text-accent transition-colors">
           Give Today
         </Link>
@@ -74,7 +74,7 @@ export default function PublicHeader() {
             <nav className="hidden lg:flex items-center gap-1">
               {navLinks?.map((link) => (
                 // <div key={link?.href} className="relative group">
-                <div className="relative group">
+                <div key={link?.label} className="relative group">
                   {link?.children ? (
                     <button
                       className={`flex items-center gap-1 text-sm font-medium px-3 py-2 rounded-lg transition-colors ${

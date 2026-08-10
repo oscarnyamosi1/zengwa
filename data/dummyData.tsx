@@ -9,18 +9,22 @@ export interface Campaign {
   id: string;
   title: string;
   category: string;
-  image: string;
+  image: string[];
   alt: string;
   raised: number;
-  goal: number;
   donors: number;
+  goal: number;
   daysLeft: number;
   badge: string;
   badgeColor: string;
   currency: string;
   description: string;
   updates: number;
+  rating: number,
+  reviews: string[],
 }
+
+
 
 export interface Child {
   id: string;
@@ -41,7 +45,7 @@ export interface Project {
   id: string;
   title: string;
   category: string;
-  image: string;
+  image: string[];
   alt: string;
   status: 'Completed' | 'In Progress' | 'Planned';
   progress: number;
@@ -210,8 +214,8 @@ export const campaigns: Campaign[] = [
   id: 'camp-001',
   title: 'Zengwa Primary School Block',
   category: 'Education',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1ea8fffc7-1784313313635.png",
-  alt: 'Construction workers building a new school classroom block with concrete walls and iron roof in rural Kenya',
+  image: ["https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193848/WhatsApp_Image_2026-08-02_at_12.29.03_PM_1_av92gt.jpg","https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193838/WhatsApp_Image_2026-08-02_at_12.29.02_PM_1_cq2oql.jpg"],
+  alt: 'School block under construction in Zengwa village',
   raised: 1240000,
   goal: 1800000,
   donors: 248,
@@ -220,88 +224,66 @@ export const campaigns: Campaign[] = [
   badgeColor: 'bg-danger text-white',
   currency: 'KES',
   description: 'We are building a second classroom block to accommodate 200 additional students who currently study under trees. The new block will have 4 classrooms, a library, and sanitation facilities.',
-  updates: 8
+  updates: 8,
+  rating:4,
+  reviews:["awesomejob",'You\'re God sent']
 },
-{
-  id: 'camp-002',
-  title: 'Clean Water Borehole — Zengwa Village',
-  category: 'Water & Health',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1839c4d53-1772094706028.png",
-  alt: 'African woman drawing clean water from a newly installed borehole pump surrounded by community members',
-  raised: 680000,
-  goal: 900000,
-  donors: 156,
-  daysLeft: 18,
-  badge: 'Featured',
-  badgeColor: 'bg-primary text-white',
-  currency: 'KES',
-  description: 'Providing clean, safe drinking water to over 1,500 community members who currently walk 8km daily to fetch water from a contaminated river.',
-  updates: 5
-},
-{
-  id: 'camp-003',
-  title: 'Child Sponsorship — 50 Students',
-  category: 'Sponsorship',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_127400d6a-1763296439452.png",
-  alt: 'Group of smiling Kenyan school children in green uniforms standing outside a classroom holding books',
-  raised: 325000,
-  goal: 500000,
-  donors: 89,
-  daysLeft: 60,
-  badge: 'Active',
-  badgeColor: 'bg-accent/20 text-primary',
-  currency: 'KES',
-  description: 'Sponsor a child\'s education for a full year — covering school fees, uniforms, books, meals, and healthcare. Change a life forever.',
-  updates: 12
-},
-{
-  id: 'camp-004',
-  title: 'Community Health Outreach 2026',
-  category: 'Health',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_12bc7169c-1773142299522.png",
-  alt: 'Medical volunteer in white coat examining a young child at a rural health outreach clinic in Africa',
-  raised: 145000,
-  goal: 400000,
-  donors: 64,
-  daysLeft: 90,
-  badge: 'New',
-  badgeColor: 'bg-gold/20 text-warning',
-  currency: 'KES',
-  description: 'Mobile health clinics bringing medical care, vaccinations, and health education to 5 remote villages in Kwale County.',
-  updates: 3
-},
-{
-  id: 'camp-005',
-  title: 'Church Planting — Kwale North',
-  category: 'Church',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1fe854a69-1765652592467.png",
-  alt: 'Small congregation gathered under a thatched roof church structure in a remote African village during Sunday service',
-  raised: 92000,
-  goal: 250000,
-  donors: 41,
-  daysLeft: 120,
-  badge: 'Active',
-  badgeColor: 'bg-accent/20 text-primary',
-  currency: 'KES',
-  description: 'Planting 3 new churches in unreached communities in Northern Kenya, each with a trained pastor and discipleship program.',
-  updates: 4
-},
-{
-  id: 'camp-006',
-  title: 'Girls\' Dormitory Construction',
-  category: 'Education',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_135eef728-1764694159531.png",
-  alt: 'Young African girls studying together in a bright classroom with colorful educational posters on the walls',
-  raised: 560000,
-  goal: 1200000,
-  donors: 112,
-  daysLeft: 75,
-  badge: 'Active',
-  badgeColor: 'bg-accent/20 text-primary',
-  currency: 'KES',
-  description: 'Building a safe dormitory for 80 girls from remote villages, enabling them to attend school without the daily 20km walk.',
-  updates: 6
-}];
+// {
+//   id: 'camp-002',
+//   title: 'Clean Water Borehole — Zengwa Village',
+//   category: 'Water & Health',
+//   image: [""],
+//   alt: 'African woman drawing clean water from a newly installed borehole pump surrounded by community members',
+//   raised: 680000,
+//   goal: 900000,
+//   donors: 156,
+//   daysLeft: 18,
+//   badge: 'Featured',
+//   badgeColor: 'bg-primary text-white',
+//   currency: 'KES',
+//   description: 'Providing clean, safe drinking water to over 1,500 community members who currently walk 8km daily to fetch water from a contaminated river.',
+//   updates: 5,
+//   rating:4,
+//   reviews:["awesomejob",'You\'re God sent']
+// },
+// {
+//   id: 'camp-003',
+//   title: 'Church Tree Planting — Kwale North',
+//   category: 'Church',
+//   image: ["https://res.cloudinary.com/ezs2dy9g/image/upload/v1786187773/WhatsApp_Image_2026-08-02_at_12.29.02_PM_chigls.jpg"],
+//   alt: 'Small congregation gathered under a thatched roof church structure in a remote African village during Sunday service',
+//   raised: 92000,
+//   goal: 250000,
+//   donors: 41,
+//   daysLeft: 120,
+//   badge: 'Active',
+//   badgeColor: 'bg-accent/20 text-primary',
+//   currency: 'KES',
+//   description: 'Planting 3 new churches in unreached communities in Northern Kenya, each with a trained pastor and discipleship program.',
+//   updates: 4,
+//   rating:4,
+//   reviews:["awesomejob",'You\'re God sent']
+// },
+// {
+//   id: 'camp-004',
+//   title: 'Girls\' Dormitory Construction',
+//   category: 'Education',
+//   image:[ "https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193848/WhatsApp_Image_2026-08-02_at_12.29.03_PM_1_av92gt.jpg"],
+//   alt: 'Young African girls studying together in a bright classroom with colorful educational posters on the walls',
+//   raised: 0,
+//   goal: 0,
+//   donors: 0,
+//   daysLeft:365,
+//   badge: 'Active',
+//   badgeColor: 'bg-accent/20 text-primary',
+//   currency: 'KES',
+//   description: 'Building a safe dormitory for 80 girls from remote villages, enabling them to attend school without the daily 20km walk.',
+//   updates: 6,
+//     rating:4,
+//   reviews:["awesomejob",'You\'re God sent']
+// }
+
+];
 
 
 // ─── CHILDREN (SPONSORSHIP) ───────────────────────────────────
@@ -401,8 +383,8 @@ export const projects: Project[] = [
   id: 'proj-001',
   title: 'Zengwa Primary School Block',
   category: 'Education',
-  image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1fa810fe8-1784313443629.png',
-  alt: 'Construction workers building a new school classroom block with concrete walls and iron roof in rural Kenya',
+  image: ["https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193845/WhatsApp_Image_2026-08-02_at_12.29.03_PM_o91da6.jpg",'https://img.rocket.new/generatedImages/rocket_gen_img_1fa810fe8-1784313443629.png'],
+  alt: 'Construction progress of school classroom block with concrete walls for  Zengwa Connect project',
   status: 'In Progress',
   progress: 69,
   budget: 1800000,
@@ -414,91 +396,43 @@ export const projects: Project[] = [
   location: 'Zengwa Village, Kwale',
   beneficiaries: 200
 },
+
 {
   id: 'proj-002',
-  title: 'Clean Water Borehole Project',
-  category: 'Water & Health',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1839c4d53-1772094706028.png",
-  alt: 'African woman drawing clean water from a newly installed borehole pump surrounded by community members',
-  status: 'In Progress',
-  progress: 76,
-  budget: 900000,
-  spent: 680000,
+  title: 'Tree Planting — Kwale North',
+  category: 'Church Planting',
+  image: ["https://res.cloudinary.com/ezs2dy9g/image/upload/v1786187748/WhatsApp_Image_2026-08-02_at_12.29.17_PM_oidfiu.jpg"],
+  alt: "Trees planted on Zengwa connect projects' acquired piece of land",
+  status: 'Completed',
+  progress: 0,
+  budget: 250000,
+  spent: 92000,
   currency: 'KES',
-  description: 'Drilling and equipping a solar-powered borehole to provide clean water to 1,500+ community members.',
-  startDate: 'Mar 2026',
-  endDate: 'Aug 2026',
-  location: 'Zengwa Village',
-  beneficiaries: 1500
+  description: 'Planting trees in Kwale on a recently acquired piece of land for the Zengwa connect project.',
+  startDate: 'Feb 2026',
+  endDate: 'Dec 2026',
+  location: 'Acquired piece of land - North Kwale ',
+  beneficiaries: 450
 },
 {
   id: 'proj-003',
-  title: 'Community Health Clinic',
-  category: 'Health',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_16c04b52a-1773138407454.png",
-  alt: 'Medical volunteer in white coat examining a young child at a rural health outreach clinic in Africa',
-  status: 'Planned',
-  progress: 15,
-  budget: 2500000,
-  spent: 375000,
-  currency: 'KES',
-  description: 'Building a permanent community health clinic staffed by 2 nurses and a visiting doctor, serving 5 villages.',
-  startDate: 'Oct 2026',
-  endDate: 'Jun 2027',
-  location: 'Zengwa Village',
-  beneficiaries: 3000
-},
-{
-  id: 'proj-004',
-  title: 'Church Planting — Kwale North',
+  title: 'Tree Planting — Kwale North',
   category: 'Church Planting',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_193fd4305-1784839059916.png",
-  alt: 'Small congregation gathered under a thatched roof church structure in a remote African village during Sunday service',
+  image: ["https://res.cloudinary.com/ezs2dy9g/image/upload/v1786187748/WhatsApp_Image_2026-08-02_at_12.29.17_PM_oidfiu.jpg"],
+  alt: "Trees planted on Zengwa connect projects' acquired piece of land",
   status: 'In Progress',
   progress: 37,
   budget: 250000,
   spent: 92000,
   currency: 'KES',
-  description: 'Planting 3 new churches in unreached communities with trained pastors and discipleship programs.',
+  description: 'Planting trees in Kwale on a recently acquired piece of land for the Zengwa connect project.',
   startDate: 'Feb 2026',
   endDate: 'Dec 2026',
-  location: 'Kwale North',
+  location: 'Acquired piece of land - North Kwale ',
   beneficiaries: 450
-},
-{
-  id: 'proj-005',
-  title: 'Girls\' Dormitory Construction',
-  category: 'Education',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_135eef728-1764694159531.png",
-  alt: 'Young African girls studying together in a bright classroom with colorful educational posters on the walls',
-  status: 'In Progress',
-  progress: 47,
-  budget: 1200000,
-  spent: 560000,
-  currency: 'KES',
-  description: 'Safe dormitory for 80 girls from remote villages, eliminating the dangerous daily 20km walk to school.',
-  startDate: 'Apr 2026',
-  endDate: 'Nov 2026',
-  location: 'Zengwa Village',
-  beneficiaries: 80
-},
-{
-  id: 'proj-006',
-  title: 'Solar Power for School',
-  category: 'Infrastructure',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1632111f0-1784372318851.png",
-  alt: 'Solar panels installed on the roof of a rural school building in Africa with blue sky background',
-  status: 'Completed',
-  progress: 100,
-  budget: 450000,
-  spent: 432000,
-  currency: 'KES',
-  description: 'Installed 20 solar panels providing reliable electricity to all classrooms, enabling evening study sessions.',
-  startDate: 'Nov 2025',
-  endDate: 'Jan 2026',
-  location: 'Zengwa Village',
-  beneficiaries: 350
-}];
+}
+];
+
 
 
 // ─── BLOG POSTS ───────────────────────────────────────────────
@@ -690,7 +624,9 @@ export const events: Event[] = [
   attendees: 35,
   capacity: 50,
   free: true
-}];
+}
+
+];
 
 
 // ─── GALLERY ──────────────────────────────────────────────────
@@ -700,28 +636,28 @@ export const galleryItems: GalleryItem[] = [
   id: 'gal-001',
   type: 'photo',
   title: 'School Construction Progress',
-  alt: 'Construction workers laying foundation for new school classroom block in Zengwa Village',
-  image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1fa810fe8-1784313443629.png',
+  alt: 'school block under construction in Zengwa village ',
+  image: 'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193845/WhatsApp_Image_2026-08-02_at_12.29.03_PM_o91da6.jpg',
   album: 'Construction',
   date: 'July 2026',
   likes: 142
 },
 {
   id: 'gal-002',
-  type: 'photo',
-  title: 'Borehole Inauguration Day',
-  alt: 'Community members celebrating around a new water borehole with clean water flowing',
-  image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1444ad8a7-1772110832391.png',
-  album: 'Water Projects',
+  type: 'video',
+  title: 'Children Looking for Supplies in Dumping Places',
+  alt: 'Children looking for food and clothing and materials to construct houses and eat to survive',
+  image: 'https://res.cloudinary.com/ezs2dy9g/video/upload/v1786187774/WhatsApp_Video_2026-08-02_at_12.29.02_PM_lm2gx6.mp4',
+  album: 'Survival',
   date: 'June 2026',
   likes: 289
 },
 {
   id: 'gal-003',
   type: 'photo',
-  title: 'Children in Class',
-  alt: 'Kenyan school children sitting at desks in a bright classroom with teacher at the chalkboard',
-  image: 'https://images.unsplash.com/photo-1567057420215-0afa9aa9253a',
+  title: 'Children in Dumpster',
+  alt: 'Vulnerable Children in the Zengwa village scavenging in the dumpster.',
+  image: 'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786187749/WhatsApp_Image_2026-08-02_at_12.29.03_PM_2_zfklin.jpg',
   album: 'Education',
   date: 'July 2026',
   likes: 198
@@ -729,10 +665,10 @@ export const galleryItems: GalleryItem[] = [
 {
   id: 'gal-004',
   type: 'photo',
-  title: 'Medical Outreach Camp',
-  alt: 'Volunteer doctors and nurses treating patients at a free medical camp in rural Kenya',
+  title: 'Piece of land bought by Zengwa Connect Team',
+  alt: 'Piece of land bought nby zengwa connenct team to to facilitate construction of children Shelter',
   image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1e2a766cc-1772878671814.png',
-  album: 'Health',
+  album: 'Shelter',
   date: 'May 2026',
   likes: 167
 },
@@ -919,36 +855,18 @@ export const teamMembers: TeamMember[] = [
 // ─── TESTIMONIALS ─────────────────────────────────────────────
 
 export const testimonials: Testimonial[] = [
-{
-  id: 'test-001',
-  name: 'Margaret Thompson',
-  role: 'Child Sponsor — 3 years',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1440ac186-1772838729426.png",
-  alt: 'Smiling middle-aged woman with glasses',
-  quote: 'Sponsoring Amina has been one of the greatest joys of my life. The updates I receive show real transformation — not just in her education but in her entire family.',
-  country: 'United Kingdom',
-  flag: '🇬🇧'
-},
-{
-  id: 'test-002',
-  name: 'Robert & Linda Chen',
-  role: 'Monthly Donors — 5 years',
-  image: "https://images.unsplash.com/photo-1680977735364-cf4ad5eead54",
-  alt: 'Couple smiling together outdoors',
-  quote: 'We have visited Zengwa twice. The transparency, the genuine love for the community, and the tangible impact make this the most trustworthy ministry we support.',
-  country: 'United States',
-  flag: '🇺🇸'
-},
-{
-  id: 'test-003',
-  name: 'Pastor Erik Lindqvist',
-  role: 'Partner Church — Sweden',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1fc8d62f9-1767576593040.png",
-  alt: 'Swedish pastor in church setting',
-  quote: 'Our congregation has partnered with Zengwa for 4 years. Every report we receive is detailed, honest, and filled with the evidence of God\'s work. We trust them completely.',
-  country: 'Sweden',
-  flag: '🇸🇪'
-}];
+// {
+//   id: 'test-001',
+//   name: 'Margaret Thompson',
+//   role: 'Child Sponsor — 3 years',
+//   image: "https://img.rocket.new/generatedImages/rocket_gen_img_1440ac186-1772838729426.png",
+//   alt: 'Smiling middle-aged woman with glasses',
+//   quote: 'Sponsoring Amina has been one of the greatest joys of my life. The updates I receive show real transformation — not just in her education but in her entire family.',
+//   country: 'United Kingdom',
+//   flag: '🇬🇧'
+// }
+
+];
 
 
 // ─── RECENT DONATIONS ─────────────────────────────────────────
@@ -1007,28 +925,29 @@ export const auditLogs: AuditLog[] = [
 
 // ─── IMPACT STATS ─────────────────────────────────────────────
 
+
 export const impactStats = {
-  childrenSponsored: 847,
-  totalRaisedKES: 12400000,
-  volunteersServed: 312,
-  communitiesReached: 28,
-  projectsCompleted: 14,
-  yearsOfService: 17,
-  countriesRepresented: 24,
-  donorsCount:1200,
-  livesTransformed: 3200
+  childrenSponsored: 0,
+  totalRaisedKES: 0,
+  volunteersServed: 0,
+  communitiesReached: 0,
+  // projectsCompleted: completeprojects.length,
+  yearsOfService: 1,
+  countriesRepresented: 1,
+  donorsCount:0,
+  livesTransformed: 0
 };
 
 // ─── DONATION TREND DATA (for charts) ─────────────────────────
 
 export const donationTrendData = [
-  { month: 'Jan', amount: 820000, donors: 98 },
-  { month: 'Feb', amount: 940000, donors: 112 },
-  { month: 'Mar', amount: 1100000, donors: 134 },
-  { month: 'Apr', amount: 980000, donors: 118 },
-  { month: 'May', amount: 1340000, donors: 156 },
-  { month: 'Jun', amount: 2500000, donors: 198 },
-  { month: 'Jul', amount: 2840000, donors: 234 }
+  { month: 'Jan', amount: 0, donors: 0 },
+  { month: 'Feb', amount: 0, donors: 0 },
+  { month: 'Mar', amount: 0, donors: 0 },
+  { month: 'Apr', amount: 0, donors: 0 },
+  { month: 'May', amount: 0, donors: 0 },
+  { month: 'Jun', amount: 0, donors: 0 },
+  { month: 'Jul', amount: 0, donors: 0 }
 ];
 
 
@@ -1036,11 +955,10 @@ export const donationTrendData = [
 
 export const campaignProgressData = [
 
-  { name: 'School Block', raised: 1240000, goal: 1800000 },
-  { name: 'Clean Water', raised: 680000, goal: 900000 },
-  { name: 'Sponsorship', raised: 325000, goal: 500000 },
-  { name: 'Health Outreach', raised: 145000, goal: 400000 },
-  { name: 'Church Planting', raised: 92000, goal: 250000 }
+  { name: 'School Block', raised: 0, goal: 0 },
+  { name: 'Clean Water', raised: 0, goal: 0 },
+  { name: 'Sponsorship', raised: 325000, goal: 0 }
+
 
 ];
 
