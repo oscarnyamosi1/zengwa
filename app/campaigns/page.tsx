@@ -137,7 +137,7 @@ export default function CampaignsPage() {
                   <div key={campaign.id} className="bg-card border border-border rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all group">
                     <div className="relative overflow-hidden">
                       <AppImage
-                        src={campaign.image}
+                        src={campaign.image[0] || null}
                         alt={campaign.alt}
                         width={500}
                         height={280}
