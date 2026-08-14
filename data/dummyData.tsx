@@ -34,7 +34,7 @@ export interface Post {
   excerpt: string;
   image: string[];
   alt: string;
-  categoryColor: 'bg-gold/20 text-warning' | 'bg-primary/10 text-primary'
+  categoryColor: string
 
 }
 
