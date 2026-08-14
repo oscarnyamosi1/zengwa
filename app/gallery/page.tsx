@@ -140,7 +140,7 @@ export default function GalleryPage() {
         </section>
 
         {/* Gallery Grid */}
-        <Suspense fallback={<ActivitySkeleton />}>
+        <Suspense fallback={<div className="py-20 text-center text-muted-foreground">Loading gallery...</div>}>
         <section className="py-10 lg:py-14">
           <div className="max-w-screen-2xl mx-auto px-6 lg:px-10 xl:px-16">
             <p className="text-muted-foreground text-sm mb-6">{filtered.length} items</p>
