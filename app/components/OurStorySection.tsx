@@ -56,8 +56,7 @@ export default function OurStorySection() {
           {/* Right Content */}
           <div>
             <div className="inline-flex items-center gap-2 text-primary font-semibold text-sm tracking-wider uppercase mb-4">
-              <span className="w-8 h-0.5 bg-primary rounded" />
-              Our Story
+           
             </div>
             <h2 className="text-section-title text-foreground mb-4">
               Balanced Fuel for{' '}

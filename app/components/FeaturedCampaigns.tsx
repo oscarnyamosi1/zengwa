@@ -20,12 +20,8 @@ export default function FeaturedCampaigns() {
       <div className="max-w-screen-2xl mx-auto px-6 lg:px-10 xl:px-16">
         {/* Section Header */}
         <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 text-primary font-semibold text-sm tracking-wider uppercase mb-3">
-            <span className="w-8 h-0.5 bg-primary rounded" />
-            Our Campaigns
-            <span className="w-8 h-0.5 bg-primary rounded" />
-          </div>
-          <h2 className="text-section-title text-foreground">Featured Projects</h2>
+       
+          <h2 className="text-section-title text-foreground">Featured Campaigns</h2>
           <p className="text-muted-foreground mt-3 max-w-xl mx-auto">
             Each campaign represents a real need in our community. Your gift goes directly to the field.
           </p>
@@ -42,6 +38,9 @@ export default function FeaturedCampaigns() {
                   className="campaign-card-hover bg-card rounded-sm overflow-hidden border border-border shadow-card group">
                   
                   {/* Image */}
+
+                {/* <Link href={`/campaigns/${campaign.id}`} id={`campaign-${campaign.id}`} className="block h-full w-full"> */}
+                <Link href={`/`} id={`campaign-${campaign.id}`} className="block h-full w-full">
                   <div className="relative overflow-hidden">
                     <AppImage
                       src={ campaign.image?.[0] || null }
@@ -103,6 +102,9 @@ export default function FeaturedCampaigns() {
                       Donate Now
                     </Link>
                   </div>
+
+                      </Link>
+
                 </div>);
 
             })}

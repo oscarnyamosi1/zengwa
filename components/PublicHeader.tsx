@@ -46,12 +46,12 @@ export default function PublicHeader() {
 
   return (
     <>
-      <div className="bg-primary text-primary-foreground text-center py-2 text-sm font-medium tracking-wide">
+      {/* <div className="bg-primary text-primary-foreground text-center py-2 text-sm font-medium tracking-wide">
         Join thousands of donors transforming lives in Africa —&nbsp;
         <Link href="/donate" className="underline underline-offset-2 hover:text-accent transition-colors">
           Give Today
         </Link>
-      </div>
+      </div> */}
       <header
         className={`sticky top-0 z-50 transition-all duration-300 ${
           scrolled

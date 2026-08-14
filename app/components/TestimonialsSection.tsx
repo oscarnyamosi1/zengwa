@@ -41,9 +41,9 @@ export default function TestimonialsSection() {
       <div className="max-w-screen-2xl mx-auto px-6 lg:px-10 xl:px-16">
         <div className="text-center mb-10">
           <div className="inline-flex items-center gap-2 text-primary font-semibold text-sm tracking-wider uppercase mb-3">
-            <span className="w-8 h-0.5 bg-primary rounded" />
+            
             Testimonials
-            <span className="w-8 h-0.5 bg-primary rounded" />
+            
           </div>
           <h2 className="text-section-title text-foreground">Voices of Impact</h2>
           <p className="text-muted-foreground mt-3 max-w-lg mx-auto">

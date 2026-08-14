@@ -45,7 +45,7 @@ export default function VolunteerPage() {
             <h1 className="text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">
               Give Your Time.<br />Transform Lives.
             </h1>
-            <p className="text-primary-foreground/75 text-lg max-w-2xl mx-auto mb-8">
+            <p className="text-primary-foreground text-primary-foreground/75 text-lg max-w-2xl mx-auto mb-8">
               Join 312+ volunteers from 24 countries who have served in Zengwa. Whether for 2 weeks or 12 months — your skills are needed.
             </p>
             <div className="flex flex-wrap justify-center gap-6">

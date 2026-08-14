@@ -50,7 +50,7 @@ export default function AboutPage() {
             <h1 className="text-4xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
               1 Year of Transforming<br />Lives in the Coast of Kenya
             </h1>
-            <p className="text-primary-foreground/75 text-lg max-w-2xl mx-auto mb-8">
+            <p className="text-primary-foreground text-primary-foreground/75 text-lg max-w-2xl mx-auto mb-8">
               What began as a small school under a tree has grown into a ministry touching hundreds of lives through education, clean water, healthcare, and the Gospel.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -95,7 +95,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="inline-flex items-center gap-2 text-primary font-semibold text-sm tracking-wider uppercase mb-4">
-                  <span className="w-8 h-0.5 bg-primary rounded" />
+                  
                   Who We Are
                 </div>
                 <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6 leading-tight">
@@ -150,9 +150,9 @@ export default function AboutPage() {
           <div className="max-w-screen-2xl mx-auto px-6 lg:px-10 xl:px-16">
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 text-primary font-semibold text-sm tracking-wider uppercase mb-3">
-                <span className="w-8 h-0.5 bg-primary rounded" />
+                
                 What Drives Us
-                <span className="w-8 h-0.5 bg-primary rounded" />
+                
               </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground">Our Core Values</h2>
             </div>
@@ -178,9 +178,9 @@ export default function AboutPage() {
           <div className="max-w-screen-2xl mx-auto px-6 lg:px-10 xl:px-16">
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 text-primary font-semibold text-sm tracking-wider uppercase mb-3">
-                <span className="w-8 h-0.5 bg-primary rounded" />
+                
                 Our Journey
-                <span className="w-8 h-0.5 bg-primary rounded" />
+                
               </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground">1 Year of Faithfulness</h2>
             </div>
@@ -201,9 +201,9 @@ export default function AboutPage() {
           <div className="max-w-screen-2xl mx-auto px-6 lg:px-10 xl:px-16">
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 text-primary font-semibold text-sm tracking-wider uppercase mb-3">
-                <span className="w-8 h-0.5 bg-primary rounded" />
+                
                 The People
-                <span className="w-8 h-0.5 bg-primary rounded" />
+                
               </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground">Meet Our Team</h2>
               <p className="text-muted-foreground mt-3 max-w-xl mx-auto">Dedicated servants who give their lives to see Coast  region of Kenya transformed.</p>
@@ -234,9 +234,9 @@ export default function AboutPage() {
           <div className="max-w-screen-2xl mx-auto px-6 lg:px-10 xl:px-16">
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 text-primary font-semibold text-sm tracking-wider uppercase mb-3">
-                <span className="w-8 h-0.5 bg-primary rounded" />
+                
                 Trusted Worldwide
-                <span className="w-8 h-0.5 bg-primary rounded" />
+                
               </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground">What Our Supporters Say</h2>
             </div>
@@ -261,8 +261,8 @@ export default function AboutPage() {
         <section className="py-16 bg-primary">
           <div className="max-w-screen-2xl mx-auto px-6 lg:px-10 xl:px-16 text-center">
             <h2 className="text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">Join Our Mission</h2>
-            <p className="text-primary-foreground/75 max-w-xl mx-auto mb-8">
-              Whether you give, volunteer, or pray — you are part of the story God is writing in Coast  region of Kenya.
+            <p className="text-primary-foreground max-w-xl mx-auto mb-8">
+              Whether you give, volunteer, or pray you are part of the story God is writing in Coast  region of Kenya.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/donate" className="bg-accent text-primary font-semibold px-8 py-3 rounded-xl hover:bg-accent/90 transition-colors flex items-center gap-2">

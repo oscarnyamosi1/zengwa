@@ -31,14 +31,11 @@ export default function NewsletterCTA() {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           {/* Left */}
           <div className="text-center lg:text-left max-w-lg">
-            <div className="flex items-center justify-center lg:justify-start gap-2 mb-3">
-              <Leaf size={18} className="text-accent" />
-              <span className="text-accent text-sm font-semibold tracking-wider uppercase">Stay Connected</span>
-            </div>
+            
             <h2 className="text-2xl lg:text-3xl font-extrabold text-primary-foreground mb-2">
               Founded by:
             </h2>
-            <p className="text-primary-foreground/70 text-sm leading-relaxed">
+            <p className="text-primary-foreground text-sm leading-relaxed">
             Evangelist Anne Kemunto & Mohammed Beni
             </p>
           </div>

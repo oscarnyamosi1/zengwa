@@ -24,7 +24,19 @@ export interface Campaign {
   reviews: string[],
 }
 
+export interface Post {
+  
+  id: string;
+  title: string;
+  category: "Construction" | "Church" | "Water" | "Sponsorship";
+  date: string;
+  readTime: string;
+  excerpt: string;
+  image: string[];
+  alt: string;
+  categoryColor: 'bg-gold/20 text-warning' | 'bg-primary/10 text-primary'
 
+}
 
 export interface Child {
   id: string;
@@ -980,3 +992,50 @@ export const sponsorshipRingData = [
   { name: 'Awaiting Sponsor', value: 63, fill: '#81C784' }
 
 ];
+
+// ------------------------------posts----------------------------------
+export const posts: Post[] = [
+{
+  id: 'post-001',
+  title: 'School Block Construction Reaches 23% — Completion Expected by 2027 August',
+  category: 'Construction',
+  date: '14 Jul 2026',
+  readTime: '4 min read',
+  excerpt: 'The second classroom block at Zengwa Primary School is progressing ahead of schedule, thanks to the generous support of 248 donors from 12 countries.',
+  image: ["https://res.cloudinary.com/ezs2dy9g/image/upload/v1786562946/WhatsApp_Image_2026-08-12_at_9.30.34_PM_bb5tc7.jpg"],
+  alt: 'Construction site showing new school building with workers laying bricks and scaffolding in place',
+  categoryColor: 'bg-warning/10 text-warning'
+},
+{
+  id: 'post-002',
+  title: '50 New Children Enrolled in Sponsorship Program for 2026 Academic Year',
+  category: 'Sponsorship',
+  date: '08 Jul 2026',
+  readTime: '3 min read',
+  excerpt: 'This year we welcomed 50 new children into our sponsorship program, each paired with a committed global donor who will walk with them through their education journey.',
+  image: ["https://img.rocket.new/generatedImages/rocket_gen_img_11e51961d-1767969209983.png"],
+  alt: 'Excited young African children in school uniforms holding up their new school bags and supplies on enrollment day',
+  categoryColor: 'bg-accent/20 text-primary'
+},
+{
+  id: 'post-003',
+  title: 'Water Borehole Serves 1,200 Community Members Daily Since Installation',
+  category: 'Water',
+  date: '01 Jul 2026',
+  readTime: '5 min read',
+  excerpt: 'The borehole funded by our Clean Water campaign has been operational for 3 months, providing safe drinking water to over 1,200 people in Zengwa and surrounding villages.',
+  image: ["https://img.rocket.new/generatedImages/rocket_gen_img_1444ad8a7-1772110832391.png"],
+  alt: 'Children collecting clean water from a newly installed borehole pump in an African village',
+  categoryColor: 'bg-primary/10 text-primary'
+},
+{
+  id: 'post-004',
+  title: 'Partnership with Kwale Diocese Strengthens Church Planting Initiative',
+  category: 'Church',
+  date: '24 Jun 2026',
+  readTime: '3 min read',
+  excerpt: 'A new memorandum of understanding with the Anglican Diocese of Kwale will accelerate our church planting goals, targeting 8 new congregations by end of 2027.',
+  image: ["https://img.rocket.new/generatedImages/rocket_gen_img_18daf0a55-1765652592016.png"],
+  alt: 'Community members gathered outside a small rural church in Kenya for a Sunday service',
+  categoryColor: 'bg-gold/20 text-warning'
+}];

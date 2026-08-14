@@ -1,5 +1,5 @@
 'use client';
-
+import { Suspense } from "react";
 import React, { useState } from 'react';
 import PublicHeader from '@/components/PublicHeader';
 import PublicFooter from '@/components/PublicFooter';
@@ -140,6 +140,7 @@ export default function GalleryPage() {
         </section>
 
         {/* Gallery Grid */}
+        <Suspense fallback={<ActivitySkeleton />}>
         <section className="py-10 lg:py-14">
           <div className="max-w-screen-2xl mx-auto px-6 lg:px-10 xl:px-16">
             <p className="text-muted-foreground text-sm mb-6">{filtered.length} items</p>
@@ -192,6 +193,7 @@ export default function GalleryPage() {
             </div>
           </div>
         </section>
+        </Suspense>
       </main>
 
       <PublicFooter />
