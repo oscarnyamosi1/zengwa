@@ -22,7 +22,11 @@ export default function HomePage() {
         <FeaturedCampaigns />
         {/* <ImpactStats /> */}
         <OurStorySection />
+<<<<<<< HEAD
         {/* <TestimonialsSection /> */}
+=======
+        <TestimonialsSection />
+>>>>>>> 66402661b64dc5c064143c6d6b8bbd8b88dabd3b
         <LatestNews />
         <NewsletterCTA />
       </main>

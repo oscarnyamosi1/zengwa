@@ -3,7 +3,10 @@ import Link from 'next/link';
 import { Leaf, Heart, Globe } from 'lucide-react';
 import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
+<<<<<<< HEAD
 import { impactStats } from "@/data/dummyData";
+=======
+>>>>>>> 66402661b64dc5c064143c6d6b8bbd8b88dabd3b
 
 
 const pillars = [
@@ -49,7 +52,11 @@ export default function OurStorySection() {
                 {/* <div className="w-2 h-2 rounded-full bg-accent animate-pulse-slow" /> */}
                 <span className="text-xs font-semibold text-primary uppercase tracking-wider">Live Impact</span>
               </div>
+<<<<<<< HEAD
               <p className="text-2xl font-extrabold text-foreground stat-number">{impactStats.childrenSponsored}</p>
+=======
+              <p className="text-2xl font-extrabold text-foreground stat-number">847</p>
+>>>>>>> 66402661b64dc5c064143c6d6b8bbd8b88dabd3b
               <p className="text-xs text-muted-foreground">Children in school today</p>
             </div>
           </div>

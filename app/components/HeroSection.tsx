@@ -115,7 +115,11 @@ export default function HeroSection() {
                       
                         {/* Headline */}
                         <h1 className="text-[42px] leading-[1.08] sm:text-[52px] md:text-[64px] lg:text-[76px] xl:text-[88px] font-bold text-white tracking-[-0.02em] mb-4">
+<<<<<<< HEAD
                             Pure Generosity
+=======
+                            Balanced Giving.
+>>>>>>> 66402661b64dc5c064143c6d6b8bbd8b88dabd3b
                             <br />
                             <span className="text-primary-light drop-shadow-[0_2px_20px_rgba(0,0,0,0.3)]">
                                 Pure Impact.

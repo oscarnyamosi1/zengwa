@@ -119,10 +119,17 @@ export default function PublicFooter() {
                 <span className="text-primary-foreground/70 text-sm">{companyCommunicationChannel.email}</span>
               </li>
             </ul>
+<<<<<<< HEAD
             {/* <div className="mt-6 p-3 rounded-xl bg-primary-foreground/10 border border-primary-foreground/20">
               <p className="text-xs text-primary-foreground/60 font-medium uppercase tracking-wider mb-1">Registered Charity</p>
               <p className="text-xs text-primary-foreground/80">Kenya NGO Registration No. 0042/2019</p>
             </div> */}
+=======
+            <div className="mt-6 p-3 rounded-xl bg-primary-foreground/10 border border-primary-foreground/20">
+              <p className="text-xs text-primary-foreground/60 font-medium uppercase tracking-wider mb-1">Registered Charity</p>
+              <p className="text-xs text-primary-foreground/80">Kenya NGO Registration No. 0042/2019</p>
+            </div>
+>>>>>>> 66402661b64dc5c064143c6d6b8bbd8b88dabd3b
           </div>
         </div>
       </div>
