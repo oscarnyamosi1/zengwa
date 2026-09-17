@@ -216,8 +216,6 @@ export const companyCommunicationChannel = {
 
   phone:"+254 706 074 840",
 
-  phone:"+254 700 123 456",
-
   facebook:"facebooklink",
   x:"x.com",
   location:"Zengwa Village, Kwale County, Coast of Kenya",
