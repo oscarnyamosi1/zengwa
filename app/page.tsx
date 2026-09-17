@@ -18,15 +18,14 @@ export default function HomePage() {
       <PublicHeader />
       <main>
         <HeroSection />
-        <TrustBadgeStrip />
+        {/*<TrustBadgeStrip />*/}
         <FeaturedCampaigns />
         {/* <ImpactStats /> */}
         <OurStorySection />
 
         {/* <TestimonialsSection /> */}
 
-        <TestimonialsSection />
-        <LatestNews />
+            <LatestNews />
         <NewsletterCTA />
       </main>
       <PublicFooter />

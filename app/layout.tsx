@@ -10,11 +10,11 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://zengwaconnect.org"),
+  metadataBase: new URL("https://zengwachristianeducationcentre.org"),
 
   title: {
-    default: "ZengwaConnect | Transforming Lives Through Faith and Education",
-    template: "%s | ZengwaConnect",
+    default: "Zengwa Christian Education Centre | Transforming Lives Through Faith and Education",
+    template: "%s | Zengwa Christian Education Centre",
   },
 
   description:
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
   keywords: [
     "Zengwa",
-    "ZengwaConnect",
+    "Zengwa Christian Education Centre",
     "Christian charity",
     "Child sponsorship Kenya",
     "Education charity",
@@ -39,12 +39,12 @@ export const metadata: Metadata = {
 
   authors: [
     {
-      name: "Qweewp tech",
+      name: "Qweeewp Africa",
     },
   ],
 
-  creator: "qweewp tech",
-  publisher: "ZengwaConnect",
+  creator: "Qweeewp Africa",
+  publisher: "Zengwa Christian Education Centre",
 
   robots: {
     index: true,
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "/",
+    canonical: "https://zengwachristianeducationcentre.org",
   },
 
   icons: {
@@ -69,33 +69,33 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "ZengwaConnect | Transforming Lives Through Faith and Education",
+    title: "Zengwa Christian Education Centre | Transforming Lives Through Faith and Education",
     description:
       "Empowering communities through education, child sponsorship, evangelism, and Christian outreach across Africa.",
 
-    url: "https://zengwaconnect.org",
-    siteName: "ZengwaConnect",
+    url: "https://zengwachristianeducationcentre.org",
+    siteName: "Zengwa Christian Education Centre",
 
     images: [
       {
-        url: "/logo.jpg",
+        url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "ZengwaConnect",
+        alt: "Zengwa Christian Education Centre logo ",
       },
     ],
 
-    locale: "en_US",
+    locale: "en_KE",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "ZengwaConnect",
+    title: "Zengwa Christian Education Centre",
     description:
-      "Support education, child sponsorship, evangelism, and community transformation through ZengwaConnect.",
+      "Support education, child sponsorship, evangelism, and community transformation through Zengwa Christian Education Centre.",
 
-    images: ["/og-image.jpg"],
+    images: ["/logo.png"],
   },
 
   category: "Nonprofit",

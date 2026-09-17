@@ -8,9 +8,13 @@ import { recentDonations } from '@/data/dummyData';
 // Trust indicators — compact, legible over the photograph
 function TrustIndicators() {
     const items = [
-        { icon: CheckCircle, text: '100% Faith & Charity Mission' },
-        { icon: Truck, text: 'Free Impact Reports' },
-        { icon: Shield, text: 'Secure Donation Channels' },
+        // { icon: CheckCircle, text: '100% Faith & Charity Mission' },
+        // { icon: Truck, text: 'Impact Reports' },
+        // { icon: Shield, text: 'Secure Donation Channels' },
+
+          { icon: Heart, text: '100% Faith & Charity Mission' },
+          { icon: BookOpenText, text: 'Impact Reports' },
+          { icon: ShieldCheck, text: 'Secure Donation Channels' },
     ];
 
     return (
