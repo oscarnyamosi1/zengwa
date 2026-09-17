@@ -213,11 +213,11 @@ export interface AuditLog {
 
 export const companyCommunicationChannel = {
   email:"zengwaacademy@gmail.com",
-<<<<<<< HEAD
+
   phone:"+254 706 074 840",
-=======
+
   phone:"+254 700 123 456",
->>>>>>> 66402661b64dc5c064143c6d6b8bbd8b88dabd3b
+
   facebook:"facebooklink",
   x:"x.com",
   location:"Zengwa Village, Kwale County, Coast of Kenya",
@@ -862,11 +862,9 @@ export const teamMembers: TeamMember[] = [
   id: 'team-001',
   name: 'Evangelist Anne Kemunto',
   role: 'Founder &  Director',
-<<<<<<< HEAD
+
   image: "https://res.cloudinary.com/ezs2dy9g/image/upload/v1789408586/WhatsApp_Image_2026-09-14_at_12.47.17_fglxto.jpg",
-=======
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1ede44e00-1772198986914.png",
->>>>>>> 66402661b64dc5c064143c6d6b8bbd8b88dabd3b
+
   alt: 'Evangelist Anne Kemunto',
   bio: 'Evangelist Anne Kemunto founded Zengwa Christian Education Centre in 2025 after a vision to transform his home village through education and the Gospel.'
 },
@@ -874,11 +872,9 @@ export const teamMembers: TeamMember[] = [
   id: 'team-002',
   name: 'Mohammed Beni',
   role: 'Founder &  Director',
-<<<<<<< HEAD
+
   image: "https://res.cloudinary.com/ezs2dy9g/image/upload/v1789408586/WhatsApp_Image_2026-09-14_at_11.54.58_1_tpqicz.jpg",
-=======
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_19a711f4d-1772438320119.png",
->>>>>>> 66402661b64dc5c064143c6d6b8bbd8b88dabd3b
+
   alt: 'Mohammed Beni smiling confidently',
   bio: 'Mohammed Beni has coordinated over 200 volunteers from 6 counties. He is passionate about sustainable impact.'
 },
@@ -960,11 +956,8 @@ export const auditLogs: AuditLog[] = [
 
 
 export const impactStats = {
-<<<<<<< HEAD
   childrenSponsored: 84,
-=======
-  childrenSponsored: 0,
->>>>>>> 66402661b64dc5c064143c6d6b8bbd8b88dabd3b
+
   totalRaisedKES: 0,
   volunteersServed: 0,
   communitiesReached: 0,
@@ -1004,11 +997,9 @@ export const campaignProgressData = [
 
 export const sponsorshipRingData = [
 
-<<<<<<< HEAD
+
   { name: 'Sponsored', value: 84, fill: '#1B5E20' },
-=======
-  { name: 'Sponsored', value: 847, fill: '#1B5E20' },
->>>>>>> 66402661b64dc5c064143c6d6b8bbd8b88dabd3b
+
   { name: 'Awaiting Sponsor', value: 63, fill: '#81C784' }
 
 ];
