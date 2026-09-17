@@ -12,9 +12,9 @@ function TrustIndicators() {
         // { icon: Truck, text: 'Impact Reports' },
         // { icon: Shield, text: 'Secure Donation Channels' },
 
-          { icon: Heart, text: '100% Faith & Charity Mission' },
-          { icon: BookOpenText, text: 'Impact Reports' },
-          { icon: ShieldCheck, text: 'Secure Donation Channels' },
+          // { icon: Heart, text: '100% Faith & Charity Mission' },
+          // { icon: BookOpenText, text: 'Impact Reports' },
+          // { icon: ShieldCheck, text: 'Secure Donation Channels' },
     ];
 
     return (
