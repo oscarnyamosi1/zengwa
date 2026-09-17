@@ -155,8 +155,9 @@ export default function HeroSection() {
                 </div>
             </div>
 
-            {/* ─── FLOATING DONATION CARD — bottom-right, z-30 ─── */}
-            <DonationCard amount={latestAmount} progress={donationProgress} />
+            {/* ─── FLOATING DONATION CARD — bottom-right, z-30 ─── */}  ---------- removed the latest donation card on hero section bottom
+             
+            {/*<DonationCard amount={latestAmount} progress={donationProgress} />*/}
         </section>
     );
 }

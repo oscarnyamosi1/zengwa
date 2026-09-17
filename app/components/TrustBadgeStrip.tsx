@@ -5,9 +5,9 @@ import Icon from '@/components/ui/AppIcon';
 
 const badges = [
   { icon: Leaf, title: '100% Faith-Based', subtitle: 'Ministry-driven programs' },
-  { icon: FlaskConical, title: 'No Overhead Waste', subtitle: 'Funds go to the field' },
+  // { icon: FlaskConical, title: 'No Overhead Waste', subtitle: 'Funds go to the field' },
   { icon: Truck, title: 'Free Impact Reports', subtitle: 'On all donations' },
-  { icon: RotateCcw, title: 'Easy Refunds', subtitle: 'Hassle-free guarantee' },
+  // { icon: RotateCcw, title: 'Easy Refunds', subtitle: 'Hassle-free guarantee' },
   { icon: Headphones, title: '24/7 Support', subtitle: 'We are here to help' },
 ];
 
