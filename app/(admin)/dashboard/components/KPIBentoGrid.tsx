@@ -43,7 +43,7 @@ const kpiCards = [
   {
     id: 'kpi-children',
     label: 'Children Sponsored',
-    value: '847',
+    value: '84',
     subValue: '93% of 910 target',
     trend: 'up',
     trendPct: '+12 this month',

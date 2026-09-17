@@ -63,7 +63,7 @@ export default function ChildSponsorshipPage() {
                   className="w-full h-80 object-cover rounded-3xl shadow-card-lg" />
                 
                 <div className="absolute -bottom-4 -right-4 bg-card border border-border rounded-2xl p-4 shadow-card-lg">
-                  <p className="text-2xl font-black text-primary">847</p>
+                  <p className="text-2xl font-black text-primary">84</p>
                   <p className="text-xs text-muted-foreground">Children Sponsored</p>
                 </div>
               </div>

@@ -7,7 +7,7 @@ import Icon from '@/components/ui/AppIcon';
 
 const stats = [
   { id: 'stat-customers', icon: Leaf, value: 10000, suffix: '+', label: 'Lives Transformed', color: 'text-primary' },
-  { id: 'stat-snacks', icon: Users, value: 847, suffix: '+', label: 'Children Sponsored', color: 'text-primary' },
+  { id: 'stat-snacks', icon: Users, value: 84, suffix: '+', label: 'Children Sponsored', color: 'text-primary' },
   { id: 'stat-quality', icon: Award, value: 100, suffix: '%', label: 'Quality Guarantee', color: 'text-primary' },
   { id: 'stat-rating', icon: Globe, value: 48, suffix: '/5', label: 'Donor Rating', color: 'text-gold' },
 ];

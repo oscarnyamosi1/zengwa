@@ -29,11 +29,11 @@ export default function DashboardRightPanel() {
       {/* Sponsorship Ring */}
       <div className="bg-card rounded-md border border-border shadow-card p-5">
         <h3 className="font-bold text-foreground text-base mb-1">Sponsorship Status</h3>
-        <p className="text-xs text-muted-foreground mb-4">847 of 910 children sponsored</p>
+        <p className="text-xs text-muted-foreground mb-4">84 of 910 children sponsored</p>
         <SponsorshipRingChart />
         <div className="grid grid-cols-2 gap-2 mt-4">
           {[
-            { label: 'Sponsored', value: '847', color: 'bg-primary' },
+            { label: 'Sponsored', value: '84', color: 'bg-primary' },
             { label: 'Awaiting', value: '63', color: 'bg-border' },
           ]?.map(({ label, value, color }) => (
             <div key={`sring-${label}`} className="flex items-center gap-2 bg-muted rounded-xl p-3">

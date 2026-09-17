@@ -22,7 +22,7 @@ const values = [
 
 const milestones = [
 { year: '2025', title: 'Digital Platform', description: 'Online giving platform launched, connecting donors worldwide to our mission.' },
-{ year: '2026', title: 'Today', description: '847 sponsored children, 28 communities reached, and 1 year of God\'s faithfulness.' }];
+{ year: '2026', title: 'Today', description: '84 sponsored children, 28 communities reached, and 1 year of God\'s faithfulness.' }];
 
 
 export default function AboutPage() {
