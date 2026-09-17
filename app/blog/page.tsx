@@ -35,7 +35,7 @@ export default function BlogPage() {
               Stories of Transformation
             </h1>
             <p className="text-white/75 text-lg max-w-xl mx-auto">
-              Real stories from the field — how your generosity is changing lives in Coast  region of Kenya.
+              Real stories from the field how your generosity is changing lives in Coast  region of Kenya.
             </p>
           </div>
         </section>

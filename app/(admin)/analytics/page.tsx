@@ -32,11 +32,8 @@ const analyticsData = {
     },
     {
       label: 'Children Sponsored',
-<<<<<<< HEAD
       value: '84',
-=======
-      value: '847',
->>>>>>> 66402661b64dc5c064143c6d6b8bbd8b88dabd3b
+
       change: '+12 this month',
       trend: 'up',
       sub: '93% of 910 target',
@@ -99,11 +96,7 @@ const analyticsData = {
   ],
   sponsorship: {
     total: 910,
-<<<<<<< HEAD
     sponsored: 84,
-=======
-    sponsored: 847,
->>>>>>> 66402661b64dc5c064143c6d6b8bbd8b88dabd3b
     percentage: 93,
   },
   events: [

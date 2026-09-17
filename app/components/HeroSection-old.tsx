@@ -19,11 +19,8 @@ export default function HeroSection() {
            
             {/* Headline */}
             <h1 className="text-hero-xl text-foreground mb-4 text-balance">
-<<<<<<< HEAD
               Pure Generosity{' '}
-=======
-              Balanced Giving.{' '}
->>>>>>> 66402661b64dc5c064143c6d6b8bbd8b88dabd3b
+
               <span className="text-primary">Pure Impact.</span>
             </h1>
 
