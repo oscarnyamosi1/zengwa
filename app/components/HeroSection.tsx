@@ -74,8 +74,9 @@ export default function HeroSection() {
             {/* ─── BACKGROUND PHOTOGRAPH — full-bleed, z-0 ─── */}
             <div className="absolute inset-0 z-0">
                 <AppImage
-                    src="https://images.unsplash.com/photo-1567057420215-0afa9aa9253a?w=1600&q=80"
-                    alt=""
+                    // src="https://images.unsplash.com/photo-1567057420215-0afa9aa9253a?w=1600&q=80"
+                    src="https://res.cloudinary.com/ezs2dy9g/image/upload/v1790154097/IMG-20260920-WA0023_fefqdq.jpg?w=1600&q=80"
+                    alt="Children in a classroom"
                     fill
                     priority
                     className="object-cover object-[65%_center] md:object-[60%_center]"

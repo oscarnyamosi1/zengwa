@@ -40,7 +40,7 @@ export default function FeaturedCampaigns() {
                   {/* Image */}
 
                 {/* <Link href={`/campaigns/${campaign.id}`} id={`campaign-${campaign.id}`} className="block h-full w-full"> */}
-                <Link href={`/`} id={`campaign-${campaign.id}`} className="block h-full w-full">
+                <Link href={`/campaigns/${campaign.slug}`} id={`campaign-${campaign.id}`} className="block h-full w-full">
                   <div className="relative overflow-hidden">
                     <AppImage
                       src={ campaign.image?.[0] || null }

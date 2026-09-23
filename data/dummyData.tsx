@@ -7,8 +7,10 @@
 
 export interface Campaign {
   id: string;
+  slug:string;
   title: string;
   category: string;
+  thumbnail:string;
   image: string[];
   alt: string;
   raised: number;
@@ -219,7 +221,7 @@ export const companyCommunicationChannel = {
   facebook:"facebooklink",
   x:"x.com",
   location:"Zengwa Village, Kwale County, Coast of Kenya",
-  instagram:"instagram.com",
+  instagram:"https://www.instagram.com/zengwachristiancentre?utm_source=zengwachristianeducationcentre.org",
   youtube:"youtube.com",
   tiktok:"tiktok.com",
 }
@@ -227,9 +229,11 @@ export const companyCommunicationChannel = {
 export const campaigns: Campaign[] = [
 {
   id: 'camp-001',
+  slug:'construction-of-zengwa-education-centre-school-blocks',
   title: 'Zengwa Primary School Block',
   category: 'Education',
-  image: ["https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193848/WhatsApp_Image_2026-08-02_at_12.29.03_PM_1_av92gt.jpg","https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193838/WhatsApp_Image_2026-08-02_at_12.29.02_PM_1_cq2oql.jpg"],
+  thumbnail:'',
+  image: ["https://res.cloudinary.com/ezs2dy9g/image/upload/v1789657905/IMG-20260917-WA0010_ka8xas.jpg","https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193848/WhatsApp_Image_2026-08-02_at_12.29.03_PM_1_av92gt.jpg","https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193838/WhatsApp_Image_2026-08-02_at_12.29.02_PM_1_cq2oql.jpg"],
   alt: 'School block under construction in Zengwa village',
   raised: 1240000,
   goal: 1800000,
@@ -398,7 +402,7 @@ export const projects: Project[] = [
   id: 'proj-001',
   title: 'Zengwa Primary School Block',
   category: 'Education',
-  image: ["https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193845/WhatsApp_Image_2026-08-02_at_12.29.03_PM_o91da6.jpg",'https://img.rocket.new/generatedImages/rocket_gen_img_1fa810fe8-1784313443629.png'],
+  image: ["https://res.cloudinary.com/ezs2dy9g/image/upload/v1789657905/IMG-20260917-WA0010_ka8xas.jpg",'https://img.rocket.new/generatedImages/rocket_gen_img_1fa810fe8-1784313443629.png'],
   alt: 'Construction progress of school classroom block with concrete walls for  Zengwa Connect project',
   status: 'In Progress',
   progress: 69,
@@ -1022,7 +1026,7 @@ export const posts: Post[] = [
   date: '08 Jul 2026',
   readTime: '3 min read',
   excerpt: 'This year we welcomed 50 new children into our sponsorship program, each paired with a committed global donor who will walk with them through their education journey.',
-  image: ["https://img.rocket.new/generatedImages/rocket_gen_img_11e51961d-1767969209983.png"],
+  image: ["https://res.cloudinary.com/ezs2dy9g/image/upload/v1790154084/IMG-20260920-WA0011_gj8xbd.jpg"],
   alt: 'Excited young African children in school uniforms holding up their new school bags and supplies on enrollment day',
   categoryColor: 'bg-accent/20 text-primary'
 },
@@ -1033,7 +1037,7 @@ export const posts: Post[] = [
   date: '01 Jul 2026',
   readTime: '5 min read',
   excerpt: 'The borehole funded by our Clean Water campaign has been operational for 3 months, providing safe drinking water to over 1,200 people in Zengwa and surrounding villages.',
-  image: ["https://img.rocket.new/generatedImages/rocket_gen_img_1444ad8a7-1772110832391.png"],
+  image: ["https://res.cloudinary.com/ezs2dy9g/image/upload/v1790158376/IMG-20260921-WA0009_1_zgbqde.jpg"],
   alt: 'Children collecting clean water from a newly installed borehole pump in an African village',
   categoryColor: 'bg-primary/10 text-primary'
 },

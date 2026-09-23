@@ -36,8 +36,8 @@ export default function OurStorySection() {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-card-lg">
               <AppImage
-                src="https://img.rocket.new/generatedImages/rocket_gen_img_1b4d21463-1764671823131.png"
-                alt="Volunteers and teachers working together with children in a Kenyan school setting, reviewing educational materials"
+                src="https://res.cloudinary.com/ezs2dy9g/image/upload/v1790154079/IMG-20260918-WA0009_jb2we8.jpg"
+                alt="Volunteers and teachers meeting in April 2026"
                 width={600}
                 height={500}
                 className="w-full object-cover h-[420px]" />

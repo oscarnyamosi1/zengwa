@@ -1,19 +1,46 @@
-import type { NextConfig } from "next";
+// import type { NextConfig } from "next";
 
-// const nextConfig: NextConfig = {
-//   /* config options here */
+// // const nextConfig: NextConfig = {
+// //   /* config options here */
+// // };
+
+// // export default nextConfig;
+
+
+// const nextConfig = {
+//   experimental: {
+//     optimizePackageImports: [
+//       "lucide-react",
+//       "react-icons",
+//     ],
+//   },
 // };
 
-// export default nextConfig;
+// module.exports = nextConfig;
 
 
-const nextConfig = {
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: [
       "lucide-react",
       "react-icons",
     ],
   },
+
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+    ],
+  },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
