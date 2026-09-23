@@ -56,8 +56,8 @@ export default function ChildSponsorshipPage() {
               </div>
               <div className="relative">
                 <AppImage
-                  src="https://images.unsplash.com/photo-1567057420215-0afa9aa9253a"
-                  alt="Group of smiling Kenyan school children in green uniforms standing outside a classroom"
+                  src="https://res.cloudinary.com/ezs2dy9g/image/upload/v1790154075/IMG-20260918-WA0010_jhbrsu.jpg"
+                  alt="Group of people who helped propel children sponsorship"
                   width={600}
                   height={450}
                   className="w-full h-80 object-cover rounded-3xl shadow-card-lg" />

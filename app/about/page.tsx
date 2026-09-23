@@ -124,7 +124,7 @@ export default function AboutPage() {
               </div>
               <div className="relative">
                 <AppImage
-                  src="https://images.unsplash.com/photo-1567057420215-0afa9aa9253a"
+                  src="https://res.cloudinary.com/ezs2dy9g/image/upload/v1790154083/IMG-20260920-WA0010_wlig0q.jpg"
                   alt="Group of smiling Kenyan school children in green uniforms standing outside a classroom"
                   width={600}
                   height={450}

@@ -1041,15 +1041,4 @@ export const posts: Post[] = [
   image: ["https://res.cloudinary.com/ezs2dy9g/image/upload/v1790158376/IMG-20260921-WA0009_1_zgbqde.jpg"],
   alt: 'Children collecting clean water from a newly installed borehole pump in an African village',
   categoryColor: 'bg-primary/10 text-primary'
-},
-{
-  id: 'post-004',
-  title: 'Partnership with Kwale Diocese Strengthens Church Planting Initiative',
-  category: 'Church',
-  date: '24 Jun 2026',
-  readTime: '3 min read',
-  excerpt: 'A new memorandum of understanding with the Anglican Diocese of Kwale will accelerate our church planting goals, targeting 8 new congregations by end of 2027.',
-  image: ["https://img.rocket.new/generatedImages/rocket_gen_img_18daf0a55-1765652592016.png"],
-  alt: 'Community members gathered outside a small rural church in Kenya for a Sunday service',
-  categoryColor: 'bg-gold/20 text-warning'
 }];
