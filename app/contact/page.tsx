@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import PublicHeader from '@/components/PublicHeader';
 import PublicFooter from '@/components/PublicFooter';
+import {companyCommunicationChannel} from '@/data/dummyData'
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle, MessageCircle } from 'lucide-react';
 import Icon from '@/components/ui/AppIcon';
 
@@ -63,9 +64,9 @@ export default function ContactPage() {
                   <h2 className="text-2xl font-bold text-foreground mb-6">Contact Information</h2>
                   <div className="space-y-4">
                     {[
-                      { icon: MapPin, label: 'Address', value: 'Zengwa Village, Kwale County, Coast  region of Kenya' },
-                      { icon: Phone, label: 'Phone', value: '+254 700 123 456' },
-                      { icon: Mail, label: 'Email', value: 'info@zengwaconnect.org' },
+                      { icon: MapPin, label: 'Address', value: companyCommunicationChannel.location },
+                      { icon: Phone, label: 'Phone', value: companyCommunicationChannel.phone },
+                      { icon: Mail, label: 'Email', value: companyCommunicationChannel.email },
                       { icon: Clock, label: 'Office Hours', value: 'Mon–Fri: 8am–5pm EAT' },
                     ].map((item) => {
                       const Icon = item.icon;
@@ -85,14 +86,14 @@ export default function ContactPage() {
                 </div>
 
                 {/* Nairobi Office */}
-                <div className="p-5 bg-primary/5 border border-primary/20 rounded-2xl">
+                {/* <div className="p-5 bg-primary/5 border border-primary/20 rounded-2xl">
                   <h3 className="font-bold text-foreground mb-2">Nairobi Liaison Office</h3>
                   <p className="text-sm text-muted-foreground">Westlands Business Park, Suite 4B<br />Nairobi, Kenya<br />+254 722 456 789</p>
-                </div>
+                </div> */}
 
                 {/* WhatsApp */}
                 <a
-                  href="https://wa.me/254700123456"
+                  href={`https://wa.me/${companyCommunicationChannel.whatsappNumber}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-4 bg-[#25D366]/10 border border-[#25D366]/30 rounded-2xl hover:bg-[#25D366]/20 transition-colors"

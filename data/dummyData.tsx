@@ -217,6 +217,7 @@ export const companyCommunicationChannel = {
   email:"zengwaacademy@gmail.com",
 
   phone:"+254 706 074 840",
+  whatsappNumber:254706074840,
 
   facebook:"facebooklink",
   x:"x.com",

@@ -102,10 +102,10 @@ export default function AboutPage() {
                   Zengwa Christian Education Centre
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Founded in 2025 by Evangelist Anne Kemunto and Mohammed Beni, Zengwa Christian Education Centre is a faith-based NGO operating in Kwale County, Coast  region of Kenya — one of the most remote and underserved regions in Africa.
+                  Founded in 2025 by Evangelist Anne Kemunto and Mohammed Beni, Zengwa Christian Education Centre is a faith-based NGO operating in Kwale County, Coast  region of Kenya ( one of the most remote and underserved regions in Africa.)
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-8">
-                  We believe that every child deserves quality education, clean water, healthcare, and the knowledge of God&apos;s love. Through the generosity of donors worldwide, we are making this a reality — one life at a time.
+                  We believe that every child deserves quality education, clean water, healthcare, and the knowledge of God&apos;s love. Through the generosity of donors worldwide, we are making this a reality one life at a time.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="p-5 rounded-2xl bg-primary/5 border border-primary/20">
