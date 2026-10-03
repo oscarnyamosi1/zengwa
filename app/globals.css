@@ -9,7 +9,8 @@
   --primary-foreground: #ffffff;
   --secondary: #f2f2f7;
   --secondary-foreground: #1d1d1f;
-  --accent: #2e7d32;
+  /* --accent: #2e7d32; */
+  --accent: black;
   --accent-foreground: #ffffff;
   --muted: #f2f2f7;
   --muted-foreground: #6e6e73;
@@ -38,7 +39,8 @@
   --primary-foreground: #ffffff;
   --secondary: #2c2c2e;
   --secondary-foreground: #f5f5f7;
-  --accent: #388e3c;
+  /* --accent: #388e3c; */
+  --accent: black;
   --accent-foreground: #ffffff;
   --muted: #2c2c2e;
   --muted-foreground: #98989d;

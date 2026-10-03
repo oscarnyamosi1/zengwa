@@ -161,7 +161,7 @@ export default function ProjectsPage() {
                       </div>
 
                       <Link
-                        href="/donate"
+                        href={`/donate/${project.slug}`}
                         className="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground py-2.5 rounded-xl text-sm font-semibold hover:bg-secondary transition-colors active:scale-95"
                       >
                         <Heart size={14} />

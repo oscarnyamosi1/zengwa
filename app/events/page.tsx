@@ -65,8 +65,8 @@ export default function EventsPage() {
             <h1 className="text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">
               Join Us in Person
             </h1>
-            <p className="text-primary-foreground/75 text-lg max-w-xl mx-auto">
-              From fundraising galas to community prayer days — find an event near you and be part of the mission.
+            <p className="text-primary-foreground text-lg max-w-xl mx-auto">
+              From fundraising meetings to community prayer days, find an event near you and be part of the mission.
             </p>
           </div>
         </section>

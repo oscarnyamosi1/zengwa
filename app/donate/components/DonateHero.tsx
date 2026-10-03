@@ -8,7 +8,7 @@ export default function DonateHero() {
     <section className="hero-gradient py-12 lg:py-16">
       <div className="max-w-screen-2xl mx-auto px-6 lg:px-10 xl:px-16 text-center">
 
-        <h1 className="text-3xl lg:text-5xl font-extrabold text-primary-foreground mb-3 tracking-tight">
+        <h1 className="text-3xl lg:text-5xl font-extrabold mb-3 tracking-tight">
           Your Gift Changes Lives
         </h1>
         <p className="text-primary-foreground/75 text-base lg:text-lg max-w-xl mx-auto mb-6">

@@ -94,6 +94,8 @@ export interface Child {
 export interface Project {
   id: string;
   title: string;
+  thumbnail:string;
+  slug:string;
   category: string;
   image: string[];
   alt: string;
@@ -109,17 +111,47 @@ export interface Project {
   beneficiaries: number;
 }
 
+// export interface BlogPost {
+//   id: string;
+//   title: string;
+//   excerpt: string;
+//   content: string;
+//   category: string;
+//   author: string;
+//   authorRole: string;
+//   authorAvatar: string;
+//   image: string;
+//   storyImages:string[];
+//   alt: string;
+//   date: string;
+//   readTime: number;
+//   tags: string[];
+//   featured: boolean;
+// }
+
+export type BlogContentBlock =
+  | { type: "paragraph"; text: string }
+  | { type: "image"; src: string; alt: string; caption?: string }
+  | { type: "image-paragraph"; src: string; alt: string; caption?: string; text: string; imagePosition?: "left" | "right" }
+  | { type: "paragraph-image"; src: string; alt: string; caption?: string; text: string; imagePosition?: "left" | "right" }
+  | { type: "heading"; text: string; level?: 2 | 3 }
+  | { type: "quote"; text: string; author?: string };
+
 export interface BlogPost {
   id: string;
+  slug: string;
   title: string;
   excerpt: string;
-  content: string;
+  /** Rich content blocks for flexible rendering */
+  content: BlogContentBlock[];
+  /** Plain fallback / SEO */
+  plainContent?: string;
   category: string;
   author: string;
   authorRole: string;
   authorAvatar: string;
   image: string;
-  storyImages:string[];
+  storyImages: string[];
   alt: string;
   date: string;
   readTime: number;
@@ -477,6 +509,8 @@ export const projects: Project[] = [
 {
   id: 'proj-001',
   title: 'Zengwa Primary School Block',
+  slug: 'Zengwa Primary School Block',
+  thumbnail:"https://res.cloudinary.com/ezs2dy9g/image/upload/v1789657905/IMG-20260917-WA0010_ka8xas.jpg",
   category: 'Education',
   image: ["https://res.cloudinary.com/ezs2dy9g/image/upload/v1789657905/IMG-20260917-WA0010_ka8xas.jpg",'https://img.rocket.new/generatedImages/rocket_gen_img_1fa810fe8-1784313443629.png'],
   alt: 'Construction progress of school classroom block with concrete walls for  Zengwa Connect project',
@@ -495,6 +529,8 @@ export const projects: Project[] = [
 {
   id: 'proj-002',
   title: 'Tree Planting — Kwale North',
+  slug: 'Tree Planting — Kwale North',
+  thumbnail:"https://res.cloudinary.com/ezs2dy9g/image/upload/v1789657905/IMG-20260917-WA0010_ka8xas.jpg",
   category: 'Church Planting',
   image: ["https://res.cloudinary.com/ezs2dy9g/image/upload/v1786187748/WhatsApp_Image_2026-08-02_at_12.29.17_PM_oidfiu.jpg"],
   alt: "Trees planted on Zengwa connect projects' acquired piece of land",
@@ -512,6 +548,8 @@ export const projects: Project[] = [
 {
   id: 'proj-003',
   title: 'Tree Planting — Kwale North',
+  thumbnail:"https://res.cloudinary.com/ezs2dy9g/image/upload/v1789657905/IMG-20260917-WA0010_ka8xas.jpg",
+  slug: 'Tree Planting — Kwale North',
   category: 'Church Planting',
   image: ["https://res.cloudinary.com/ezs2dy9g/image/upload/v1786187748/WhatsApp_Image_2026-08-02_at_12.29.17_PM_oidfiu.jpg"],
   alt: "Trees planted on Zengwa connect projects' acquired piece of land",
@@ -533,108 +571,343 @@ export const projects: Project[] = [
 // ─── BLOG POSTS ───────────────────────────────────────────────
 
 export const blogPosts: BlogPost[] = [
-{
-  id: 'blog-001',
-  title: 'How Clean Water Changed Everything for Zengwa Village',
-  excerpt: 'When the borehole was finally drilled, the entire community gathered to witness the first clean water flow. Tears of joy mixed with prayers of thanksgiving.',
-  content: 'Full article content here...',
-  category: 'Water Projects',
-  author: 'Pastor James Mwangi',
-  authorRole: 'Founder & Director',
-  authorAvatar: "https://img.rocket.new/generatedImages/rocket_gen_img_1839c4d53-1772094706028.png",
-  image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1444ad8a7-1772110832391.png',
-  alt: 'Community members celebrating around a new water borehole in rural Kenya',
-  date: 'July 15, 2026',
-  readTime: 5,
-  tags: ['Water', 'Community', 'Impact'],
-  featured: true,
-  storyImages:[]
-},
-{
-  id: 'blog-002',
-  title: 'Amina\'s Story: From Dropout to Top Student',
-  excerpt: 'Amina was about to leave school when a sponsor stepped in. Today, she leads her class in mathematics and dreams of becoming a doctor.',
-  content: 'Full article content here...',
-  category: 'Child Sponsorship',
-  author: 'Sarah Kimani',
-  authorRole: 'Sponsorship Coordinator',
-  authorAvatar: "https://img.rocket.new/generatedImages/rocket_gen_img_13b578e81-1772639951391.png",
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_13b578e81-1772639951391.png",
-  alt: 'Young Kenyan girl in school uniform smiling brightly while holding a pencil and notebook',
-  date: 'July 8, 2026',
-  readTime: 4,
-  tags: ['Sponsorship', 'Education', 'Success Story'],
-  featured: true,
-  storyImages:[]
-},
-{
-  id: 'blog-003',
-  title: '2026 Mid-Year Ministry Report: God\'s Faithfulness',
-  excerpt: 'We are humbled to share how your generosity has impacted over 3,000 lives in the first half of 2026. Here is a detailed account of every project.',
-  content: 'Full article content here...',
-  category: 'Ministry Updates',
-  author: 'Pastor James Mwangi',
-  authorRole: 'Founder & Director',
-  authorAvatar: "https://img.rocket.new/generatedImages/rocket_gen_img_125dfa351-1772094883303.png",
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_125dfa351-1772094883303.png",
-  alt: 'Group of community members gathered for a ministry meeting in a church hall',
-  date: 'July 1, 2026',
-  readTime: 8,
-  tags: ['Report', 'Ministry', 'Impact'],
-  featured: false,
-  storyImages:[]
-},
-{
-  id: 'blog-004',
-  title: 'Volunteer Spotlight: Dr. Emily\'s Two Weeks in Kwale',
-  excerpt: 'Dr. Emily flew from London to spend two weeks running free medical clinics. She treated 480 patients and trained 12 community health workers.',
-  content: 'Full article content here...',
-  category: 'Volunteers',
-  author: 'Grace Odhiambo',
-  authorRole: 'Volunteer Coordinator',
-  authorAvatar: "https://img.rocket.new/generatedImages/rocket_gen_img_12bc7169c-1773142299522.png",
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1d760f12f-1784638949747.png",
-  alt: 'Female doctor in white coat examining a child at a rural health clinic in Kenya',
-  date: 'June 22, 2026',
-  readTime: 6,
-  tags: ['Volunteers', 'Health', 'Community'],
-  featured: false,
-  storyImages:[]
-},
-{
-  id: 'blog-005',
-  title: 'New Church Planted in Kalacha — 47 Souls Saved',
-  excerpt: 'After months of prayer and preparation, the Kalacha church was officially planted. The first Sunday service saw 47 people give their lives to Christ.',
-  content: 'Full article content here...',
-  category: 'Church Planting',
-  author: 'Pastor James Mwangi',
-  authorRole: 'Founder & Director',
-  authorAvatar: "https://img.rocket.new/generatedImages/rocket_gen_img_1fe854a69-1765652592467.png",
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_166369d07-1785486042175.png",
-  alt: 'Congregation gathered for worship in a newly planted church in rural Kenya',
-  date: 'June 10, 2026',
-  readTime: 5,
-  tags: ['Church', 'Evangelism', 'Salvation'],
-  featured: false,
-  storyImages:[]
-},
-{
-  id: 'blog-006',
-  title: 'Solar Panels Light Up Zengwa School — Students Study After Dark',
-  excerpt: 'The new solar installation means students can now study in the evenings. Exam scores have already improved by 23% since installation.',
-  content: 'Full article content here...',
-  category: 'Infrastructure',
-  author: 'David Njoroge',
-  authorRole: 'Project Manager',
-  authorAvatar: "https://img.rocket.new/generatedImages/rocket_gen_img_1944b7219-1774958948573.png",
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1944b7219-1774958948573.png",
-  alt: 'Solar panels on school roof with students visible through classroom windows studying at night',
-  date: 'May 28, 2026',
-  readTime: 3,
-  tags: ['Infrastructure', 'Education', 'Solar'],
-  featured: false,
-  storyImages:[]
-}];
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 'blog-001',
+    slug: 'how-clean-water-changed-everything-for-zengwa-village',
+    title: 'How Clean Water Changed Everything for Zengwa Village',
+    excerpt:
+      'When the borehole was finally drilled, the entire community gathered to witness the first clean water flow. Tears of joy mixed with prayers of thanksgiving.',
+    content: [
+      {
+        type: 'paragraph',
+        text: 'When the borehole was finally drilled, the entire community gathered to witness the first clean water flow. Tears of joy mixed with prayers of thanksgiving. For the elders of Zengwa, it was a moment they had prayed for across four decades.',
+      },
+      {
+        type: 'image-paragraph',
+        src: 'https://img.rocket.new/generatedImages/rocket_gen_img_1444ad8a7-1772110832391.png',
+        alt: 'Villagers gathered around the new borehole',
+        caption: 'The moment water first flowed at Zengwa',
+        imagePosition: 'left',
+        text: 'For years, women and children walked up to six kilometers each day to fetch water from a seasonal river. The water was often contaminated, leading to frequent illness and missed school days. Today, over 400 households have access to clean, safe water within a few minutes walk.',
+      },
+      { type: 'heading', text: 'A Community Transformed', level: 2 },
+      {
+        type: 'paragraph-image',
+        src: 'https://img.rocket.new/generatedImages/rocket_gen_img_13b578e81-1772639951391.png',
+        alt: 'Children playing near the clean water pump',
+        caption: 'Children can now attend school regularly',
+        imagePosition: 'right',
+        text: 'School attendance has risen by 40% since the borehole was commissioned, and reported cases of waterborne disease have dropped dramatically. Mothers who once spent their mornings fetching water now run small businesses or tend kitchen gardens.',
+      },
+      {
+        type: 'quote',
+        text: 'This borehole is not just water — it is life, health, and hope for our children.',
+        author: 'Pastor James Mwangi',
+      },
+      { type: 'heading', text: 'Looking Ahead', level: 2 },
+      {
+        type: 'paragraph',
+        text: 'A local water committee has been established and trained in pump maintenance, ensuring the project remains sustainable for years to come. Your continued generosity makes stories like Zengwa possible.',
+      },
+    ],
+    plainContent:
+      'When the borehole was finally drilled, the entire community gathered to witness the first clean water flow. Over 400 households now have access to clean, safe water.',
+    category: 'Water Projects',
+    author: 'Pastor James Mwangi',
+    authorRole: 'Founder & Director',
+    authorAvatar:
+      'https://img.rocket.new/generatedImages/rocket_gen_img_1839c4d53-1772094706028.png',
+    image:
+      'https://img.rocket.new/generatedImages/rocket_gen_img_1444ad8a7-1772110832391.png',
+    storyImages: [
+      'https://img.rocket.new/generatedImages/rocket_gen_img_1444ad8a7-1772110832391.png',
+      'https://img.rocket.new/generatedImages/rocket_gen_img_13b578e81-1772639951391.png',
+    ],
+    alt: 'Community members celebrating around a new water borehole in rural Kenya',
+    date: 'July 15, 2026',
+    readTime: 5,
+    tags: ['Water', 'Community', 'Impact'],
+    featured: true,
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 'blog-002',
+    slug: 'aminas-story-from-dropout-to-top-student',
+    title: "Amina's Story: From Dropout to Top Student",
+    excerpt:
+      'Amina was about to leave school when a sponsor stepped in. Today, she leads her class in mathematics and dreams of becoming a doctor.',
+    content: [
+      {
+        type: 'paragraph',
+        text: "Two years ago, Amina had packed her bags. Her mother could no longer afford the school fees, and Amina had resigned herself to a life of casual labor. That is when a sponsor, halfway across the world, decided to change her story.",
+      },
+      {
+        type: 'image-paragraph',
+        src: 'https://img.rocket.new/generatedImages/rocket_gen_img_13b578e81-1772639951391.png',
+        alt: 'Amina in her school uniform',
+        caption: 'Amina at Kilifi Primary School',
+        imagePosition: 'right',
+        text: "Today, Amina sits at the top of her class in mathematics. She wakes up before sunrise to study by the light of a solar lamp — one of many installed across her village last year. Her teachers describe her as 'unstoppable.'",
+      },
+      {
+        type: 'quote',
+        text: 'I want to become a doctor so I can help the children of my village. That is my promise.',
+        author: 'Amina, age 13',
+      },
+      { type: 'heading', text: 'The Power of Sponsorship', level: 2 },
+      {
+        type: 'paragraph-image',
+        src: 'https://img.rocket.new/generatedImages/rocket_gen_img_13b578e81-1772639951391.png',
+        alt: 'Amina studying with her classmates',
+        caption: 'Amina with her study group',
+        imagePosition: 'left',
+        text: "Amina's story is not unique. Across the Coast region, over 600 children have been kept in school through our sponsorship program. Each sponsor's contribution provides school fees, uniforms, meals, and school supplies.",
+      },
+      {
+        type: 'paragraph',
+        text: "If you would like to sponsor a child like Amina, please visit our sponsorship page. Your generosity may be the reason a child stays in school this year.",
+      },
+    ],
+    plainContent:
+      'Amina was about to drop out of school when a sponsor stepped in. Today she leads her class in mathematics.',
+    category: 'Child Sponsorship',
+    author: 'Sarah Kimani',
+    authorRole: 'Sponsorship Coordinator',
+    authorAvatar:
+      'https://img.rocket.new/generatedImages/rocket_gen_img_13b578e81-1772639951391.png',
+    image:
+      'https://img.rocket.new/generatedImages/rocket_gen_img_13b578e81-1772639951391.png',
+    storyImages: [
+      'https://img.rocket.new/generatedImages/rocket_gen_img_13b578e81-1772639951391.png',
+    ],
+    alt: 'Young Kenyan girl in school uniform smiling brightly while holding a pencil and notebook',
+    date: 'July 8, 2026',
+    readTime: 4,
+    tags: ['Sponsorship', 'Education', 'Success Story'],
+    featured: true,
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 'blog-003',
+    slug: '2026-mid-year-ministry-report',
+    title: "2026 Mid-Year Ministry Report: God's Faithfulness",
+    excerpt:
+      'We are humbled to share how your generosity has impacted over 3,000 lives in the first half of 2026. Here is a detailed account of every project.',
+    content: [
+      {
+        type: 'paragraph',
+        text: 'The first six months of 2026 have been a season of remarkable fruitfulness. Through your generosity, we have touched over 3,000 lives across the Coast region of Kenya. Below is a summary of every major project.',
+      },
+      { type: 'heading', text: 'Water Projects', level: 2 },
+      {
+        type: 'paragraph',
+        text: 'Three new boreholes were drilled — in Zengwa, Kalacha, and Mwangulu. Together, they provide clean water to more than 1,200 households. Two additional boreholes are scheduled for the third quarter.',
+      },
+      { type: 'heading', text: 'Education & Sponsorship', level: 2 },
+      {
+        type: 'paragraph',
+        text: 'Over 600 children are currently sponsored, 47 of whom sat for their national primary exams and achieved distinction. We distributed 1,500 school kits, including uniforms, shoes, and stationery.',
+      },
+      { type: 'heading', text: 'Health Clinics', level: 2 },
+      {
+        type: 'paragraph',
+        text: 'Our mobile clinics served 2,300 patients across 14 villages. We trained 38 community health workers and distributed 500 mosquito nets to expectant mothers.',
+      },
+      {
+        type: 'quote',
+        text: 'To God be all the glory. Every life changed is a testament to His faithfulness and your generosity.',
+        author: 'Pastor James Mwangi',
+      },
+      {
+        type: 'paragraph',
+        text: 'As we enter the second half of the year, we invite you to continue partnering with us. Our goal is to reach 5,000 lives before the year ends.',
+      },
+    ],
+    plainContent:
+      'A mid-year report on the ministry impact during the first half of 2026.',
+    category: 'Ministry Updates',
+    author: 'Pastor James Mwangi',
+    authorRole: 'Founder & Director',
+    authorAvatar:
+      'https://img.rocket.new/generatedImages/rocket_gen_img_125dfa351-1772094883303.png',
+    image:
+      'https://img.rocket.new/generatedImages/rocket_gen_img_125dfa351-1772094883303.png',
+    storyImages: [],
+    alt: 'Group of community members gathered for a ministry meeting in a church hall',
+    date: 'July 1, 2026',
+    readTime: 8,
+    tags: ['Report', 'Ministry', 'Impact'],
+    featured: false,
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 'blog-004',
+    slug: 'volunteer-spotlight-dr-emilys-two-weeks-in-kwale',
+    title: "Volunteer Spotlight: Dr. Emily's Two Weeks in Kwale",
+    excerpt:
+      'Dr. Emily flew from London to spend two weeks running free medical clinics. She treated 480 patients and trained 12 community health workers.',
+    content: [
+      {
+        type: 'paragraph',
+        text: "When Dr. Emily boarded her flight from London to Mombasa, she did not know what to expect. Two weeks later, she would leave with the tears of 480 patients and the gratitude of an entire village.",
+      },
+      {
+        type: 'image-paragraph',
+        src: 'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193845/WhatsApp_Image_2026-08-02_at_12.29.03_PM_o91da6.jpg',
+        alt: 'Dr. Emily examining a child at a rural clinic',
+        caption: 'Dr. Emily at the Kwale mobile clinic',
+        imagePosition: 'left',
+        text: 'Each morning, the mobile clinic opened at 7 AM and often stayed past dusk. Dr. Emily treated everything from malaria to malnutrition, and trained 12 community health workers to continue the work long after she left.',
+      },
+      { type: 'heading', text: 'A Lasting Impact', level: 2 },
+      {
+        type: 'paragraph-image',
+        src: 'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193845/WhatsApp_Image_2026-08-02_at_12.29.03_PM_o91da6.jpg',
+        alt: 'Dr. Emily with local health workers',
+        caption: 'Training community health workers',
+        imagePosition: 'right',
+        text: "The health workers she trained now run weekly clinics in three villages. They refer serious cases to the county hospital in Kwale and have already saved at least two lives since Dr. Emily's departure.",
+      },
+      {
+        type: 'quote',
+        text: 'I came to give, but I received far more than I gave.',
+        author: 'Dr. Emily Carter',
+      },
+      {
+        type: 'paragraph',
+        text: 'We are always looking for skilled volunteers — doctors, nurses, teachers, and engineers. If you feel called to serve, please reach out to our volunteer coordinator.',
+      },
+    ],
+    plainContent:
+      'Dr. Emily spent two weeks running free medical clinics in Kwale, treating 480 patients.',
+    category: 'Volunteers',
+    author: 'Grace Odhiambo',
+    authorRole: 'Volunteer Coordinator',
+    authorAvatar:
+      'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193845/WhatsApp_Image_2026-08-02_at_12.29.03_PM_o91da6.jpg',
+    image:
+      'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193845/WhatsApp_Image_2026-08-02_at_12.29.03_PM_o91da6.jpg',
+    storyImages: [
+      'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193845/WhatsApp_Image_2026-08-02_at_12.29.03_PM_o91da6.jpg',
+    ],
+    alt: 'Female doctor in white coat examining a child at a rural health clinic in Kenya',
+    date: 'June 22, 2026',
+    readTime: 6,
+    tags: ['Volunteers', 'Health', 'Community'],
+    featured: false,
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 'blog-005',
+    slug: 'new-church-planted-in-kalacha',
+    title: 'New Church Planted in Kalacha — 47 Souls Saved',
+    excerpt:
+      'After months of prayer and preparation, the Kalacha church was officially planted. The first Sunday service saw 47 people give their lives to Christ.',
+    content: [
+      {
+        type: 'paragraph',
+        text: 'For eighteen months, a small team of believers met under a baobab tree in Kalacha to pray for a church. On June 7th, 2026, that prayer was answered. The Kalacha Community Church opened its doors for the very first time.',
+      },
+      { type: 'heading', text: 'The First Service', level: 2 },
+      {
+        type: 'paragraph',
+        text: 'The first Sunday service was attended by more than 200 people, many of whom had never entered a church before. By the end of the service, 47 souls had given their lives to Christ.',
+      },
+      {
+        type: 'image-paragraph',
+        src: 'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193845/WhatsApp_Image_2026-08-02_at_12.29.03_PM_o91da6.jpg',
+        alt: 'Congregation gathered for worship in the new church',
+        caption: 'The very first service at Kalacha',
+        imagePosition: 'right',
+        text: 'Pastor James Mwangi led the dedication service, assisted by three elders from the Mombasa headquarters. The congregation has already begun weekly Bible studies and a children\'s Sunday school.',
+      },
+      {
+        type: 'quote',
+        text: 'We planted a church, but God planted a community.',
+        author: 'Pastor James Mwangi',
+      },
+      {
+        type: 'paragraph',
+        text: 'The new congregation is now meeting weekly and planning to plant its own daughter church in a neighboring village by the end of 2027.',
+      },
+    ],
+    plainContent:
+      'A new church was planted in Kalacha, with 47 souls saved at the first service.',
+    category: 'Church Planting',
+    author: 'Pastor James Mwangi',
+    authorRole: 'Founder & Director',
+    authorAvatar:
+      'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193845/WhatsApp_Image_2026-08-02_at_12.29.03_PM_o91da6.jpg',
+    image:
+      'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193845/WhatsApp_Image_2026-08-02_at_12.29.03_PM_o91da6.jpg',
+    storyImages: [
+      'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193845/WhatsApp_Image_2026-08-02_at_12.29.03_PM_o91da6.jpg',
+    ],
+    alt: 'Congregation gathered for worship in a newly planted church in rural Kenya',
+    date: 'June 10, 2026',
+    readTime: 5,
+    tags: ['Church', 'Evangelism', 'Salvation'],
+    featured: false,
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 'blog-006',
+    slug: 'solar-panels-light-up-zengwa-school',
+    title: 'Solar Panels Light Up Zengwa School — Students Study After Dark',
+    excerpt:
+      'The new solar installation means students can now study in the evenings. Exam scores have already improved by 23% since installation.',
+    content: [
+      {
+        type: 'paragraph',
+        text: 'For the students of Zengwa Primary School, darkness used to mark the end of learning. No electricity meant no evening study, and exam performance suffered as a result. That changed in April 2026.',
+      },
+      {
+        type: 'image-paragraph',
+        src: 'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193845/WhatsApp_Image_2026-08-02_at_12.29.03_PM_o91da6.jpg',
+        alt: 'Solar panels on the school roof',
+        caption: 'Solar panels installed on the school roof',
+        imagePosition: 'left',
+        text: 'Twelve solar panels now power the entire school compound, including seven classrooms, the library, and a computer lab. Students can now study until 9 PM, and the library stays open for evening reading sessions.',
+      },
+      { type: 'heading', text: 'The Results Speak', level: 2 },
+      {
+        type: 'paragraph-image',
+        src: 'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193845/WhatsApp_Image_2026-08-02_at_12.29.03_PM_o91da6.jpg',
+        alt: 'Students studying at night under solar lights',
+        caption: 'Evening study session',
+        imagePosition: 'right',
+        text: 'Since the installation, exam scores have risen by 23% across all grade levels. Three students from the school qualified for national secondary schools this year — a first in the school\'s history.',
+      },
+      {
+        type: 'paragraph',
+        text: 'The project was funded through a generous gift from a partnering church in the United States. We hope to replicate the model at two more schools in 2027.',
+      },
+    ],
+    plainContent:
+      'Solar panels installed at Zengwa Primary School have raised exam scores by 23%.',
+    category: 'Infrastructure',
+    author: 'David Njoroge',
+    authorRole: 'Project Manager',
+    authorAvatar:
+      'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193845/WhatsApp_Image_2026-08-02_at_12.29.03_PM_o91da6.jpg',
+    image:
+      'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193845/WhatsApp_Image_2026-08-02_at_12.29.03_PM_o91da6.jpg',
+    storyImages: [
+      'https://res.cloudinary.com/ezs2dy9g/image/upload/v1786193845/WhatsApp_Image_2026-08-02_at_12.29.03_PM_o91da6.jpg',
+    ],
+    alt: 'Solar panels on school roof with students visible through classroom windows studying at night',
+    date: 'May 28, 2026',
+    readTime: 3,
+    tags: ['Infrastructure', 'Education', 'Solar'],
+    featured: false,
+  },
+];
 
 
 // ─── EVENTS ───────────────────────────────────────────────────
