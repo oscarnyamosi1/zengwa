@@ -14,7 +14,7 @@ import Icon from '@/components/ui/AppIcon';
 const values = [
 { icon: Heart, title: 'Compassion', description: 'We serve with genuine love for every person, reflecting the heart of Christ in all we do.' },
 { icon: Shield, title: 'Integrity', description: 'Every donation is accounted for. We publish full financial reports and welcome scrutiny.' },
-{ icon: Users, title: 'Community', description: 'We work with communities, not for them — building local capacity and ownership.' },
+{ icon: Users, title: 'Community', description: 'We work with communities, not for them thus building local capacity and ownership.' },
 { icon: BookOpen, title: 'Education', description: 'We believe education is the most powerful tool to break the cycle of poverty.' },
 { icon: Droplets, title: 'Sustainability', description: 'Every project is designed to be maintained and owned by the local community long-term.' },
 { icon: Church, title: 'Faith', description: 'Our work is rooted in the Gospel. We serve because Christ first served us.' }];
@@ -22,7 +22,7 @@ const values = [
 
 const milestones = [
 { year: '2025', title: 'Digital Platform', description: 'Online giving platform launched, connecting donors worldwide to our mission.' },
-{ year: '2026', title: 'Today', description: '84 sponsored children, 28 communities reached, and 1 year of God\'s faithfulness.' }];
+{ year: '2026', title: 'Today', description: '84 sponsored children, 3 communities reached, and 1 year of God\'s faithfulness.' }];
 
 
 export default function AboutPage() {

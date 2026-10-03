@@ -28,7 +28,7 @@ export default function ActivityFeed() {
       <div className="px-5 py-4 border-b border-border flex items-center justify-between">
         <div>
           <h3 className="font-bold text-foreground text-base">Activity Feed</h3>
-          <p className="text-xs text-muted-foreground mt-0.5">Latest ministry actions — last 24 hours</p>
+          <p className="text-xs text-muted-foreground mt-0.5">Latest ministry actions , last 24 hours</p>
         </div>
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-1.5 bg-accent/10 text-primary border border-accent/30 px-3 py-1.5 rounded-full text-xs font-semibold">

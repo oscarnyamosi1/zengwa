@@ -5,6 +5,40 @@
 
 // ─── TYPES ───────────────────────────────────────────────────
 
+export type ContentBlock =
+  | {
+      type: 'paragraph';
+      text: string;
+    }
+  | {
+      type: 'image';
+      src: string;
+      alt: string;
+      caption?: string;
+    };
+
+export interface Funding {
+  raised: number;
+  goal: number;
+  currency: string;
+  percentage: number;
+  donors: number;
+  daysLeft: number;
+  updates: number;
+}
+
+// export interface Campaign {
+//   id: string;
+//   slug:string;
+//   category: string;
+//   title: string;
+//   subtitle: string;
+//   heroImage?: string;
+//   description: string;
+//   content: ContentBlock[];
+//   funding: Funding;
+// }
+
 export interface Campaign {
   id: string;
   slug:string;
@@ -30,8 +64,10 @@ export interface Post {
   
   id: string;
   title: string;
+  slug:string;
   category: "Construction" | "Church" | "Water" | "Sponsorship";
   date: string;
+  thumbnail:string,
   readTime: string;
   excerpt: string;
   image: string[];
@@ -181,15 +217,54 @@ export interface PrayerRequest {
   answered: boolean;
 }
 
+// export interface VolunteerRole {
+//   id: string;
+//   title: string;
+//   description: string;
+//   commitment: string;
+//   skills: string[];
+//   openings: number;
+//   location: string;
+//   category: string;
+// }
+
+export type VolunteerCategory =
+  | 'Health'
+  | 'Construction'
+  | 'Education'
+  | 'Communications'
+  | 'Administration'
+  | 'Fundraising';
+
+export type VolunteerLocationType = 'On-site' | 'Remote' | 'Hybrid';
+
 export interface VolunteerRole {
   id: string;
+  slug: string;
   title: string;
+  summary: string;
   description: string;
-  commitment: string;
-  skills: string[];
+  category: VolunteerCategory;
+  categoryColor: string;
   openings: number;
+  commitment: string;
+  duration: {
+    minWeeks: number;
+    maxWeeks: number | null;
+    isRemoteFriendly: boolean;
+  };
   location: string;
-  category: string;
+  locationType: VolunteerLocationType;
+  skills: string[];
+  preferredSkills?: string[];
+  experienceRequired: boolean;
+  languages?: string[];
+  applicationDeadline?: string;
+  isActive: boolean;
+  image?: string;
+  alt?: string;
+  postedAt: string;
+  updatedAt: string;
 }
 
 export interface DashboardUser {
@@ -962,13 +1037,13 @@ export const impactStats = {
   childrenSponsored: 84,
 
   totalRaisedKES: 0,
-  volunteersServed: 0,
-  communitiesReached: 0,
+  volunteersServed: 92,
+  communitiesReached: 3,
   // projectsCompleted: completeprojects.length,
   yearsOfService: 1,
   countriesRepresented: 1,
   donorsCount:0,
-  livesTransformed: 0
+  livesTransformed: 400
 };
 
 // ─── DONATION TREND DATA (for charts) ─────────────────────────
@@ -1011,6 +1086,7 @@ export const sponsorshipRingData = [
 export const posts: Post[] = [
 {
   id: 'post-001',
+  slug:"School Block Construction Reaches",
   title: 'School Block Construction Reaches 23% — Completion Expected by 2027 August',
   category: 'Construction',
   date: '14 Jul 2026',
@@ -1022,6 +1098,7 @@ export const posts: Post[] = [
 },
 {
   id: 'post-002',
+  slug:"50 New Children Enrolled in Sponsorship",
   title: '50 New Children Enrolled in Sponsorship Program for 2026 Academic Year',
   category: 'Sponsorship',
   date: '08 Jul 2026',
@@ -1033,6 +1110,7 @@ export const posts: Post[] = [
 },
 {
   id: 'post-003',
+  slug:"Water Borehole Serves 1,200 ",
   title: 'Water Borehole Serves 1,200 Community Members Daily Since Installation',
   category: 'Water',
   date: '01 Jul 2026',

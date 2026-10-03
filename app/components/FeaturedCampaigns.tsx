@@ -40,7 +40,7 @@ export default function FeaturedCampaigns() {
                   {/* Image */}
 
                 {/* <Link href={`/campaigns/${campaign.id}`} id={`campaign-${campaign.id}`} className="block h-full w-full"> */}
-                <Link href={`/campaigns/${campaign.slug}`} id={`campaign-${campaign.id}`} className="block h-full w-full">
+                <Link href={`/campaign/${campaign.slug}`} id={`campaign-${campaign.id}`} className="block h-full w-full">
                   <div className="relative overflow-hidden">
                     <AppImage
                       src={ campaign.image?.[0] || null }
@@ -95,7 +95,7 @@ export default function FeaturedCampaigns() {
 
                     {/* CTA */}
                     <Link
-                      href="/donate"
+                      href={`donate/${campaign.slug}`}
                       className="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground py-2.5 rounded-xl text-sm font-semibold hover:bg-secondary transition-all duration-150 active:scale-95">
                       
                       <FaIcon icon={faHandHoldingHeart} size={22} className="white" />

@@ -146,6 +146,13 @@ export default function HeroSection() {
                                 Donate Now
                             </Link>
                             <Link
+                                href="/volunteer"
+                                className="inline-flex items-center gap-2.5 bg-primary hover:bg-primary-dark text-white px-6 md:px-8 py-3.5 md:py-4 rounded-full font-semibold text-sm md:text-base transition-all duration-200 shadow-xl shadow-primary/25 hover:shadow-primary/40 hover:scale-[1.02] active:scale-95"
+                            >
+                                <Heart size={18} className="flex-shrink-0" />
+                                Volunteer Now
+                            </Link>
+                            <Link
                                 href="/campaigns"
                                 className="inline-flex items-center gap-2.5 bg-white/15 backdrop-blur-sm hover:bg-white/25 text-white px-6 md:px-8 py-3.5 md:py-4 rounded-full font-semibold text-sm md:text-base transition-all duration-200 border border-white/20 hover:border-white/40 active:scale-95"
                             >

@@ -16,52 +16,56 @@ export default function LatestNews() {
             </div>
             <h2 className="text-section-title text-foreground">Ministry Updates</h2>
           </div>
-          <Link
-            href="/"
+          <a
+            href="/blog"
             className="hidden sm:flex items-center gap-2 text-sm font-semibold text-primary hover:text-secondary transition-colors">
             
             View All Posts
             <ArrowRight size={16} />
-          </Link>
+          </a>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {posts?.map((post) =>
-          <article
-            key={post?.id}
-            className="campaign-card-hover bg-card rounded-sm overflow-hidden border border-border shadow-card group">
-            
-              <div className="overflow-hidden">
-                <AppImage
-                src={post?.image[0]}
-                alt={post?.alt}
-                width={400}
-                height={200}
-                className="w-full h-44 object-cover transition-transform duration-300 group-hover:scale-105" />
+          <a href={`blog/`+ post?.slug}>
+
+            <article
+              key={post?.id}
+              className="campaign-card-hover bg-card rounded-sm overflow-hidden border border-border shadow-card group">
               
-              </div>
-              <div className="p-4">
-                <div className="flex items-center justify-between mb-3">
-                  <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${post?.categoryColor}`}>
-                    {post?.category}
-                  </span>
-                  <div className="flex items-center gap-1 text-xs text-muted-foreground">
-                    <Clock size={11} />
-                    {post?.readTime}
+                <div className="overflow-hidden">
+                  <AppImage
+                  src={post?.image[0]}
+                  alt={post?.alt}
+                  width={400}
+                  height={200}
+                  className="w-full h-44 object-cover transition-transform duration-300 group-hover:scale-105" />
+                
+                </div>
+                <div className="p-4">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${post?.categoryColor}`}>
+                      {post?.category}
+                    </span>
+                    <div className="flex items-center gap-1 text-xs text-muted-foreground">
+                      <Clock size={11} />
+                      {post?.readTime}
+                    </div>
+                  </div>
+                  <h3 className="font-semibold text-sm text-foreground leading-snug mb-2 line-clamp-2 group-hover:text-primary transition-colors">
+                    {post?.title}
+                  </h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed mb-3 line-clamp-3">
+                    {post?.excerpt}
+                  </p>
+                  <div className="flex items-center gap-1.5 text-xs text-muted-foreground pt-2 border-t border-border">
+                    <Calendar size={11} />
+                    {post?.date}
                   </div>
                 </div>
-                <h3 className="font-semibold text-sm text-foreground leading-snug mb-2 line-clamp-2 group-hover:text-primary transition-colors">
-                  {post?.title}
-                </h3>
-                <p className="text-xs text-muted-foreground leading-relaxed mb-3 line-clamp-3">
-                  {post?.excerpt}
-                </p>
-                <div className="flex items-center gap-1.5 text-xs text-muted-foreground pt-2 border-t border-border">
-                  <Calendar size={11} />
-                  {post?.date}
-                </div>
-              </div>
-            </article>
+              </article>
+              
+          </a>
           )}
         </div>
 

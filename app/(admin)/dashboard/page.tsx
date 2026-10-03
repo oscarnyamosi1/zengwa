@@ -15,7 +15,7 @@ export default function DashboardPage() {
           <div>
             <h1 className="text-2xl font-bold text-foreground">Ministry Dashboard</h1>
             <p className="text-muted-foreground text-sm mt-0.5">
-              ZengwaConnect — Overview for July 2026
+              ZengwaConnect Overview for July 2026
             </p>
           </div>
           <div className="flex items-center gap-3">

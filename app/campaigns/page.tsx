@@ -61,7 +61,7 @@ export default function CampaignsPage() {
                 </h1>
                 {/* <p className="text-primary-foreground/75 leading-relaxed max-w-xs text-lg mb-8 "> */}
                 <p className="text-white/75 text-md leading-relaxed mb-8 max-w-xs">
-                  Every campaign represents a real, urgent need. Your gift — however small — makes an eternal difference.
+                  Every campaign represents a real, urgent need. Your gift ( however small ) makes an eternal difference.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Link href="/donate" className="bg-accent text-primary font-semibold px-6 py-3 rounded-xl hover:bg-accent/90 transition-colors flex items-center gap-2">
