@@ -27,18 +27,6 @@ export interface Funding {
   updates: number;
 }
 
-// export interface Campaign {
-//   id: string;
-//   slug:string;
-//   category: string;
-//   title: string;
-//   subtitle: string;
-//   heroImage?: string;
-//   description: string;
-//   content: ContentBlock[];
-//   funding: Funding;
-// }
-
 export interface Campaign {
   id: string;
   slug:string;
@@ -60,21 +48,21 @@ export interface Campaign {
   reviews: string[],
 }
 
-export interface Post {
+// export interface Post {
   
-  id: string;
-  title: string;
-  slug:string;
-  category: "Construction" | "Church" | "Water" | "Sponsorship";
-  date: string;
-  thumbnail:string,
-  readTime: string;
-  excerpt: string;
-  image: string[];
-  alt: string;
-  categoryColor: string
+//   id: string;
+//   title: string;
+//   slug:string;
+//   category: "Construction" | "Church" | "Water" | "Sponsorship";
+//   date: string;
+//   thumbnail:string,
+//   readTime: string;
+//   excerpt: string;
+//   image: string[];
+//   alt: string;
+//   categoryColor: string
 
-}
+// }
 
 export interface Child {
   id: string;
@@ -111,23 +99,6 @@ export interface Project {
   beneficiaries: number;
 }
 
-// export interface BlogPost {
-//   id: string;
-//   title: string;
-//   excerpt: string;
-//   content: string;
-//   category: string;
-//   author: string;
-//   authorRole: string;
-//   authorAvatar: string;
-//   image: string;
-//   storyImages:string[];
-//   alt: string;
-//   date: string;
-//   readTime: number;
-//   tags: string[];
-//   featured: boolean;
-// }
 
 export type BlogContentBlock =
   | { type: "paragraph"; text: string }
@@ -985,20 +956,20 @@ export const events: Event[] = [
 //   capacity: 800,
 //   free: true
 // },
-// {
-//   id: 'evt-006',
-//   title: 'Donor Appreciation Breakfast',
-//   description: 'A special breakfast for our top donors to share project updates, impact reports, and future plans. An intimate gathering of 50 key supporters.',
-//   date: 'September 12, 2026',
-//   time: '8:00 AM — 11:00 AM',
-//   location: 'Villa Rosa Kempinski, Nairobi',
-//   type: 'Donor Relations',
-//   image: "https://images.unsplash.com/photo-1661335996024-1264a70d1347",
-//   alt: 'Elegant breakfast setting with white tablecloths and fresh flowers for a donor appreciation event',
-//   attendees: 35,
-//   capacity: 50,
-//   free: true
-// }
+{
+  id: 'evt-006',
+  title: 'Donor Appreciation Breakfast',
+  description: 'A special breakfast for our top donors to share project updates, impact reports, and future plans. An intimate gathering of 50 key supporters.',
+  date: 'September 12, 2026',
+  time: '8:00 AM — 11:00 AM',
+  location: 'Villa Rosa Kempinski, Nairobi',
+  type: 'Donor Relations',
+  image: "https://images.unsplash.com/photo-1661335996024-1264a70d1347",
+  alt: 'Elegant breakfast setting with white tablecloths and fresh flowers for a donor appreciation event',
+  attendees: 35,
+  capacity: 50,
+  free: true
+}
 
 ];
 
@@ -1354,42 +1325,3 @@ export const sponsorshipRingData = [
   { name: 'Awaiting Sponsor', value: 63, fill: '#81C784' }
 
 ];
-
-// ------------------------------posts----------------------------------
-export const posts: Post[] = [
-{
-  id: 'post-001',
-  slug:"School Block Construction Reaches",
-  title: 'School Block Construction Reaches 23% — Completion Expected by 2027 August',
-  category: 'Construction',
-  date: '14 Jul 2026',
-  readTime: '4 min read',
-  excerpt: 'The second classroom block at Zengwa Primary School is progressing ahead of schedule, thanks to the generous support of 248 donors from 12 countries.',
-  image: ["https://res.cloudinary.com/ezs2dy9g/image/upload/v1786562946/WhatsApp_Image_2026-08-12_at_9.30.34_PM_bb5tc7.jpg"],
-  alt: 'Construction site showing new school building with workers laying bricks and scaffolding in place',
-  categoryColor: 'bg-warning/10 text-warning'
-},
-{
-  id: 'post-002',
-  slug:"50 New Children Enrolled in Sponsorship",
-  title: '50 New Children Enrolled in Sponsorship Program for 2026 Academic Year',
-  category: 'Sponsorship',
-  date: '08 Jul 2026',
-  readTime: '3 min read',
-  excerpt: 'This year we welcomed 50 new children into our sponsorship program, each paired with a committed global donor who will walk with them through their education journey.',
-  image: ["https://res.cloudinary.com/ezs2dy9g/image/upload/v1790154084/IMG-20260920-WA0011_gj8xbd.jpg"],
-  alt: 'Excited young African children in school uniforms holding up their new school bags and supplies on enrollment day',
-  categoryColor: 'bg-accent/20 text-primary'
-},
-{
-  id: 'post-003',
-  slug:"Water Borehole Serves 1,200 ",
-  title: 'Water Borehole Serves 1,200 Community Members Daily Since Installation',
-  category: 'Water',
-  date: '01 Jul 2026',
-  readTime: '5 min read',
-  excerpt: 'The borehole funded by our Clean Water campaign has been operational for 3 months, providing safe drinking water to over 1,200 people in Zengwa and surrounding villages.',
-  image: ["https://res.cloudinary.com/ezs2dy9g/image/upload/v1790158376/IMG-20260921-WA0009_1_zgbqde.jpg"],
-  alt: 'Children collecting clean water from a newly installed borehole pump in an African village',
-  categoryColor: 'bg-primary/10 text-primary'
-}];

@@ -66,8 +66,8 @@ export default function PublicHeader() {
       <header
         className={`sticky top-0 z-50 transition-all duration-200 ${
           scrolled
-            ? 'bg-card/75 backdrop-blur-xl backdrop-saturate-150 border-b border-border shadow-[0_1px_2px_rgba(0,0,0,0.04)]'
-            : 'bg-card/60 backdrop-blur-xl backdrop-saturate-150 border-b border-border'
+            ? 'bg-card/35 backdrop-blur-xl backdrop-saturate-150 border-b border-border shadow-[0_1px_2px_rgba(0,0,0,0.04)]'
+            : 'bg-card/30 backdrop-blur-xl backdrop-saturate-150 border-b border-border'
         }`}
       >
         <div className="max-w-screen-2xl mx-auto px-4 lg:px-6">
@@ -85,7 +85,7 @@ export default function PublicHeader() {
             </div>
 
             {/* ── Center: Desktop Nav ────────────────── */}
-            <nav className="hidden lg:flex items-center gap-0.5">
+            <nav className="hidden lg:flex items-center gap-0.5 backdrop-blur-[20px]">
               {navLinks?.map((link) => (
                 <div key={link?.label} className="relative group">
                   {link?.children ? (
@@ -124,14 +124,14 @@ export default function PublicHeader() {
                       onMouseEnter={() => setOpenDropdown(link?.label)}
                       onMouseLeave={() => setOpenDropdown(null)}
                     >
-                      <div className="py-1.5">
+                      <div className="py-1.5 bg-primary backdrop-blur-xl">
                         {link?.children?.map((child) => (
                           <Link
                             key={child?.href}
                             href={child?.href}
                             className={`block px-3.5 py-1.5 text-[13px] transition-colors duration-150 mx-1 rounded-md ${
                               pathname === child?.href
-                                ? 'text-primary bg-primary/8 font-medium'
+                                ? 'text-white bg-primary/8 bg-foreground font-medium'
                                 : 'text-foreground/80 hover:bg-black/[0.04] dark:hover:bg-white/[0.06] hover:text-foreground'
                             }`}
                           >
